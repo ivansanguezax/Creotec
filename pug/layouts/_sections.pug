@@ -1,13 +1,75 @@
+// Cards
+- var cardImages = ["..","..","..",".."]
+- var cardTitles = ["Card title", "Card title", "Card title", "Card title"]
+- var cardTexts = ["This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."]
+- var cardModals = ["#1", "#2", "#3", "#4"]
+
+mixin card(cardImage, cardTitle, cardText, cardModal)
+    .col-lg-3.col
+        .card(class=cardModal=="#1"?"bg-primary":"")
+            button.btn.text-start(type="button" data-bs-toggle="modal" data-bs-target=cardModal)
+                img.card-img-top(src=cardImage alt=cardTitle)
+            .card-body
+                button.btn.text-start(type="button")
+                    h5.card-title(class=cardModal=="#1"?"text-light":"")= cardTitle
+                    p.card-text(class=cardModal=="#1"?"text-light":"")= cardText
+
 main
     .container
         .row
             .col-lg.col-12
                 h1 Crea tu protesis a bajo costo
                 p Mejora tu calidad de vida con una prótesis personalizada
+            .col-lg.col-12.d-flex.justify-content-lg-evenly.justify-content-between
+                img(src="./assets/png/image.png", alt="image")
+                .btn-group-vertical.gap-2.d-flex.justify-content-end
+                    button.btn.btn-primary 1
+                    button.btn 2
+                    button.btn 3
+                    button.btn 4
+
+section.blockcontent-1#blockcontent-1
+    .container
+        .row
+            .col-lg.col-12
+                h1 Por qué elegirnos?
             .col-lg.col-12
                 img(src="./assets/png/image.png", alt="image")
-                .btn-group-vertical.justify-content-end
-                    .btn 1
-                    .btn 2
-                    .btn 3
-                    .btn 4
+
+section.blockcontent-2#blockcontent-2
+    .container.bg-primary
+        .row
+            .col.pt-5.pb-4
+                h1.text-center.text-white.fs-4 “Good health is not something we can buy. However, it can be an extremely valuable savings account.”
+                button.btn.btn-light.text-primary.mt-3 Request an Appointment
+
+section.homepage-banner#homepage-banner
+    .container
+        .row
+            .col
+                h1.mt-3.mb-4 Nuestros servicios
+        .row
+            each val,index in cardImages
+                +card(val,cardTitles[index],cardTexts[index], cardModals[index])
+
+section.menu#menu
+    .container
+        .row
+            h1 Nuestros Pacientes
+        .row
+            .col-lg-6.col
+                .card
+                    img.card-img-top(src='...' alt='...')
+                    .card-body
+                        h5.card-title Card title
+                        p.card-text
+                            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        i.bi.bi-quote
+            .col-lg-6.col
+                .card
+                    img.card-img-top(src='...' alt='...')
+                    .card-body
+                        h5.card-title Card title
+                        p.card-text
+                            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        i.bi.bi-quote

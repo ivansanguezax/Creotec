@@ -1,4 +1,4 @@
-- var items = {"#1": "Home", "#2": "Nosotros", "#3": "Proceso", "#4": "Precios", "#5": "Contacto", "#6": "Proyectos", "#7": "FAQ", "#8": "Crear pedido", "#9": "Iniciar sesión"}
+- var items = {"#1": "Home", "#2": "Nosotros", "#3": "Contacto", "#4": "Proyectos", "#5": "Crear pedido", "#6": "Iniciar sesión"}
 
 header
     .container
@@ -10,7 +10,5 @@ header
                 #navbarNavAltMarkup.collapse.navbar-collapse
                     .navbar-nav.ms-auto
                         each val,key in items
-                            if(val == pag)
-                                a.nav-link.active(href=key)=val
-                            else
-                                a.nav-link(href=key)=val
+                            a.nav-link(class=(val==pag)?"active":"", href=key)=val
+                            

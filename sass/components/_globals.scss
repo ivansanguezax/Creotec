@@ -1,4 +1,121 @@
-// Colors 
+//======Colors=======
 
+// Neutral Colors 
 $color-white: #FFFFFF;
-$color-table-header: #FBFBFD
+$color-table-header: #FBFBFD;
+$color-background:#F8F8FC;
+$color-divider:#E4E5F0;
+$color-disable:#DCDEE9;
+$color-border:#BCBFD6;
+$color-placeholder:#A7ABC3;
+$color-text-secondary:#82869E;
+$color-text-primary:#434657;
+$color-text-title:#1B1D29;
+
+// Primary Colors
+$color-primary-50:#F4F7FF;
+$color-primary-100:#E8EFFF;
+$color-primary-200:#D1DFFF;
+$color-primary-500:#1A60FF;
+$color-primary-600:#1756E6;
+$color-primary-700:#154DCC;
+
+//Secondary Colors
+
+$color-secondary-50:#F7FBFF;
+$color-secondary-100:#EEF8FF;
+$color-secondary-200:#DDF0FE;
+$color-secondary-500:#55B6FA;
+$color-secondary-600:#4DA4E1;
+$color-secondary-700:#4492C8;
+
+// Link Colors
+$color-link-50:#E8F4FF;
+$color-link100: #D1E9FF;
+$color-link200: #A3D3FF;
+$color-link500:#1990FF;
+$color-link600:#1473CC;
+$color-link700: #0F5699;
+
+
+//Sucess Colors 
+$color-success-50:#F5FDF7;
+$color-success-100:#EAFAEF;
+$color-success-200:#D6F5DF;
+$color-success500:#30CD60;
+$color-success600:#2BB956;
+$color-success700:#26A44D;
+
+
+//Pending Colors
+$color-pending-50:#FFFBF5;
+$color-pending100:#FFF6EC;
+$color-pending200:#FFEED9;
+$color-pending500:#FFA940;
+$color-pending600:#E6983A;
+$color-pending700:#CC8733;
+
+//Error Colors
+$color-error100:#FDF6F6;
+$color-error200:#FBECEC;
+$color-error300:#F8D9D9;
+$color-error500:#DA4343;
+$color-error600:#C43C3C;
+$color-error700:#AE3636;
+
+//======End Colors=======
+
+//=====Shadow======
+
+$Shadow-s: 0px 1px 4px rgba(0, 0, 0, 0.2);
+$Shadow-m:0px 2px 10px rgba(0, 0, 0, 0.2);
+$Shadow-l:0px 4px 32px rgba(0, 0, 0, 0.08);
+$Shadow-color:0px 8px 26px rgba(26, 96, 255, 0.25);
+
+
+//=====End-Shadow======
+
+//=====Mixins=====
+
+
+@mixin font($n,$w) {
+    font-family: 'Roboto', sans-serif;
+    font-size: $n;
+    font-weight: $w;
+    line-height: 150%;
+}
+
+@mixin buttonPrimary($w,$h,$br,$pw,$ph,$f,$fw){
+    width:$w;
+    height:$h;
+    border-radius: $br;
+    padding: $ph $pw;
+    background-color:$color-primary-500;
+    color:$color-white;
+    font-size: $f;
+    font-weight: $fw;
+}
+
+@mixin buttonSecondary($w,$h,$br,$pw,$ph,$f,$fw){
+    width:$w;
+    height:$h;
+    border-radius: $br;
+    padding: $ph $pw;
+    background-color:$color-white;
+    color:$color-primary-600;
+    font-family: 'Roboto', sans-serif;
+    font-size: $f;  
+    font-weight: $fw;
+}
+
+@mixin buttonSecondary($w,$h,$br,$pw,$ph,$f,$fw){
+    width:$w;
+    height:$h;
+    border-radius: $br;
+    padding: $ph $pw;
+    background-color:$color-white;
+    color:$color-primary-600;
+    font-family: 'Roboto', sans-serif;
+    font-size: $f;  
+    font-weight: $fw;
+}
