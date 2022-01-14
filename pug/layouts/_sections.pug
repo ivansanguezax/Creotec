@@ -4,22 +4,39 @@
 - var cardTexts = ["This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."]
 - var cardModals = ["#1", "#2", "#3", "#4"]
 
-mixin card(cardImage, cardTitle, cardText, cardModal)
-    .col-lg-3.col
+// Healthy Tips
+- var cardHealthyImages = ["..","..",".."]
+- var cardHealthyTitles = ["Card title", "Card title", "Card title"]
+- var cardHealthyTexts = ["This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."]
+
+// Insurance images
+- var insuranceImages = ["./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png"]
+
+mixin cardWithModal(cardImage, cardTitle, cardText, cardModal)
+    .col-lg-3.col-12
         .card(class=cardModal=="#1"?"bg-primary":"")
             button.btn.text-start(type="button" data-bs-toggle="modal" data-bs-target=cardModal)
                 img.card-img-top(src=cardImage alt=cardTitle)
             .card-body
-                button.btn.text-start(type="button")
+                button.btn.text-start(type="button" data-bs-toggle="modal" data-bs-target=cardModal)
                     h5.card-title(class=cardModal=="#1"?"text-light":"")= cardTitle
                     p.card-text(class=cardModal=="#1"?"text-light":"")= cardText
 
+mixin card(cardImage, cardTitle, cardText)
+    .col-lg-4.col-12
+        .card
+            img.card-img-top(src=cardImage alt=cardTitle)
+            .card-body
+                h5.card-title= cardTitle
+                p.card-text= cardText
+
 main
     .container
-        .row
+        .row.mt-5
             .col-lg.col-12
                 h1 Crea tu protesis a bajo costo
                 p Mejora tu calidad de vida con una prótesis personalizada
+                button.btn.btn-primary(type="button") Comenzar Proceso
             .col-lg.col-12.d-flex.justify-content-lg-evenly.justify-content-between
                 img(src="./assets/png/image.png", alt="image")
                 .btn-group-vertical.gap-2.d-flex.justify-content-end
@@ -50,7 +67,7 @@ section.homepage-banner#homepage-banner
                 h1.mt-3.mb-4 Nuestros servicios
         .row
             each val,index in cardImages
-                +card(val,cardTitles[index],cardTexts[index], cardModals[index])
+                +cardWithModal(val,cardTitles[index],cardTexts[index], cardModals[index])
 
 section.menu#menu
     .container
@@ -73,3 +90,68 @@ section.menu#menu
                         p.card-text
                             | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                         i.bi.bi-quote
+        .row
+            .col-2.offset-5
+                ul.d-flex.justify-content-around
+                    li.active
+                    li
+                    li
+                    li
+                    li
+        .row
+            each val,index in cardHealthyImages
+                +card(val,cardHealthyTitles[index],cardHealthyTexts[index])
+        .row
+            .col-2.offset-5
+                button.btn.btn-primary(type="button")
+                    | More post
+                    i.bi.bi-chevron-right
+
+section.contact#contact
+    .container
+        .row
+            .col.text-center
+                h1 
+                    | Request Appointment <br />
+                    | for Annual Wellness Exam
+        .row
+            .col-6.form.offset-3
+                .mb-3
+                    label.form-label(for='exampleInputEmail1') Your Full Name
+                    input#exampleInputEmail1.form-control(type='text' aria-describedby='emailHelp')
+                .mb-3
+                    label.form-label(for='exampleInputEmail1') Phone Number
+                    input#exampleInputEmail1.form-control(type='number' aria-describedby='emailHelp')
+                .mb-3
+                    label.form-label(for='exampleInputEmail1') Email
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+                .mb-3
+                    label.form-label(for='exampleInputEmail1') Your Full Name
+                    input#exampleInputEmail1.form-control(type='date' aria-describedby='emailHelp')
+        .row
+            .col.d-flex.justify-content-center
+                button.btn.btn-primary(type='submit') Submit
+
+
+
+section.blockcontent-3#blockcontent-3
+    .container
+        .row
+            .col
+                h1 Accepted Insurance
+        .row
+            .col.d-flex.justify-content-between.overflow-hidden
+                each val in insuranceImages
+                    img(src=val, alt="alt")
+
+section.blockcontent-4#blockcontent-4
+    .container.bg-primary.pt-3
+        .row.d-flex.justify-content-center.text-center
+            .col-lg-4.col-12
+                img(src="./assets/png/image.png", alt="imagealt")
+                h1  Meet Our Doctors
+                button.btn.btn-light(type="button") See more
+            .col-lg-4.col-12
+                img(src="./assets/png/image.png", alt="imagealt")
+                h1  Meet Our Doctors
+                button.btn.btn-light(type="button") See more

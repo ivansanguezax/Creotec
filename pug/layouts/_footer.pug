@@ -1,0 +1,41 @@
+// Variables
+// Patient Care
+- var objCare = {"#0":"Providers","#1":"Servíces","#2":"Request an Appointment","#3":"Reviews","#4":"Billing & Insurance"}
+
+// Contact
+- var contactIcons = ["bi-cursor","bi-telephone","bi-envelope","bi-clock"]
+- var contactTexts = ["Boston, USA 55 Huntington Ave Str","+1 541-754-3010","support@medilab.com","Mo-Fr: 07:00-23:00h"]
+- var contactUrls = ["#1","#2","#3","#4"]
+
+// Mixins
+mixin contactItem(icon,text,url)
+    li
+        a(href=url).d-flex
+            i.bi(class=icon).me-2
+            p=text
+
+footer#footer
+    .container
+        .row
+            .col
+                img(src="./assets/png/image.png", alt="imagealt")
+                h2 Clinicio
+                p We are a family centered practice that incorporates compassion and dedication to promote your well being.
+            .col
+                span Patient care
+                ul
+                    each val,index in objCare
+                        li
+                            a(href=index)=val
+            .col
+                span Contact
+                ul
+                    each val,index in contactIcons
+                        +contactItem(val,contactTexts[index],contactUrls[index])
+            .col
+                span Follow Us
+                .d-flex
+                    a(href="#").fa.fa-facebook
+                    a(href="#").fa.fa-youtube-play
+
+                    

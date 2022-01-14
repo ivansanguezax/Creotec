@@ -1,10 +1,11 @@
-- var items = {"#1": "Home", "#2": "Nosotros", "#3": "Contacto", "#4": "Proyectos", "#5": "Crear pedido", "#6": "Iniciar sesión"}
+- var items = {"#1": "Home", "#2": "Nosotros", "#3": "Servicios", "#4": "Proyectos", "#5": "Crear pedido", "#6": "Iniciar sesión"}
 
 header
     .container
-        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
             .container
-                a.navbar-brand(href='#') Navbar
+                a.navbar-brand(href='#')
+                    img(src="./assets/png/logo.png", alt="logo")
                 button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarNavAltMarkup.collapse.navbar-collapse
