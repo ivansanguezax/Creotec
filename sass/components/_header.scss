@@ -1,0 +1,17 @@
+@import "_globals";
+
+.navbar{
+    &-brand img{
+        width:72px;
+    }
+    &-nav a{
+        @include font(18px,700,$color-text-primary);
+    }
+    &-nav a:hover{
+        @include font(18px,700,$color-primary-500 !important);
+    }
+    .active{
+        @include font(18px,700,$color-primary-500 !important);
+    }
+
+}

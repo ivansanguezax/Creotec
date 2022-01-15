@@ -1,4 +1,30 @@
+.navbar-brand img {
+  width: 72px;
+}
+.navbar-nav a {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #434657;
+}
+.navbar-nav a:hover {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #1A60FF !important;
+}
+.navbar .active {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #1A60FF !important;
+}
+
 footer ul li {
-  list-style: none; }
+  list-style: none;
+}
 
 /*# sourceMappingURL=style.css.map */

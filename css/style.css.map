@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,YAAY;EACR,UAAU,EAAE,IAAI",
-"sources": ["../sass/components/_footer.scss"],
-"names": [],
-"file": "style.css"
-}
+{"version":3,"sourceRoot":"","sources":["../sass/components/_header.scss","../sass/components/_globals.scss","../sass/components/_footer.scss"],"names":[],"mappings":"AAGI;EACI;;AAEJ;ECmFA;EACA,WDnFkB;ECoFlB,aDpFuB;ECqFvB;EACA,OAlFgB;;ADFhB;ECgFA;EACA,WDhFkB;ECiFlB,aDjFuB;ECkFvB;EACA,ODnF2B;;AAE3B;EC6EA;EACA,WD7EkB;EC8ElB,aD9EuB;EC+EvB;EACA,ODhF2B;;;AEb/B;EACI","file":"style.css"}

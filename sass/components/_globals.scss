@@ -86,11 +86,12 @@ $mobile1-width: 425px;
 //=====Mixins=====
 
 
-@mixin font($n,$w) {
+@mixin font($n,$w,$c) {
     font-family: 'Roboto', sans-serif;
     font-size: $n;
     font-weight: $w;
     line-height: 150%;
+    color: $c;
 }
 
 @mixin buttonPrimary($w,$h,$br,$pw,$ph,$f,$fw){
