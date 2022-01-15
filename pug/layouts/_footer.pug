@@ -1,18 +1,4 @@
-// Variables
-// Patient Care
-- var objCare = {"#0":"Providers","#1":"Servíces","#2":"Request an Appointment","#3":"Reviews","#4":"Billing & Insurance"}
-
-// Contact
-- var contactIcons = ["bi-cursor","bi-telephone","bi-envelope","bi-clock"]
-- var contactTexts = ["Boston, USA 55 Huntington Ave Str","+1 541-754-3010","support@medilab.com","Mo-Fr: 07:00-23:00h"]
-- var contactUrls = ["#1","#2","#3","#4"]
-
-// Mixins
-mixin contactItem(icon,text,url)
-    li
-        a(href=url).d-flex
-            i.bi(class=icon).me-2
-            p=text
+include _globals.pug
 
 footer#footer
     .container

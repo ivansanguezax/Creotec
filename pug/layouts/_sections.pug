@@ -1,110 +1,85 @@
-// Cards
-- var cardImages = ["..","..","..",".."]
-- var cardTitles = ["Card title", "Card title", "Card title", "Card title"]
-- var cardTexts = ["This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."]
-- var cardModals = ["#1", "#2", "#3", "#4"]
+include _globals.pug
 
-// Healthy Tips
-- var cardHealthyImages = ["..","..",".."]
-- var cardHealthyTitles = ["Card title", "Card title", "Card title"]
-- var cardHealthyTexts = ["This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."]
+//- main.homepage
+//-     .container
+//-         .row.mt-5
+//-             .col-lg.col-12.homepage-description
+//-                 h1 Crea tu protesis a bajo costo
+//-                 p Mejora tu calidad de vida con una prótesis personalizada
+//-                 button.btn.btn-primary(type="button") Comenzar Proceso
+//-             .col-lg.col-12.d-flex.justify-content-lg-evenly.justify-content-between.homepage-images
+//-                 img(src="./assets/png/image.png", alt="image")
+//-                 .btn-group-vertical.gap-4.d-flex.justify-content-end.homepage-images-buttongroup
+//-                     button#btn-nav-img-1.btn.homepage-images-btn 1
+//-                     button#btn-nav-img-2.btn 2
+//-                     button#btn-nav-img-3.btn 3
+//-                     button#btn-nav-img-4.btn 4
 
-// Insurance images
-- var insuranceImages = ["./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png"]
+//- section.blockcontent1#blockcontent1
+//-     .container
+//-         .row
+//-             .col-lg.col-12.blockcontent1-description
+//-                 h1 Por qué elegirnos?
+//-             .col-lg.col-12.blockcontent1-images
+//-                 img(src="./assets/png/image.png", alt="image")
 
-mixin cardWithModal(cardImage, cardTitle, cardText, cardModal)
-    .col-lg-3.col-12
-        .card(class=cardModal=="#1"?"bg-primary":"")
-            button.btn.text-start(type="button" data-bs-toggle="modal" data-bs-target=cardModal)
-                img.card-img-top(src=cardImage alt=cardTitle)
-            .card-body
-                button.btn.text-start(type="button" data-bs-toggle="modal" data-bs-target=cardModal)
-                    h5.card-title(class=cardModal=="#1"?"text-light":"")= cardTitle
-                    p.card-text(class=cardModal=="#1"?"text-light":"")= cardText
+//- section.blockcontent-2#blockcontent-2
+//-     .container-fluid.bg-primary
+//-         .row
+//-             .col.pt-5.pb-4.text-center
+//-                 h1.text-center.text-white.fs-4 “Good health is not something we can buy. However, it can be an extremely valuable savings account.”
+//-                 button.btn.btn-light.text-primary.mt-3 Request an Appointment
 
-mixin card(cardImage, cardTitle, cardText)
-    .col-lg-4.col-12
-        .card
-            img.card-img-top(src=cardImage alt=cardTitle)
-            .card-body
-                h5.card-title= cardTitle
-                p.card-text= cardText
+//- section.services#services
+//-     .container
+//-         .row
+//-             .col.services-title
+//-                 h1.mt-3.mb-4 Nuestros servicios
+//-         .row.text-center.d-flex.justify-content-center
+//-             each val,index in cardImages
+//-                 +cardWithModal(val,cardTitles[index],cardTexts[index], cardModals[index],index)
 
-main
+//- section.patients#patients
+//-     .container
+//-         .row.patients-title
+//-             h1 Nuestros Pacientes
+//-         .row.patients-testimonials
+//-             .col-lg-6.col
+//-                 .card.d-flex.justify-content-center.text-center
+//-                     img(src='./assets/png/image.png' alt='...')
+//-                     .card-body
+//-                         h5.card-title Card title
+//-                         p.card-text
+//-                             | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+//-                         i.bi.bi-quote
+//-             .col-lg-6.col
+//-                 .card.d-flex.justify-content-center.text-center
+//-                     img(src='./assets/png/image.png' alt='...')
+//-                     .card-body
+//-                         h5.card-title Card title
+//-                         p.card-text
+//-                             | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+//-                         i.bi.bi-quote
+//-         .row.patients-nav
+//-             .col-2.offset-5
+//-                 ul.d-flex.justify-content-around
+//-                     li#nav-service-item-1.patients-nav-item
+//-                     li#nav-service-item-2
+//-                     li#nav-service-item-3
+//-                     li#nav-service-item-4
+//-                     li#nav-service-item-5
+
+section.healthy#healthy
     .container
-        .row.mt-5
-            .col-lg.col-12
-                h1 Crea tu protesis a bajo costo
-                p Mejora tu calidad de vida con una prótesis personalizada
-                button.btn.btn-primary(type="button") Comenzar Proceso
-            .col-lg.col-12.d-flex.justify-content-lg-evenly.justify-content-between
-                img(src="./assets/png/image.png", alt="image")
-                .btn-group-vertical.gap-2.d-flex.justify-content-end
-                    button.btn.btn-primary 1
-                    button.btn 2
-                    button.btn 3
-                    button.btn 4
-
-section.blockcontent-1#blockcontent-1
-    .container
-        .row
-            .col-lg.col-12
-                h1 Por qué elegirnos?
-            .col-lg.col-12
-                img(src="./assets/png/image.png", alt="image")
-
-section.blockcontent-2#blockcontent-2
-    .container.bg-primary
-        .row
-            .col.pt-5.pb-4
-                h1.text-center.text-white.fs-4 “Good health is not something we can buy. However, it can be an extremely valuable savings account.”
-                button.btn.btn-light.text-primary.mt-3 Request an Appointment
-
-section.homepage-banner#homepage-banner
-    .container
-        .row
-            .col
-                h1.mt-3.mb-4 Nuestros servicios
-        .row
-            each val,index in cardImages
-                +cardWithModal(val,cardTitles[index],cardTexts[index], cardModals[index])
-
-section.menu#menu
-    .container
-        .row
-            h1 Nuestros Pacientes
-        .row
-            .col-lg-6.col
-                .card
-                    img.card-img-top(src='...' alt='...')
-                    .card-body
-                        h5.card-title Card title
-                        p.card-text
-                            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                        i.bi.bi-quote
-            .col-lg-6.col
-                .card
-                    img.card-img-top(src='...' alt='...')
-                    .card-body
-                        h5.card-title Card title
-                        p.card-text
-                            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                        i.bi.bi-quote
-        .row
-            .col-2.offset-5
-                ul.d-flex.justify-content-around
-                    li.active
-                    li
-                    li
-                    li
-                    li
-        .row
+        .row.text.center.healthy-title
+            h1 Healthy Tips
+        .row.healthy-cards
             each val,index in cardHealthyImages
                 +card(val,cardHealthyTitles[index],cardHealthyTexts[index])
         .row
-            .col-2.offset-5
+            .col-2.offset-5.healthy-button
                 button.btn.btn-primary(type="button")
-                    | More post
+                    | More post   
                     i.bi.bi-chevron-right
 
 section.contact#contact

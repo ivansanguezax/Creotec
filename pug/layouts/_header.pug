@@ -1,4 +1,4 @@
-- var items = {"#1": "Home", "#2": "Nosotros", "#3": "Servicios", "#4": "Proyectos", "#5": "Crear pedido", "#6": "Iniciar sesión"}
+include _globals.pug
 
 header
     .container
@@ -10,6 +10,7 @@ header
                     span.navbar-toggler-icon
                 #navbarNavAltMarkup.collapse.navbar-collapse
                     .navbar-nav.ms-auto
-                        each val,key in items
+                        each val,key in headerItems
                             a.nav-link(class=(val==pag)?"active":"", href=key)=val
-                            
+                        each val,id in headerButtons
+                            button.btn.navbar-btn(type="button" data-bs-toggle="modal" data-bs-target=id)= val

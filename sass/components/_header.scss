@@ -5,13 +5,23 @@
         width:72px;
     }
     &-nav a{
-        @include font(18px,700,$color-text-primary);
+        @include font(18px,500,$color-text-primary);
     }
     &-nav a:hover{
-        @include font(18px,700,$color-primary-500 !important);
+        @include font(18px,500,$color-primary-500 !important);
     }
     .active{
         @include font(18px,700,$color-primary-500 !important);
+    }
+    &-btn{
+        @include buttonPrimary(126px, 40px, 100px, 14px, 400);
+        margin: 0px 16px;
+    }
+    &-btn:hover{
+        @include buttonSecondary(126px, 40px, 100px, 14px, 400);
+    }
+    &-btn:last-child{
+        margin: 0px;
     }
 
 }

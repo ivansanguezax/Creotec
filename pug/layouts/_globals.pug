@@ -1,0 +1,53 @@
+//- Variables
+//- Header
+- var headerItems = {"#1": "Home", "#2": "Nosotros", "#3": "Servicios", "#4": "Proyectos"}
+- var headerButtons = {"#1": "Crear pedido", "#2": "Iniciar sesión"}
+//- Sections
+//- Cards
+- var cardImages = ["./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png"]
+- var cardTitles = ["Card title", "Card title", "Card title", "Card title"]
+- var cardTexts = ["This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."]
+- var cardModals = ["#1", "#2", "#3", "#4"]
+
+//- Healthy Tips
+- var cardHealthyImages = ["./assets/png/image.png","./assets/png/image.png","./assets/png/image.png"]
+- var cardHealthyTitles = ["Card title", "Card title", "Card title"]
+- var cardHealthyTexts = ["This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."]
+
+//- Insurance images
+- var insuranceImages = ["./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png","./assets/png/image.png"]
+
+//- Footer
+//- Patient Care
+- var objCare = {"#0":"Providers","#1":"Servíces","#2":"Request an Appointment","#3":"Reviews","#4":"Billing & Insurance"}
+
+//- Contact
+- var contactIcons = ["bi-cursor","bi-telephone","bi-envelope","bi-clock"]
+- var contactTexts = ["Boston, USA 55 Huntington Ave Str","+1 541-754-3010","support@medilab.com","Mo-Fr: 07:00-23:00h"]
+- var contactUrls = ["#1","#2","#3","#4"]
+
+//- Mixins
+mixin contactItem(icon,text,url)
+    li
+        a(href=url).d-flex
+            i.bi(class=icon).me-2
+            p=text
+
+mixin cardWithModal(cardImage, cardTitle, cardText, cardModal,index)
+    .col-lg-3.col-12.services-card
+        .card(class=cardModal=="#1"?"services-card-active":"")(id="card-"+index)
+            button.btn.text-start(type="button" data-bs-toggle="modal" data-bs-target=cardModal)
+                img.card-img-top(src=cardImage alt=cardTitle)
+            .card-body
+                button.btn.text-start(type="button" data-bs-toggle="modal" data-bs-target=cardModal)
+                    h5.card-title= cardTitle
+                    p.card-text= cardText
+
+mixin card(cardImage, cardTitle, cardText)
+    .col-lg-4.col-12
+        .card
+            img.card-img-top(src=cardImage alt=cardTitle)
+            .card-body
+                h5.text-start.card-title= cardTitle
+                p.text-start.card-text= cardText
+    

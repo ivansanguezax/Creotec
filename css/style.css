@@ -1,30 +1,271 @@
 .navbar-brand img {
-  width: 72px;
-}
+  width: 72px; }
 .navbar-nav a {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 150%;
-  color: #434657;
-}
+  color: #434657; }
 .navbar-nav a:hover {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 150%;
-  color: #1A60FF !important;
-}
+  color: #1A60FF !important; }
 .navbar .active {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 150%;
-  color: #1A60FF !important;
-}
+  color: #1A60FF !important; }
+.navbar-btn {
+  width: 126px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #1A60FF;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px 16px; }
+.navbar-btn:hover {
+  width: 126px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #FFFFFF;
+  color: #1A60FF;
+  border: 1px solid #1756E6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
+.navbar-btn:last-child {
+  margin: 0px; }
+
+.homepage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #F4F7FF 0%, #E8EFFF 100%); }
+  .homepage-description h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #1A60FF; }
+  .homepage-descriotion p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #434657; }
+  .homepage-description button {
+    width: 222px;
+    height: 65px;
+    border-radius: 100px;
+    background-color: #1A60FF;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 23px;
+    margin-top: 17px; }
+  .homepage-description button:hover {
+    width: 222px;
+    height: 65px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    color: #1A60FF;
+    border: 1px solid #1756E6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 23px; }
+  .homepage-images-buttongroup {
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    padding: 15px 25px; }
+  .homepage-images-btn {
+    background-color: #1A60FF;
+    border-radius: 40px !important;
+    color: #FFFFFF; }
 
 footer ul li {
-  list-style: none;
-}
+  list-style: none; }
+
+.blockcontent1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF; }
+  .blockcontent1-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #1756E6; }
+  .blockcontent1-images img {
+    width: 433px; }
+
+.blockcontent-2 {
+  background-color: #1756E6; }
+  .blockcontent-2 h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #FFFFFF; }
+  .blockcontent-2 button {
+    width: auto;
+    height: auto;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    color: #1A60FF;
+    border: 1px solid #1756E6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 21px 64px; }
+
+.services {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF; }
+  .services-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #1A60FF; }
+  .services-card .card {
+    margin-right: 16px;
+    width: 296px;
+    border-radius: 16px !important; }
+    .services-card .card h5 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 150%;
+      color: #434657; }
+    .services-card .card p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 150%;
+      color: #82869E; }
+  .services-card-active {
+    background-color: #1A60FF; }
+    .services-card-active h5 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 150%;
+      color: #FFFFFF !important; }
+    .services-card-active p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 150%;
+      color: #FFFFFF !important; }
+
+.patients {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  text-align: center; }
+  .patients-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #1A60FF;
+    margin-bottom: 135px; }
+  .patients-testimonials .card {
+    width: 605px;
+    height: 375px;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; }
+    .patients-testimonials .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 60px;
+      margin: 44px 0px 17px; }
+    .patients-testimonials .card h5 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 150%;
+      color: #434657; }
+    .patients-testimonials .card p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 150%;
+      color: #82869E; }
+    .patients-testimonials .card i {
+      font-size: 35px;
+      color: #1A60FF; }
+  .patients-nav {
+    margin-top: 40px; }
+    .patients-nav li {
+      color: #D1DFFF;
+      font-size: 40px; }
+    .patients-nav-item {
+      color: #1A60FF !important; }
+
+.healthy {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  text-align: center; }
+  .healthy-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #1A60FF;
+    margin-bottom: 50px; }
+  .healthy-cards .card {
+    width: 394px;
+    height: 398px;
+    border-radius: 16px;
+    margin: 0px 30px; }
+    .healthy-cards .card h5 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 150%;
+      color: #434657; }
+    .healthy-cards .card p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 150%;
+      color: #82869E; }
+  .healthy-button {
+    margin-top: 40px; }
+    .healthy-button button {
+      width: 240px;
+      height: 72px;
+      border-radius: 100px;
+      background: linear-gradient(94.16deg, #1B4DE1 1.43%, #62D8E9 98.84%);
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 150%;
+      color: #FFFFFF; }
+    .healthy-button i {
+      font-size: 15px;
+      font-weight: 800 !important;
+      color: #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */

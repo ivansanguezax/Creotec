@@ -1,0 +1,150 @@
+.blockcontent1{
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: $color-white;
+    &-description{
+        @include font(48px, 700, $color-primary-600)
+    }
+    &-images img{
+        width: 433px;
+        
+    }
+}
+
+.blockcontent-2{
+    background-color: $color-primary-600;
+    h1{
+        @include font(40px, 500, $color-white);
+    }
+    button{
+        @include buttonSecondary(auto,auto,100px,20px,500);
+        padding: 21px 64px;
+    }
+}
+
+.services{
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: $color-white;
+    &-title{
+        @include font(48px,700, $color-primary-500);
+    }
+    &-card .card{
+        margin-right: 16px;
+        width: 296px;
+        border-radius: 16px !important;
+        h5{
+            @include font(20px,700,$color-text-primary);
+        }
+        p{
+            @include font(14px, 200,$color-text-secondary);
+        }
+    }
+    &-card-active{
+        background-color: $color-primary-500;
+        h5{
+            @include font(20px,700, $color-white !important);
+        }
+        p{
+            @include font(14px, 200, $color-white !important);
+        }
+    }
+}
+
+.patients{
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: $color-white;
+    text-align: center;
+    &-title{
+        @include font(48px,700, $color-primary-500);
+        margin-bottom: 135px;
+    }
+    &-testimonials .card{
+        width: 605px;
+        height: 375px;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        border: none;
+        img{
+            width:100px;
+            height:100px;
+            border-radius: 60px;
+            margin: 44px 0px 17px;
+        }
+        h5{
+            @include font(24px, 700, $color-text-primary);
+        }
+        p{
+            @include font(14px, 200, $color-text-secondary);
+            
+        }
+        i{
+            font-size: 35px;
+            color:$color-primary-500;
+        }
+
+    }
+    &-nav{
+        margin-top: 40px;
+        li{
+            color:$color-primary-200;
+            font-size: 40px;
+        }
+        &-item{
+            color: $color-primary-500 !important;
+        }
+    }
+}
+
+.healthy{
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: $color-white;
+    text-align: center;
+    &-title{
+        @include font(48px,700, $color-primary-500);
+        margin-bottom: 50px;
+    }
+    &-cards .card{
+        width:394px;
+        height: 398px;
+        border-radius: 16px;
+        margin: 0px 30px;
+        h5{
+            @include font(20px,700,$color-text-primary);
+        }
+        p{
+            @include font(14px, 200, $color-text-secondary);
+        }
+    }
+    &-button{
+        margin-top: 40px;
+        button{
+            width:240px; 
+            height: 72px;
+            border-radius: 100px;
+            background: linear-gradient(94.16deg, #1B4DE1 1.43%, #62D8E9 98.84%);
+            @include font(20px, 500, $color-white);
+            
+        }
+        i{
+            font-size:15px;
+            font-weight: 800 !important;
+            color: $color-white;
+        }   
+    }
+
+}
+
