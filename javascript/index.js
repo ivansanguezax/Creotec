@@ -6,10 +6,10 @@ window.counter2 = 0;
 window.animateImages = new AnimationCicle(window.counter, 4, (counter) => {
     $(`#btn-nav-img-${counter+1}`).toggleClass('homepage-images-btn');
     $(`#btn-nav-img-${counter==3?1:counter+2}`).toggleClass('homepage-images-btn');
-},1000);
+});
 
 
-window.animateImages.movediv();
+window.animateImages.movediv(1000);
 
 // function movediv(){
 //     setTimeout(function(){ //throttle requestAnimationFrame to 20fps

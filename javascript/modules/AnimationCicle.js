@@ -14,11 +14,11 @@ class AnimationCicle{
                             || function(f){return setTimeout(f, 1000/60)};
     }
 
-    movediv(){
+    movediv(timeout){
         setTimeout(() => { //throttle requestAnimationFrame to 20fps
             this.imgChange().next();
-            this.requestAnimationFrame.call(window,this.movediv);
-        }, this.timeout);
+            this.requestAnimationFrame.call(window,this.movediv,timeout);
+        }, timeout);
     }
 
     * imgChange(){
