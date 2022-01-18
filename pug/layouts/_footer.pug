@@ -1,24 +1,23 @@
 include _globals.pug
 
-footer#footer
-    .container-fluid
-        .row
-            .col
-                img(src="./assets/png/image.png", alt="imagealt")
-                h2 Clinicio
+footer#footer.footer
+    .container-fluid.footer-container
+        .row.gap-5
+            .col.footer-img
+                img(src="./assets/png/logo.png", alt="imagealt")
                 p We are a family centered practice that incorporates compassion and dedication to promote your well being.
-            .col
+            .col.footer-patient-care
                 span Patient care
                 ul
                     each val,index in objCare
                         li
                             a(href=index)=val
-            .col
+            .col.footer-contact
                 span Contact
                 ul
                     each val,index in contactIcons
                         +contactItem(val,contactTexts[index],contactUrls[index])
-            .col
+            .col.footer-social
                 span Follow Us
                 .d-flex
                     a(href="#").fa.fa-facebook
