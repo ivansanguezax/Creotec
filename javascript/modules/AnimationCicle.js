@@ -1,6 +1,6 @@
 class AnimationCicle{
-    constructor(counter, max, callback, timeout){
-        this.counter = counter;
+    constructor(max, callback, timeout){
+        this.counter = 0;
         this.max = max;
         this.callback = callback;
         this.timeout = timeout;
@@ -14,11 +14,11 @@ class AnimationCicle{
                             || function(f){return setTimeout(f, 1000/60)};
     }
 
-    movediv(timeout){
+    movediv(){
         setTimeout(() => { //throttle requestAnimationFrame to 20fps
             this.imgChange().next();
-            this.requestAnimationFrame.call(window,this.movediv,timeout);
-        }, timeout);
+            this.requestAnimationFrame.call(window,this.movediv,this.timeout);
+        }, this.timeout);
     }
 
     * imgChange(){
