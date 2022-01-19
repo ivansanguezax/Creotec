@@ -1,7 +1,7 @@
 import AnimationCicle from "./modules/AnimationCicle.js";
 
 const images = [
-    "./assets/png/image.png",
+    "./assets/jpg/img-2.jpg",
     "./assets/jpg/img-1.jpg",
     "./assets/jpg/img-2.jpg",
     "./assets/jpg/img-3.jpg"
@@ -11,9 +11,10 @@ const images = [
 window.animateImagesandCards = new AnimationCicle(4, (counter) => {
     $(`#btn-nav-img-${counter+1}`).toggleClass('homepage-images-btn');
     $(`#btn-nav-img-${counter==3?1:counter+2}`).toggleClass('homepage-images-btn');
+    $(`.homepage-images`).attr("style", `background-image: url('${images[counter]}');`);
     $(`#card-${counter}`).toggleClass('services-card-active');
     $(`#card-${counter==3?0:counter+1}`).toggleClass('services-card-active');
-},1000);
+},5000);
 
 window.animateCarrousel = new AnimationCicle(5, (counter) => {
     $(`#nav-service-item-${counter+1}`).toggleClass('patients-nav-item');
@@ -25,7 +26,7 @@ window.animatePictures = new AnimationCicle(7,(counter)=>{
     // console.log(firstChild);
     document.querySelector(".slide-track").appendChild(firstChild[0]);
     // firstChild.remove();
-},5000)
+},4000)
 
 // Calling function
 window.animateImagesandCards.movediv();

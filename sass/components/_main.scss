@@ -1,14 +1,20 @@
 @import "_globals";
 
 .homepage{
-    height:100vh;
+    height: 100vh;
     display:flex;
     justify-content:center;
     align-items: center;
     background: linear-gradient(180deg, #F4F7FF 0%, #E8EFFF 100%);
     &-description{
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
         h1{
             @include font(48px, 700, $color-primary-500);
+            text-align: center;
         }
         p{
             @include font(16px, 500, $color-text-primary)
@@ -25,32 +31,25 @@
     } 
     
     &-images{
-        height:659px;        ;
-        position:relative;
-        img{
-            width:701px;
-        }
-        img::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
+        height:auto;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-end !important;
+        background-image: url('/assets/jpg/img-1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
         &-buttongroup{
-            height:224px;
+            height:250px;
             background-color: $color-white;
+            opacity: 0.9;
             border-radius: 40px;
             padding:15px 25px;
-            position:relative;
+            margin-right: 15px;
         }
-    }
-
-        
-
-    
+    }   
     &-images-btn{
         background-color: $color-primary-500;
         border-radius:40px !important;

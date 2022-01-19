@@ -26,6 +26,11 @@
 - var contactTexts = ["Boston, USA 55 Huntington Ave Str","+1 541-754-3010","support@medilab.com","Mo-Fr: 07:00-23:00h"]
 - var contactUrls = ["#1","#2","#3","#4"]
 
+//- Cases items
+- var casesItemsImages = ["./assets/png/image.png","./assets/png/image.png","./assets/png/image.png"]
+- var casesItemsTexts = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+- var casesItemsUrls = ["./case.html", "./case.html", "./case.html"]
+
 //- Mixins
 mixin contactItem(icon,text,url)
     li
@@ -50,4 +55,14 @@ mixin card(cardImage, cardTitle, cardText)
             .card-body
                 h5.text-start.card-title= cardTitle
                 p.text-start.card-text= cardText
+
+mixin rowCasesCards(images,texts,urls)
+    .row
+        each val,index in images
+            .col-12.col-lg
+                .card(style='width: 18rem;')
+                    img.card-img-top(src=val alt=image)
+                    .card-body
+                        p.card-text= texts[index]
+                        a.btn(href=urls[index]) Read more
     

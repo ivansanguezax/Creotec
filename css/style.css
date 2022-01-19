@@ -46,58 +46,63 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #F4F7FF 0%, #E8EFFF 100%); }
-  .homepage-description h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #1A60FF; }
-  .homepage-description p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 150%;
-    color: #434657; }
-  .homepage-description button {
-    width: 222px;
-    height: 65px;
-    border-radius: 100px;
-    background-color: #1A60FF;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 20px 23px;
-    margin-top: 17px; }
-  .homepage-description button:hover {
-    width: 222px;
-    height: 65px;
-    border-radius: 100px;
-    background-color: #FFFFFF;
-    color: #1A60FF;
-    border: 1px solid #1756E6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 20px 23px; }
-  .homepage-images {
-    height: 659px;
-    position: relative; }
-    .homepage-images img {
-      width: 701px; }
-    .homepage-images img::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.5); }
-    .homepage-images-buttongroup {
-      height: 224px;
+  .homepage-description {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .homepage-description h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 150%;
+      color: #1A60FF;
+      text-align: center; }
+    .homepage-description p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 150%;
+      color: #434657; }
+    .homepage-description button {
+      width: 222px;
+      height: 65px;
+      border-radius: 100px;
+      background-color: #1A60FF;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 20px 23px;
+      margin-top: 17px; }
+    .homepage-description button:hover {
+      width: 222px;
+      height: 65px;
+      border-radius: 100px;
       background-color: #FFFFFF;
+      color: #1A60FF;
+      border: 1px solid #1756E6;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 20px 23px; }
+  .homepage-images {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end !important;
+    background-image: url("/assets/jpg/img-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .homepage-images-buttongroup {
+      height: 250px;
+      background-color: #FFFFFF;
+      opacity: 0.9;
       border-radius: 40px;
       padding: 15px 25px;
-      position: relative; }
+      margin-right: 15px; }
   .homepage-images-btn {
     background-color: #1A60FF;
     border-radius: 40px !important;
@@ -105,6 +110,106 @@
 
 footer ul li {
   list-style: none; }
+
+.footer-container {
+  height: 371px !important;
+  padding: 80px 0px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important; }
+.footer-img {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-end !important;
+  align-items: flex-start !important; }
+  .footer-img img {
+    width: 128px; }
+  .footer-img p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #434657;
+    text-align: justify;
+    margin: 0px; }
+.footer-patient-care {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-end !important;
+  align-items: flex-start !important; }
+  .footer-patient-care span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #434657; }
+  .footer-patient-care ul {
+    padding-inline-start: 0px;
+    margin-block-end: 0px; }
+  .footer-patient-care li {
+    margin: 8px 0px; }
+  .footer-patient-care li:last-child {
+    margin: 8px 0px 0px; }
+  .footer-patient-care a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #434657;
+    text-decoration: none; }
+.footer-contact {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  align-items: flex-start !important; }
+  .footer-contact span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #434657; }
+  .footer-contact ul {
+    padding-inline-start: 0px;
+    margin-block-end: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .footer-contact li {
+    margin: 8px 0px !important; }
+  .footer-contact li:last-child {
+    margin: 0px 0px 8px; }
+  .footer-contact i {
+    font-size: 20px;
+    color: #1A60FF; }
+  .footer-contact a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #434657;
+    text-decoration: none; }
+  .footer-contact p {
+    margin: 0px; }
+.footer-social {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  align-items: flex-start !important; }
+  .footer-social span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #434657; }
+  .footer-social a {
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 16px; }
+  .footer-social a:nth-child(1) {
+    color: #1877F2; }
+  .footer-social a:nth-child(2) {
+    color: #DC2217;
+    margin-right: 0px; }
 
 .blockcontent1 {
   height: 100vh;
@@ -268,9 +373,9 @@ footer ul li {
       color: #82869E; }
   .healthy-button {
     margin-top: 40px; }
-    .healthy-button button {
+    .healthy-button a {
       width: 240px;
-      height: 72px;
+      padding: 15px 0px;
       border-radius: 100px;
       background: linear-gradient(94.16deg, #1B4DE1 1.43%, #62D8E9 98.84%);
       font-family: 'Roboto', sans-serif;
@@ -408,81 +513,31 @@ footer ul li {
     font-size: 14px;
     font-weight: 400; }
 
-.footer-container {
-  height: 371px !important;
-  padding: 80px 0px;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important; }
-.footer-img {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: flex-end !important;
-  align-items: flex-start !important; }
-  .footer-img img {
-    width: 128px; }
-  .footer-img p {
+.cases {
+  margin-top: 88px;
+  height: 266px;
+  background-color: #1A60FF !important;
+  display: flex;
+  align-items: center; }
+  .cases h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #434657;
-    text-align: justify;
-    margin: 0px; }
-.footer-patient-care {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: flex-end !important;
-  align-items: flex-start !important; }
-  .footer-patient-care span {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 150%;
-    color: #434657; }
-  .footer-patient-care ul {
-    padding-inline-start: 0px;
-    margin-block-end: 0px; }
-  .footer-patient-care li {
-    margin: 8px 0px; }
-  .footer-patient-care li:last-child {
-    margin: 0px 0px 8px; }
-  .footer-patient-care a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #434657;
-    text-decoration: none; }
-.footer-contact {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: flex-start !important;
-  align-items: flex-start !important; }
-  .footer-contact span {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #434657; }
-  .footer-contact ul {
-    padding-inline-start: 0px;
-    margin-block-end: 0px; }
-  .footer-contact li {
-    margin: 8px 0px !important; }
-  .footer-contact li:last-child {
-    margin: 0px 0px 8px; }
-  .footer-contact i {
-    font-size: 20px;
-    color: #1A60FF; }
-  .footer-contact a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #434657;
-    text-decoration: none; }
-  .footer-contact p {
-    margin: 0px; }
+    color: #FFFFFF; }
+
+.items-nav ul {
+  margin: 72px 0px 40px; }
+.items-nav li {
+  margin-right: 24px; }
+.items-nav a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #434657; }
+
+.case {
+  margin-top: 100px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,104 @@
 footer ul li{
     list-style: none;
 }
+.footer{
+    &-container{
+        height:371px !important;
+        padding: 80px 0px;
+        display:flex !important;
+        justify-content: center !important;
+        align-items: center !important;  
+    }
+    &-img{
+        display:flex !important;
+        flex-direction: column;
+        justify-content: flex-end!important;
+        align-items: flex-start !important; 
+        img{
+            width:128px;
+        }
+        p{
+            @include font(12px,400,$color-text-primary);
+            text-align: justify;
+            margin:0px;
+        }
+    }
+    &-patient-care{
+        display:flex !important;
+        flex-direction: column;
+        justify-content: flex-end!important;
+        align-items: flex-start !important; 
+        span{
+            @include font(16px,700,$color-text-primary);
+        }
+        ul{
+            padding-inline-start: 0px;
+            margin-block-end:0px;
+        }
+        li{
+            margin: 8px 0px;
+        }
+        li:last-child{
+            margin: 8px 0px 0px;
+        }
+        a{
+            @include font(14px,400,$color-text-primary);
+            text-decoration: none;
+        }
+    }
+    &-contact{
+        display:flex !important;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: flex-start !important; 
+        span{
+            @include font(16px,700,$color-text-primary);
+        }
+        ul{
+            padding-inline-start: 0px;
+            margin-block-end:0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        li{
+            margin: 8px 0px !important;
+        }
+        li:last-child{
+            margin: 0px 0px 8px;
+        }
+        i{
+            font-size:20px;
+            color: $color-primary-500;
+        }
+        a{
+            @include font(14px,400,$color-text-primary);
+            text-decoration: none;
+        }
+        p{
+            margin:0px;
+        }
+    }
+    &-social{
+        display:flex !important;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: flex-start !important; 
+        span{
+            @include font(16px,700,$color-text-primary);
+        }
+        a{
+            text-decoration: none;
+            font-size: 40px;
+            margin-right: 16px;
+        }
+        a:nth-child(1){
+            color: #1877F2;
+        }
+        a:nth-child(2){
+            color: #DC2217;
+            margin-right: 0px;
+        }
+
+    }
+}

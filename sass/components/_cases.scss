@@ -1,0 +1,29 @@
+@import "_globals";
+.cases{
+    margin-top: 88px;
+    height:266px;
+    background-color: $color-primary-500 !important;
+    display: flex;
+    align-items:center;
+    h1{
+        @include font(48px, 700, $color-white);
+    }
+}
+.items{
+    
+    &-nav{
+        ul{
+            margin:72px 0px 40px;
+        }
+        li{
+            margin-right: 24px;
+        }
+        a{
+            @include font(16px,500,$color-text-primary);
+            
+        }
+    }
+    &-content{
+        
+    }
+}
