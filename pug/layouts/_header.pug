@@ -13,4 +13,4 @@ header
                         each val,key in headerItems
                             a.nav-link(class=(val==pag)?"active":"", href=key)=val
                         each val,id in headerButtons
-                            button.btn.navbar-btn(type="button" data-bs-toggle="modal" data-bs-target=id)= val
+                            button.btn.navbar-btn(onclick="location.href='"+id+"';" type="button" data-bs-toggle="modal" data-bs-target=id)= val
