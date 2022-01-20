@@ -1,6 +1,6 @@
 //- Variables
 //- Header
-- var headerItems = {"#1": "Home", "#2": "Nosotros", "#3": "Servicios", "#4": "Proyectos"}
+- var headerItems = {"./index.html": "Home", "./us.html": "Nosotros", "#3": "Servicios", "#4": "Proyectos", "./faq.html": "FAQ"}
 - var headerButtons = {"#1": "Crear pedido", "#2": "Iniciar sesión"}
 //- Sections
 //- Cards
@@ -57,12 +57,22 @@ mixin card(cardImage, cardTitle, cardText)
                 p.text-start.card-text= cardText
 
 mixin rowCasesCards(images,texts,urls)
-    .row
+    .row.mb-5
         each val,index in images
-            .col-12.col-lg
-                .card(style='width: 18rem;')
+            .col-4
+                .card
                     img.card-img-top(src=val alt=image)
                     .card-body
                         p.card-text= texts[index]
-                        a.btn(href=urls[index]) Read more
+                        a(href=urls[index]) Read more
+    
+mixin rowUsCards(images,texts,urls)
+    .row
+        each val,index in images
+            .col-12.col-lg
+                .card
+                    img.card-img-top(src=val alt=image)
+                    .card-body
+                        h5 Title
+                        p Lorem ipsum dolor sit amet
     

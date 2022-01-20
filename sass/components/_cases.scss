@@ -24,6 +24,21 @@
         }
     }
     &-content{
+        div{ 
+            height: 370px;
+            border-radius: 16px;
+            p{
+                @include font(20px, 700, $color-text-primary);
+            }
+            a{
+                margin-top: 16px;
+                @include font(16px, 400, $color-link500);
+                text-decoration: none;
+            }
+        }
+        
+    }
+    &-pages{
         
     }
 }

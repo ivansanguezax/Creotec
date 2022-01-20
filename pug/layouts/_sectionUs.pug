@@ -1,0 +1,70 @@
+include _globals.pug
+
+main.cases#cases
+    .container-fluid
+        .row
+            .col
+                .container
+                    .row
+                        .col
+                            h1.cases-title Our Doctors
+                            span.text-white Meet Clinicio Team
+
+section.items
+    .container
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+                button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                        form.d-flex
+                            input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                            button.btn.btn-outline-success(type='submit') Search
+                        li.nav-item.dropdown
+                            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                | Dropdown
+                            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                                li
+                                    a.dropdown-item(href='#') Action
+                                li
+                                    a.dropdown-item(href='#') Another action
+                                li
+                                    hr.dropdown-divider
+                                li
+                                    a.dropdown-item(href='#') Something else here
+                        li.nav-item.dropdown
+                            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                | Dropdown
+                            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                                li
+                                    a.dropdown-item(href='#') Action
+                                li
+                                    a.dropdown-item(href='#') Another action
+                                li
+                                    hr.dropdown-divider
+                                li
+                                    a.dropdown-item(href='#') Something else here
+
+                
+
+        .row
+            .col
+                .container.gap-4.items-content
+                    +rowUsCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
+                    +rowUsCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
+                    +rowUsCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
+        .row.items-pages
+            .col
+                nav(aria-label='Page navigation example')
+                    ul.pagination.justify-content-center
+                        li.page-item.disabled
+                            a.page-link Previous
+                        li.page-item
+                            a.page-link(href='#') 1
+                        li.page-item
+                            a.page-link(href='#') 2
+                        li.page-item
+                            a.page-link(href='#') 3
+                        li.page-item
+                            a.page-link(href='#') Next

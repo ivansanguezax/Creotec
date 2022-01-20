@@ -24,23 +24,24 @@ section.items
 
         .row
             .col
-                .container.gap-4.items-content
+                .container.items-content
                     +rowCasesCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
                     +rowCasesCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
                     +rowCasesCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
         .row.items-pages
             .col
-                ul.nav.d-flex.justify-content-center
-                    li.nav-item
-                        a.nav-link.active(aria-current='page' href='#1') 1 
-                    li.nav-item
-                        a.nav-link(href='#2') 2 
-                    li.nav-item
-                        a.nav-link(href='#3') 3 
-                    li.nav-item
-                        a.nav-link(href='#4') 4 
-                    li.nav-item
-                        a.nav-link(href='#5') Next
+                nav(aria-label='Page navigation example')
+                    ul.pagination.justify-content-center
+                        li.page-item.disabled
+                            a.page-link Previous
+                        li.page-item
+                            a.page-link(href='#') 1
+                        li.page-item
+                            a.page-link(href='#') 2
+                        li.page-item
+                            a.page-link(href='#') 3
+                        li.page-item
+                            a.page-link(href='#') Next
 
 section.blockcontent4#blockcontent4
     .container-fluid.bg-primary.pt-3.blockcontent4-container
