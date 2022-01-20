@@ -1,563 +1,88 @@
-.navbar-brand img {
-  width: 72px; }
-.navbar-nav a {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 150%;
-  color: #434657; }
-.navbar-nav a:hover {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 150%;
-  color: #1A60FF !important; }
-.navbar .active {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 150%;
-  color: #1A60FF !important; }
-.navbar-btn {
-  width: 126px;
-  height: 40px;
-  border-radius: 100px;
-  background-color: #1A60FF;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0px 16px; }
-.navbar-btn:hover {
-  width: 126px;
-  height: 40px;
-  border-radius: 100px;
-  background-color: #FFFFFF;
-  color: #1A60FF;
-  border: 1px solid #1756E6;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400; }
-.navbar-btn:last-child {
-  margin: 0px; }
+/*
+Error: Invalid CSS after "...in-right: 8px;x": expected "{", was ";"
+        on line 30 of sass/components/_case.scss
+        from line 7 of ./sass/style.scss
 
-.homepage {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(180deg, #F4F7FF 0%, #E8EFFF 100%); }
-  .homepage-description {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .homepage-description h1 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 48px;
-      font-weight: 700;
-      line-height: 150%;
-      color: #1A60FF;
-      text-align: center; }
-    .homepage-description p {
-      font-family: 'Roboto', sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 150%;
-      color: #434657; }
-    .homepage-description button {
-      width: 222px;
-      height: 65px;
-      border-radius: 100px;
-      background-color: #1A60FF;
-      color: #FFFFFF;
-      font-size: 18px;
-      font-weight: 400;
-      padding: 20px 23px;
-      margin-top: 17px; }
-    .homepage-description button:hover {
-      width: 222px;
-      height: 65px;
-      border-radius: 100px;
-      background-color: #FFFFFF;
-      color: #1A60FF;
-      border: 1px solid #1756E6;
-      font-family: 'Roboto', sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      padding: 20px 23px; }
-  .homepage-images {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end !important;
-    background-image: url("/assets/jpg/img-1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
-    .homepage-images-buttongroup {
-      height: 250px;
-      background-color: #FFFFFF;
-      opacity: 0.9;
-      border-radius: 40px;
-      padding: 15px 25px;
-      margin-right: 15px; }
-  .homepage-images-btn {
-    background-color: #1A60FF;
-    border-radius: 40px !important;
-    color: #FFFFFF; }
+25:     &-date{
+26:         display:flex;
+27:         align-items: center !important;
+28:         i{
+29:             font-size: 24px;
+30:             margin-right: 8px;x;
+31:         }
+32:         span{
+33:             @include font(14px,400,$color-text-secondary);
+34:         }
+35:     }   
 
-footer ul li {
-  list-style: none; }
-
-.footer-container {
-  height: 371px !important;
-  padding: 80px 0px;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important; }
-.footer-img {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: flex-end !important;
-  align-items: flex-start !important; }
-  .footer-img img {
-    width: 128px; }
-  .footer-img p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #434657;
-    text-align: justify;
-    margin: 0px; }
-.footer-patient-care {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: flex-end !important;
-  align-items: flex-start !important; }
-  .footer-patient-care span {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #434657; }
-  .footer-patient-care ul {
-    padding-inline-start: 0px;
-    margin-block-end: 0px; }
-  .footer-patient-care li {
-    margin: 8px 0px; }
-  .footer-patient-care li:last-child {
-    margin: 8px 0px 0px; }
-  .footer-patient-care a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #434657;
-    text-decoration: none; }
-.footer-contact {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: flex-start !important;
-  align-items: flex-start !important; }
-  .footer-contact span {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #434657; }
-  .footer-contact ul {
-    padding-inline-start: 0px;
-    margin-block-end: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-  .footer-contact li {
-    margin: 8px 0px !important; }
-  .footer-contact li:last-child {
-    margin: 0px 0px 8px; }
-  .footer-contact i {
-    font-size: 20px;
-    color: #1A60FF; }
-  .footer-contact a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #434657;
-    text-decoration: none; }
-  .footer-contact p {
-    margin: 0px; }
-.footer-social {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: flex-start !important;
-  align-items: flex-start !important; }
-  .footer-social span {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #434657; }
-  .footer-social a {
-    text-decoration: none;
-    font-size: 40px;
-    margin-right: 16px; }
-  .footer-social a:nth-child(1) {
-    color: #1877F2; }
-  .footer-social a:nth-child(2) {
-    color: #DC2217;
-    margin-right: 0px; }
-
-.blockcontent1 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FFFFFF; }
-  .blockcontent1-description {
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #1756E6; }
-  .blockcontent1-images img {
-    width: 433px; }
-
-.blockcontent-2 {
-  background-color: #1756E6; }
-  .blockcontent-2 h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 150%;
-    color: #FFFFFF; }
-  .blockcontent-2 button {
-    width: auto;
-    height: auto;
-    border-radius: 100px;
-    background-color: #FFFFFF;
-    color: #1A60FF;
-    border: 1px solid #1756E6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 21px 64px; }
-
-.services {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FFFFFF; }
-  .services-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #1A60FF; }
-  .services-card .card {
-    margin-right: 16px;
-    width: 296px;
-    border-radius: 16px !important; }
-    .services-card .card h5 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 150%;
-      color: #434657; }
-    .services-card .card p {
-      font-family: 'Roboto', sans-serif;
-      font-size: 14px;
-      font-weight: 200;
-      line-height: 150%;
-      color: #82869E; }
-  .services-card-active {
-    background-color: #1A60FF; }
-    .services-card-active h5 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 150%;
-      color: #FFFFFF !important; }
-    .services-card-active p {
-      font-family: 'Roboto', sans-serif;
-      font-size: 14px;
-      font-weight: 200;
-      line-height: 150%;
-      color: #FFFFFF !important; }
-
-.patients {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FFFFFF;
-  text-align: center; }
-  .patients-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #1A60FF;
-    margin-bottom: 135px; }
-  .patients-testimonials .card {
-    width: 605px;
-    height: 375px;
-    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none; }
-    .patients-testimonials .card img {
-      width: 100px;
-      height: 100px;
-      border-radius: 60px;
-      margin: 44px 0px 17px; }
-    .patients-testimonials .card h5 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 150%;
-      color: #434657; }
-    .patients-testimonials .card p {
-      font-family: 'Roboto', sans-serif;
-      font-size: 14px;
-      font-weight: 200;
-      line-height: 150%;
-      color: #82869E; }
-    .patients-testimonials .card i {
-      font-size: 35px;
-      color: #1A60FF; }
-  .patients-nav {
-    margin-top: 40px; }
-    .patients-nav li {
-      color: #D1DFFF;
-      font-size: 40px; }
-    .patients-nav-item {
-      color: #1A60FF !important; }
-
-.healthy {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FFFFFF;
-  text-align: center; }
-  .healthy-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #1A60FF;
-    margin-bottom: 50px; }
-  .healthy-cards .card {
-    width: 394px;
-    height: 398px;
-    border-radius: 16px;
-    margin: 0px 30px; }
-    .healthy-cards .card h5 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 150%;
-      color: #434657; }
-    .healthy-cards .card p {
-      font-family: 'Roboto', sans-serif;
-      font-size: 14px;
-      font-weight: 200;
-      line-height: 150%;
-      color: #82869E; }
-  .healthy-button {
-    margin-top: 40px; }
-    .healthy-button a {
-      width: 240px;
-      padding: 15px 0px;
-      border-radius: 100px;
-      background: linear-gradient(94.16deg, #1B4DE1 1.43%, #62D8E9 98.84%);
-      font-family: 'Roboto', sans-serif;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 150%;
-      color: #FFFFFF; }
-    .healthy-button i {
-      font-size: 15px;
-      font-weight: 800 !important;
-      color: #FFFFFF; }
-
-.contact {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FBFBFD; }
-  .contact-container {
-    background-color: #FFFFFF;
-    width: 1242px;
-    height: 722px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
-    border-radius: 16px; }
-  .contact-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #434657;
-    margin-bottom: 32px; }
-  .contact-form label {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #434657; }
-  .contact-form input {
-    padding: 16px;
-    border: 1px solid #BCBFD6;
-    box-sizing: border-box;
-    border-radius: 4px; }
-  .contact-form input::placeholder {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #A7ABC3; }
-  .contact-submit {
-    margin-top: 32px; }
-    .contact-submit button {
-      width: 238px;
-      height: 56px;
-      border-radius: 100px;
-      background-color: #1A60FF;
-      color: #FFFFFF;
-      font-size: 16px;
-      font-weight: 400 !important; }
-
-.blockcontent3 {
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .blockcontent3-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #1A60FF; }
-  .blockcontent3-carousel {
-    padding: 40px 0px; }
-    .blockcontent3-carousel img {
-      width: 250px;
-      height: 140px;
-      border: 1px solid #E5E5E5;
-      box-sizing: border-box;
-      border-radius: 10px; }
-
-.blockcontent4-container {
-  height: 610px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
-.blockcontent4-left {
-  width: 608px;
-  margin-right: 30px; }
-  .blockcontent4-left img {
-    width: 608px;
-    height: 342px;
-    border-radius: 16px; }
-  .blockcontent4-left h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #FFFFFF;
-    margin: 16px 0px; }
-  .blockcontent4-left button {
-    width: 141px;
-    height: 40px;
-    border-radius: 100px;
-    background-color: #FFFFFF;
-    color: #1A60FF;
-    border: 1px solid #1756E6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400; }
-.blockcontent4-right {
-  width: 608px; }
-  .blockcontent4-right img {
-    width: 608px;
-    height: 342px;
-    border-radius: 16px; }
-  .blockcontent4-right h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #FFFFFF;
-    margin: 16px 0px; }
-  .blockcontent4-right button {
-    width: 141px;
-    height: 40px;
-    border-radius: 100px;
-    background-color: #FFFFFF;
-    color: #1A60FF;
-    border: 1px solid #1756E6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400; }
-
-.cases {
-  margin-top: 88px;
-  height: 266px;
-  background-color: #1A60FF !important;
-  display: flex;
-  align-items: center; }
-  .cases h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #FFFFFF; }
-
-.items-nav ul {
-  margin: 72px 0px 40px; }
-.items-nav li {
-  margin-right: 24px; }
-.items-nav a {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 150%;
-  color: #434657; }
-.items-content div {
-  height: 370px;
-  border-radius: 16px; }
-  .items-content div p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 150%;
-    color: #434657; }
-  .items-content div a {
-    margin-top: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #1990FF;
-    text-decoration: none; }
-
-.case {
-  margin-top: 100px; }
-
-.faq {
-  margin-top: 100px; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+sass/components/_case.scss:30
+./sass/style.scss:7
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1132:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:665:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:658:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:312:in `to_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:88:in `block in with_import'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:88:in `with_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:325:in `visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
+/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...in-right: 8px;x\": expected \"{\", was \";\"\A         on line 30 of sass/components/_case.scss\A         from line 7 of ./sass/style.scss\A \A 25:     &-date{\A 26:         display:flex;\A 27:         align-items: center !important;\A 28:         i{\A 29:             font-size: 24px;\A 30:             margin-right: 8px;x;\A 31:         }\A 32:         span{\A 33:             @include font(14px,400,$color-text-secondary);\A 34:         }\A 35:     }   "; }

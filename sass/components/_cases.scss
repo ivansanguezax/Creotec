@@ -39,6 +39,33 @@
         
     }
     &-pages{
-
+        ul{
+            margin: 56px 0px 67px;
+        }
+        li{
+            margin-right: 16px;
+        }
+        li:first-child{
+            a{
+                color:$color-primary-500;
+                padding: 10px 16px; 
+                background-color: $color-white;
+                box-shadow: 0px 8px 26px rgba(26,96,255,0.25);
+                border-radius: 24px;
+            }
+        }
+        li:last-child{
+            margin-right:0px;
+            a{
+                padding: 10px 16px; 
+                background-color: $color-white;
+                box-shadow: 0px 8px 26px rgba(26,96,255,0.25);
+                border-radius: 24px;
+            }
+        }
+        a{
+            @include font(24px, 700, $color-primary-500);
+            text-decoration: none;
+        }
     }
 }

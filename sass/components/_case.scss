@@ -1,4 +1,36 @@
-
+@import "_globals";
 .case{
     margin-top: 100px;
+    div:nth-child(1){
+        margin-top:24px;
+        ol{
+            display:flex;
+            align-items: flex-end !important;
+        }
+        li:nth-child(1){
+            a{
+                @include font(14px,400,$color-text-primary);
+                text-decoration: none;
+            }
+        }
+        li:nth-child(2){
+                @include font(14px,400,$color-primary-500);
+        }
+    }
+    div:nth-child(2){
+        h1{
+            @include font(36px, 700, $color-text-primary);
+        }
+    }
+    &-date{
+        display:flex;
+        align-items: center !important;
+        i{
+            font-size: 24px;
+            margin-right: 8px;x;
+        }
+        span{
+            @include font(14px,400,$color-text-secondary);
+        }
+    }   
 }
