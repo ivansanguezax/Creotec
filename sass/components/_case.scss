@@ -27,10 +27,47 @@
         align-items: center !important;
         i{
             font-size: 24px;
-            margin-right: 8px;x;
+            margin-right: 8px;
         }
         span{
             @include font(14px,400,$color-text-secondary);
         }
     }   
+}
+.information{
+    &-image{
+        background-image: url('../../assets/jpg/img-1.jpg');
+        background-repeat: no-repeat;
+        background-position:top;
+        background-size: cover;
+        height: 315px;
+        margin: 16px 0px;
+    }
+    div:nth-child(2){
+        @include font(16px,700,$color-text-primary);
+        margin: 16px 0px;
+    }
+    div:nth-child(3){
+        @include font(16px,300,$color-text-primary);
+        margin: 16px 0px;
+    }
+    div:nth-child(4){
+        margin: 16px 0px;
+        img{
+            width: 568px;
+            height: 384px;
+        }   
+    }
+    div:nth-child(5){
+        text-align: center;
+        @include font(16px,300,$color-text-primary);
+        margin: 16px 0px;
+    }
+    div:nth-child(6){
+        @include font(16px,300,$color-text-primary);
+        margin: 16px 0px;
+        padding: 0px 0px 80px;
+        border-bottom: 1px solid $color-divider;
+    }
+
 }
