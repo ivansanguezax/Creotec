@@ -1,4 +1,48 @@
-include _globals.pug
+main.cases#cases
+    .container-fluid
+        .row
+            .col
+                .container
+                    .row
+                        .col.text-center
+                            h1.cases-title About Us
+
+section.welcome
+    .container
+        .row
+            .col
+                img(src="./assets/png/image.png" alt="image")
+            .col
+                h2 Welcome To Clinicio
+                span Our clients are our priority, we offer quality medical services with a team of specialists.
+                p Our mission is to improve the health of our community by providing high quality, comprehensive medical care in a welcoming and compassionate environment. <br ><br > On behalf of the entire staff, we would like to welcome you to our clinic. We are pleased to have the opportunity to assist you with your physical therapy care. Our goal is to provide the highest quality and most up-to-date physical therapy treatments available in a professional and caring manner. We are committed to helping you attain your rehabilitation goals. It is also our goal to provide you with outstanding service.
+
+section.image
+    .container-fluid.text-center
+        img(src="./assets/png/image.png", alt="image")
+
+section.story
+    .container
+        .row
+            .col
+                h2 Our story
+                p We are a private, independent practice constantly striving to provide excellence in personalized, compassionate care that is consistent, quality-driven and choice-conscious for all of our patients.
+                ul
+                    li
+                        i.bi.bi-check-circle-fill
+                        |  Our staff is well trained, caring and professional
+                    li
+                        i.bi.bi-check-circle-fill
+                        |  Willing to learn and update technology in an effort to achieve efficient and quality-driven patient care.
+                    li
+                        i.bi.bi-check-circle-fill
+                        |  Willing to learn and update technology in an effort to achieve efficient and quality-driven patient care.
+                    li
+                        i.bi.bi-check-circle-fill
+                        |  Our team work together as a team to make sure your ongoing health needs are met
+            .col.text-center
+                iframe(width='auto' height='auto' src='https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1')
+
 
 main.cases#cases
     .container-fluid
@@ -7,64 +51,5 @@ main.cases#cases
                 .container
                     .row
                         .col
-                            h1.cases-title Our Doctors
-                            span.text-white Meet Clinicio Team
-
-section.items
-    .container
-        nav.navbar.navbar-expand-lg.navbar-light.bg-light
-            .container-fluid
-                button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-                    span.navbar-toggler-icon
-                #navbarSupportedContent.collapse.navbar-collapse
-                    ul.navbar-nav.me-auto.mb-2.mb-lg-0
-                        form.d-flex
-                            input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
-                            button.btn.btn-outline-success(type='submit') Search
-                        li.nav-item.dropdown
-                            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
-                                | Dropdown
-                            ul.dropdown-menu(aria-labelledby='navbarDropdown')
-                                li
-                                    a.dropdown-item(href='#') Action
-                                li
-                                    a.dropdown-item(href='#') Another action
-                                li
-                                    hr.dropdown-divider
-                                li
-                                    a.dropdown-item(href='#') Something else here
-                        li.nav-item.dropdown
-                            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
-                                | Dropdown
-                            ul.dropdown-menu(aria-labelledby='navbarDropdown')
-                                li
-                                    a.dropdown-item(href='#') Action
-                                li
-                                    a.dropdown-item(href='#') Another action
-                                li
-                                    hr.dropdown-divider
-                                li
-                                    a.dropdown-item(href='#') Something else here
-
-                
-
-        .row
-            .col
-                .container.gap-4.items-content
-                    +rowUsCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
-                    +rowUsCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
-                    +rowUsCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
-        .row.items-pages
-            .col
-                nav(aria-label='Page navigation example')
-                    ul.pagination.justify-content-center
-                        li.page-item.disabled
-                            a.page-link Previous
-                        li.page-item
-                            a.page-link(href='#') 1
-                        li.page-item
-                            a.page-link(href='#') 2
-                        li.page-item
-                            a.page-link(href='#') 3
-                        li.page-item
-                            a.page-link(href='#') Next
+                            h2.cases-title “Good health is not something we can buy. However, it can be an extremely valuable savings account.”
+                            button.btn.btn-light.rounded-pill(type='button') Contact us

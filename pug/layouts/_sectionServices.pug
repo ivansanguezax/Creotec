@@ -1,0 +1,138 @@
+include _globals.pug
+
+main.cases#cases
+    .container-fluid
+        .row
+            .col
+                .container
+                    .row
+                        .col
+                            h1.cases-title Annual Wellness Exam
+                            span.text-white Keeping Close Attention To Your Health Is Always of Great Important
+
+
+.section.services#services
+    .container
+        .row
+            .col-4
+                .container
+                    .row
+                        .col
+                            h1 Your Annual <br > Wellness Exam
+                            p 
+                                | At this appointment, you can generally expect your doctor to take your vital signs, including your blood pressure and heart rate, and check your eyes, ears, nose, and mouth. 
+                                | Finally, your doctor can determine whether you’re due for any immunizations, and also recommend routine screening tests that are appropriate for you.
+                    .row
+                        .col.text-center
+                            button.btn.rounded-pill.btn-primary(type='button') 
+                                i.bi.bi-calendar-check
+                                |  Submit
+            .col-8
+                .container.gap-3
+                    .row.mb-4
+                        .col
+                            .card
+                                .btn-text-start
+                                    img.card-img-top(src="./assets/png/image.png" alt="image")
+                                .card-body
+                                    h5.card-title Card title
+                                    p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        .col
+                            .card
+                                .btn-text-start
+                                    img.card-img-top(src="./assets/png/image.png" alt="image")
+                                .card-body
+                                    h5.card-title Card title
+                                    p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                    .row
+                        .col
+                            .card
+                                .btn-text-start
+                                    img.card-img-top(src="./assets/png/image.png" alt="image")
+                                .card-body
+                                    h5.card-title Card title
+                                    p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        .col
+                            .card
+                                .btn-text-start
+                                    img.card-img-top(src="./assets/png/image.png" alt="image")
+                                .card-body
+                                    h5.card-title Card title
+                                    p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+section.service-carousel#service-carousel
+    .container
+        .row
+            .col
+                h1 Our Personalized Prevention plan Is Designed To Keep You Safe
+                // TODO: Carousel
+
+
+section.record#record
+    .container-fluid.bg-primary
+        .row
+            .col
+                .container
+                    .row
+                        .col.text-center
+                            h1 15M
+                            span diseases and disorders prevented yearly in US due to annual wellness exams
+                            a(href="#1") National Survey on Health Disorders 
+                        .col.text-center
+                            h1 45
+                            span minutes per year is the average time you need for your annual wellness checks
+                            a(href="#2") The National Institute for Safety and Health
+                        .col.text-center
+                            h1 1 in 5
+                            span among adults in the U.S. puts themselves to danger by skipping the annual exam
+                            a(href="#3") Nation Survey on Healthcare
+
+section.checklist#checklist
+    .container
+        .row
+            .col
+                img(src="./assets/png/image.png" alt="image")
+            .col
+                h2 Annual Wellness Exam Checklist
+                ul
+                    li
+                        i.bi.bi-check-circle-fill Weight
+                    li
+                        i.bi.bi-check-circle-fill Height
+                    li
+                        i.bi.bi-check-circle-fill Blood Pressure
+                    li
+                        i.bi.bi-check-circle-fill Pulse
+                    li
+                        i.bi.bi-check-circle-fill Screening Lab Tests
+                    li
+                        i.bi.bi-check-circle-fill X-Rays
+                    li
+                        i.bi.bi-check-circle-fill Immunizations
+                    li
+                        i.bi.bi-check-circle-fill Medical History Review
+
+section.contact#contact
+    .container.contact-container
+        .row.contact-title
+            .col.text-center
+                h1 
+                    | Request Appointment <br />
+                    | for Annual Wellness Exam
+        .row.contact-form
+            .col-6.form.offset-3
+                .mb-3
+                    label.form-label(for='exampleInputEmail1') Your Full Name
+                    input#exampleInputName.form-control(type='text' aria-describedby='nameHelp' placeholder='Input here')
+                .mb-3
+                    label.form-label(for='exampleInputEmail1') Phone Number
+                    input#exampleInputNumber.form-control(type='tel' aria-describedby='numberHelp' placeholder='Input here')
+                .mb-3
+                    label.form-label(for='exampleInputEmail1') Email
+                    input#exampleInputEmail.form-control(type='email' aria-describedby='emailHelp' placeholder='Vui lòng nhập')
+                .mb-3
+                    label.form-label(for='exampleInputEmail1') Schedule date
+                    input#exampleInputDate.form-control(type='date' aria-describedby='dateHelp' placeholder='Select date and time')
+        .row.contact-submit
+            .col.d-flex.justify-content-center
+                button.btn.btn-primary(type='submit') Submit

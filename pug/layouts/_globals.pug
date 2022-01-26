@@ -1,6 +1,6 @@
 //- Variables
 //- Header
-- var headerItems = {"./index.html": "Home", "./us.html": "Nosotros", "#3": "Servicios", "./about.html": "Proyectos", "./faq.html": "FAQ"}
+- var headerItems = {"./index.html": "Home", "./us.html": "Nosotros", "./services.html": "Servicios", "./about.html": "Proyectos", "./faq.html": "FAQ"}
 - var headerButtons = {"#1": "Crear pedido", "./login.html": "Iniciar sesión"}
 //- Sections
 //- Cards
@@ -40,13 +40,12 @@ mixin contactItem(icon,text,url)
 
 mixin cardWithModal(cardImage, cardTitle, cardText, cardModal,index)
     .col-lg-3.col-12.services-card
-        .card(class=cardModal=="#1"?"services-card-active":"")(id="card-"+index)
-            button.btn.text-start(type="button" data-bs-toggle="modal" data-bs-target=cardModal)
+        button.card(class=cardModal=="#1"?"services-card-active":"")(id="card-"+index type="button" data-bs-toggle="modal" data-bs-target=cardModal)
+            .btn.text-start
                 img.card-img-top(src=cardImage alt=cardTitle)
             .card-body
-                button.btn.text-start(type="button" data-bs-toggle="modal" data-bs-target=cardModal)
-                    h5.card-title= cardTitle
-                    p.card-text= cardText
+                h5.card-title= cardTitle
+                p.card-text= cardText
 
 mixin card(cardImage, cardTitle, cardText)
     .col-lg-4.col-12

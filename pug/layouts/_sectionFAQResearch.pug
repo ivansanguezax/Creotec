@@ -3,7 +3,7 @@
         .col.text-center
             h1 We are here to help
     .row
-        .col-6.form.offset-3
+        .col
             form
                 input.form-control(type='text' placeholder='Search' aria-label='Search')
 
@@ -52,17 +52,17 @@
                             |    It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the 
                             code .accordion-body
                             | , though the transition does limit overflow.
-    .row.far-content-pages
-            .col.d-flex.justify-content-center
-                nav(aria-label='Page navigation example')
-                    ul.pagination.justify-content-center
-                        li.page-item.disabled
-                            a.page-link Previous
-                        li.page-item
-                            a.page-link(href='#') 1
-                        li.page-item
-                            a.page-link(href='#') 2
-                        li.page-item
-                            a.page-link(href='#') 3
-                        li.page-item
-                            a.page-link(href='#') Next
+    .row.items-pages
+        .col
+            nav(aria-label='Page navigation example')
+                ul.pagination.justify-content-center
+                    li.page-item.disabled
+                        a Previous
+                    li.page-item
+                        a(href='#') 1
+                    li.page-item
+                        a(href='#') 2
+                    li.page-item
+                        a(href='#') 3
+                    li.page-item
+                        a(href='#') Next

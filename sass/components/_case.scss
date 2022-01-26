@@ -46,10 +46,12 @@
     div:nth-child(2){
         @include font(16px,700,$color-text-primary);
         margin: 16px 0px;
+        text-align: justify;
     }
     div:nth-child(3){
         @include font(16px,300,$color-text-primary);
         margin: 16px 0px;
+        text-align: justify;
     }
     div:nth-child(4){
         margin: 16px 0px;
@@ -68,6 +70,68 @@
         margin: 16px 0px;
         padding: 0px 0px 80px;
         border-bottom: 1px solid $color-divider;
+        text-align: justify;
     }
+}
 
+.tags{
+    .container{
+        width: 1030px;
+        height:92px;
+        background-color:$color-white;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        margin-bottom:74px;
+        .row{
+            div:nth-child(1){
+                width:515px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left:30px;
+                span{
+                    padding: 7px 12px;
+                    background: #1A60FF;
+                    border-radius: 24px;
+                    @include font(16px, 400, $color-white);
+                }
+            }
+            div:nth-child(2){
+                width:515px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding-right: 30px;
+                span{
+                    @include font(16px, 300, $color-text-primary);
+                    margin-right: 16px;
+                }
+                i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    font-size:18px;
+                    border: 1px solid #D1DFFF;
+                    box-sizing: border-box;
+                    border-radius: 100px;
+                    color: #625A5A;
+                }
+            }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+    }
+    
+}
+.similarposts{
+    h5{
+        @include font(20px,700, $color-text-primary);
+        margin: 16px 0px;
+    }
 }
