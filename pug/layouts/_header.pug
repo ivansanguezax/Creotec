@@ -10,6 +10,7 @@ header
                     span.navbar-toggler-icon
                 #navbarNavAltMarkup.collapse.navbar-collapse
                     .navbar-nav.ms-auto
+                        // TODO: Add functionality
                         each val,key in headerItems
                             a.nav-link(class=(val==pag)?"active":"", href=key)=val
                         each val,id in headerButtons

@@ -25,7 +25,8 @@
           <div class="container"><a class="navbar-brand" href="#"><img src="./assets/png/logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ms-auto"><a class="nav-link" href="./index.html">Home</a><a class="nav-link" href="./us.html">Nosotros</a><a class="nav-link" href="./services.html">Servicios</a><a class="nav-link active" href="./about.html">Proyectos</a><a class="nav-link" href="./faq.html">FAQ</a>
+              <div class="navbar-nav ms-auto">
+                <!-- TODO: Add functionality--><a class="nav-link" href="./index.html">Home</a><a class="nav-link" href="./us.html">Nosotros</a><a class="nav-link" href="./services.html">Servicios</a><a class="nav-link active" href="./about.html">Proyectos</a><a class="nav-link" href="./faq.html">FAQ</a>
                 <button class="btn navbar-btn" onclick="location.href='#1';" type="button" data-bs-toggle="modal" data-bs-target="#1">Crear pedido</button>
                 <button class="btn navbar-btn" onclick="location.href='./login.html';" type="button" data-bs-toggle="modal" data-bs-target="./login.html">Iniciar sesión</button>
               </div>
@@ -57,6 +58,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <form class="d-flex">
+                  <!-- Get data to search-->
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -172,11 +174,15 @@
           <div class="col">
             <nav aria-label="Page navigation example">
               <ul class="pagination justify-content-center">
-                <li class="page-item disabled"><a class="page-link">Previous</a></li>
+                <li class="page-item disabled">
+                  <!-- TODO: hide when page is 0--><a class="page-link">Previous</a>
+                </li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                <li class="page-item">
+                  <!-- TODO: hide when page is n--><a class="page-link" href="#">Next</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -200,6 +206,7 @@
           </div>
           <div class="col footer-contact"><span>Contact</span>
             <ul>
+              <!-- TODO: Give links-->
                   <li><a class="d-flex" href="#1"><i class="bi bi-cursor me-2"></i>
                       <p>Boston, USA 55 Huntington Ave Str</p></a></li>
                   <li><a class="d-flex" href="#2"><i class="bi bi-telephone me-2"></i>
@@ -211,7 +218,9 @@
             </ul>
           </div>
           <div class="col footer-social"><span>Follow Us</span>
-            <div class="d-flex"><a class="fa fa-facebook" href="#"></a><a class="fa fa-youtube-play" href="#"></a></div>
+            <div class="d-flex">
+              <!-- TODO: Add social media--><a class="fa fa-facebook" href="#"></a><a class="fa fa-youtube-play" href="#"></a>
+            </div>
           </div>
         </div>
       </div>

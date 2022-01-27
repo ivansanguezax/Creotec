@@ -6,6 +6,7 @@ main.homepage
             .col-lg.col-12.homepage-description
                 h1 Crea tu protesis a bajo costo
                 p Mejora tu calidad de vida con una prótesis personalizada
+                // TODO: Give functionality
                 button.btn.btn-primary(type="button") Comenzar Proceso
             .col-lg-7.col-12.d-flex.justify-content-lg-evenly.justify-content-between.homepage-images
                 .btn-group-vertical.gap-4.d-flex.justify-content-end.homepage-images-buttongroup
@@ -27,6 +28,7 @@ section.blockcontent-2#blockcontent-2
         .row
             .col.pt-5.pb-4.text-center
                 h1.text-center.text-white.fs-4 “Good health is not something we can buy. However, it can be an extremely valuable savings account.”
+                // TODO: Give functionality
                 button.btn.btn-light.text-primary.mt-3 Request an Appointment
 
 section.services#services
@@ -36,6 +38,7 @@ section.services#services
                 h1.mt-3.mb-4 Nuestros servicios
         .row.text-center.d-flex.justify-content-center
             each val,index in cardImages
+                // TODO: Create modal
                 +cardWithModal(val,cardTitles[index],cardTexts[index], cardModals[index],index)
 
 section.patients#patients
@@ -104,6 +107,7 @@ section.contact#contact
                     input#exampleInputDate.form-control(type='date' aria-describedby='dateHelp' placeholder='Select date and time')
         .row.contact-submit
             .col.d-flex.justify-content-center
+                // TODO: Get data to submit
                 button.btn.btn-primary(type='submit') Submit
 
 section.blockcontent3#blockcontent3
@@ -115,6 +119,7 @@ section.blockcontent3#blockcontent3
         .row.blockcontent3-carousel
             .col.d-flex.justify-content-between.overflow-hidden.slider
                 .slide-track.gap-4
+                    // FIXME: Endless loop
                     each val in insuranceImages
                         .slide
                             img(src=val, alt="")
@@ -125,8 +130,10 @@ section.blockcontent4#blockcontent4
             .col-lg-4.col-12.blockcontent4-left
                 img(src="./assets/png/image.png", alt="imagealt")
                 h1  Meet Our Doctors
+                // TODO: Give functionality
                 button.btn.btn-light(type="button") See more
             .col-lg-4.col-12.blockcontent4-right
                 img(src="./assets/png/image.png", alt="imagealt")
                 h1  Meet Our Doctors
+                // TODO: Give functionality
                 button.btn.btn-light(type="button") See more

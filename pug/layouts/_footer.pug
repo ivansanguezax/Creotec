@@ -15,11 +15,13 @@ footer#footer.footer
             .col.footer-contact
                 span Contact
                 ul
+                    // TODO: Give links
                     each val,index in contactIcons
                         +contactItem(val,contactTexts[index],contactUrls[index])
             .col.footer-social
                 span Follow Us
                 .d-flex
+                    // TODO: Add social media
                     a(href="#").fa.fa-facebook
                     a(href="#").fa.fa-youtube-play
 
