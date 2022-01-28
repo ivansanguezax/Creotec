@@ -25,14 +25,14 @@ section.items
         .row
             .col
                 .container.items-content
-                    +rowCasesCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
-                    +rowCasesCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
-                    +rowCasesCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
+                    +rowCasesCards(casesItemsImages,casesItemsTexts,casesItemsUrls,casesId1)
+                    +rowCasesCards(casesItemsImages,casesItemsTexts,casesItemsUrls,casesId2)
+                    +rowCasesCards(casesItemsImages,casesItemsTexts,casesItemsUrls,casesId3)
         .row.items-pages
             .col
                 nav(aria-label='Page navigation example')
                     ul.pagination.justify-content-center
-                        li.page-item.disabled
+                        li.page-item#btn-prev
                             // TODO: hide when page is 0
                             a Previous
                         li.page-item
@@ -41,7 +41,7 @@ section.items
                             a(href='#') 2
                         li.page-item
                             a(href='#') 3
-                        li.page-item
+                        li.page-item#btn-next
                             // TODO: hide when page is n
                             a(href='#') Next
 
