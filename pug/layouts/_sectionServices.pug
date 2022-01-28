@@ -25,7 +25,7 @@ main.cases#cases
                     .row
                         .col.text-center
                             button.btn.rounded-pill.btn-primary(type='button') 
-                                // TODO: Give functionality
+                                // TODO: Get data to submit
                                 i.bi.bi-calendar-check
                                 |  Submit
             .col-8
@@ -66,7 +66,57 @@ section.service-carousel#service-carousel
         .row
             .col
                 h1 Our Personalized Prevention plan Is Designed To Keep You Safe
-                // TODO: Carousel
+                .container-carousel
+                    .wgh-slider
+                        input#slide-1.wgh-slider-target(type='radio' name='slider')
+                        input#slide-2.wgh-slider-target(type='radio' name='slider')
+                        input#slide-3.wgh-slider-target(type='radio' name='slider' checked='checked')
+                        input#slide-4.wgh-slider-target(type='radio' name='slider')
+                        input#slide-5.wgh-slider-target(type='radio' name='slider')
+                        .wgh-slider__viewport
+                            .wgh-slider__viewbox
+                                .wgh-slider__container
+                                    .wgh-slider-item
+                                        .wgh-slider-item__inner
+                                            figure.wgh-slider-item-figure
+                                                img.wgh-slider-item-figure__image(src='img/image-1.jpg' alt='The 5th Exotic')
+                                                figcaption.wgh-slider-item-figure__caption
+                                                    a(href='https://f4.bcbits.com/img/a3905613628_16.jpg') The 5th Exotic
+                                                    span Quantic
+                                            label.wgh-slider-item__trigger(for='slide-1' title='Show product 1')
+                                    .wgh-slider-item
+                                        .wgh-slider-item__inner
+                                            figure.wgh-slider-item-figure
+                                                img.wgh-slider-item-figure__image(src='img/image-2.jpg' alt='The 5th Exotic')
+                                                figcaption.wgh-slider-item-figure__caption
+                                                    a(href='https://f4.bcbits.com/img/a3905613628_16.jpg') The 5th Exotic
+                                                    span Quantic
+                                            label.wgh-slider-item__trigger(for='slide-2' title='Show product 2')
+                                    .wgh-slider-item
+                                        .wgh-slider-item__inner
+                                            figure.wgh-slider-item-figure
+                                                img.wgh-slider-item-figure__image(src='img/image-3.png' alt='The 5th Exotic')
+                                                figcaption.wgh-slider-item-figure__caption
+                                                    a(href='https://f4.bcbits.com/img/a3905613628_16.jpg') The 5th Exotic
+                                                    span Quantic
+                                            label.wgh-slider-item__trigger(for='slide-3' title='Show product 3')
+                                    .wgh-slider-item
+                                        .wgh-slider-item__inner
+                                            figure.wgh-slider-item-figure
+                                                img.wgh-slider-item-figure__image(src='img/image-4.jpg' alt='The 5th Exotic')
+                                                figcaption.wgh-slider-item-figure__caption
+                                                    a(href='https://f4.bcbits.com/img/a3905613628_16.jpg') The 5th Exotic
+                                                    span Quantic
+                                            label.wgh-slider-item__trigger(for='slide-4' title='Show product 4')
+                                    .wgh-slider-item
+                                        .wgh-slider-item__inner
+                                            figure.wgh-slider-item-figure
+                                                img.wgh-slider-item-figure__image(src='img/image-5.jpg' alt='RYSY - Traveler LP')
+                                                figcaption.wgh-slider-item-figure__caption
+                                                    a(href='https://picsum.photos/id/237/480/480') RYSY - Traveler LP
+                                                    span RYSY
+                                            label.wgh-slider-item__trigger(for='slide-5' title='Show product 5')
+                
 
 
 section.record#record
