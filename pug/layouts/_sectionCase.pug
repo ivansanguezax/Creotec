@@ -44,10 +44,9 @@ section.tags#tags
                 span.rounded-pill.badge.bg-light.text-black.pt-2.pb-2 Emergency
             .col
                 span Share: 
-                // TODO: Shortener share link
                 // FIXME: CSS
-                button.btn.bi.bi-facebook
-                button.btn.bi.bi-twitter
+                button.btn.bi.bi-facebook(onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;")
+                button.btn.bi.bi-twitter(onclick="location.href='https://twitter.com/intent/tweet?text=Hola%20a%20todos,%20les%20comparto%20esta%20noticia%20de%20parte%20de%20Creotec!%20'+location.href;")
 
 section.similarposts#similarposts
     .container
@@ -57,4 +56,4 @@ section.similarposts#similarposts
         .row
             .col
                 .container.gap-4.items-content
-                    +rowCasesCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
+                    +rowCasesCards(casesItemsImages,casesItemsTexts,casesItemsUrls,casesId1)

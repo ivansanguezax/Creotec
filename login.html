@@ -19,24 +19,113 @@
     <title>Creotec</title>
   </head>
   <body>
+    <section class="modals">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nuevo Pedido</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label class="col-form-label" for="recipient-name">Nombre:</label>
+                  <input class="form-control" id="recipient-name" type="text">
+                </div>
+                <div class="mb-3">
+                  <label class="col-form-label" for="message-text">Producto:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancelar</button>
+              <button class="btn btn-primary" type="button">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="Modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="Modal1Label">Agendar cita</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label class="col-form-label" for="recipient-name">Nombre:</label>
+                  <input class="form-control" id="recipient-name" type="text">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="exampleInputEmail1">Fecha</label>
+                  <input class="form-control" id="exampleInputDate" type="date" aria-describedby="dateHelp" placeholder="Select date and time">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancelar</button>
+              <button class="btn btn-primary" type="button">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nuestros doctores</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col"><img src="./assets/jpg/img-1.jpg" alt="image" width="200">
+                    <h2>Our doctor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.</p>
+                  </div>
+                  <div class="col"><img src="./assets/jpg/img-2.jpg" alt="image" width="200">
+                    <h2>Our doctor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col"><img src="./assets/jpg/img-3.jpg" alt="image" width="200">
+                    <h2>Our doctor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.</p>
+                  </div>
+                  <div class="col"><img src="./assets/jpg/img-1.jpg" alt="image" width="200">
+                    <h2>Our doctor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <header>
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <div class="container"><a class="navbar-brand" href="#"><img src="./assets/png/logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ms-auto"> 
-                <!-- TODO: Add functionality--><a class="nav-link" href="./index.html">Home</a><a class="nav-link" href="./us.html">Nosotros</a><a class="nav-link" href="./services.html">Servicios</a><a class="nav-link" href="./about.html">Proyectos</a><a class="nav-link" href="./faq.html">FAQ</a>
-                <button class="btn navbar-btn" onclick="location.href='#1';" type="button" data-bs-toggle="modal" data-bs-target="#1">Crear pedido</button>
-                <button class="btn navbar-btn" onclick="location.href='./login.html';" type="button" data-bs-toggle="modal" data-bs-target="./login.html">Iniciar sesión</button>
+              <div class="navbar-nav ms-auto"> <a class="nav-link" href="./index.html">Home</a><a class="nav-link" href="./us.html">Nosotros</a><a class="nav-link" href="./services.html">Servicios</a><a class="nav-link" href="./about.html">Proyectos</a><a class="nav-link" href="./faq.html">FAQ</a>
+                <button class="btn navbar-btn btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Crear Pedido</button>
+                <button class="btn navbar-btn" onclick="location.href='./login.html';" type="button">Iniciar Sesión</button>
               </div>
             </div>
           </div>
         </nav>
       </div>
     </header>
-    <!-- TODO:Añadimelo las clases pues papi, uno quiere trabajar y no dejan-->
-    <div class="container">
+    <div class="container login">
       <div class="row">
         <div class="col"><img src="./assets/png/image.png" alt="image"></div>
         <div class="col text-center">
@@ -46,11 +135,9 @@
             <input class="form-control" id="inputEmail" type="email" placeholder="Email address" required="" autofocus="">
             <label class="sr-only" for="inputPassword">Password</label>
             <input class="form-control" id="inputPassword" type="password" placeholder="Password" required=""><a href="#1">Recover password</a>
-            <!-- TODO: Get data to submit-->
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
           </form><span>Or continue with</span>
-          <div class="d-flex justify-content-around"><a href=""><img src="./assets/png/logo.png" alt="logo"></a><a href=""><img src="./assets/png/logo.png" alt="logo"></a><a href=""><img src="./assets/png/logo.png" alt="logo"></a></div><span>Don't have an account? 
-            <!-- TODO: Get data to submit--><a href="#1">Register Now!</a></span>
+          <div class="d-flex justify-content-around"><a href=""><img src="./assets/png/logo.png" alt="logo"></a><a href=""><img src="./assets/png/logo.png" alt="logo"></a><a href=""><img src="./assets/png/logo.png" alt="logo"></a></div><span>Don't have an account? <a href="#1">Register Now!</a></span>
         </div>
       </div>
     </div>

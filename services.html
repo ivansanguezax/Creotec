@@ -20,23 +20,112 @@
     <title>Servicios</title>
   </head>
   <body>
+    <section class="modals">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nuevo Pedido</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label class="col-form-label" for="recipient-name">Nombre:</label>
+                  <input class="form-control" id="recipient-name" type="text">
+                </div>
+                <div class="mb-3">
+                  <label class="col-form-label" for="message-text">Producto:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancelar</button>
+              <button class="btn btn-primary" type="button">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="Modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="Modal1Label">Agendar cita</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label class="col-form-label" for="recipient-name">Nombre:</label>
+                  <input class="form-control" id="recipient-name" type="text">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="exampleInputEmail1">Fecha</label>
+                  <input class="form-control" id="exampleInputDate" type="date" aria-describedby="dateHelp" placeholder="Select date and time">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancelar</button>
+              <button class="btn btn-primary" type="button">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nuestros doctores</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col"><img src="./assets/jpg/img-1.jpg" alt="image" width="200">
+                    <h2>Our doctor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.</p>
+                  </div>
+                  <div class="col"><img src="./assets/jpg/img-2.jpg" alt="image" width="200">
+                    <h2>Our doctor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col"><img src="./assets/jpg/img-3.jpg" alt="image" width="200">
+                    <h2>Our doctor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.</p>
+                  </div>
+                  <div class="col"><img src="./assets/jpg/img-1.jpg" alt="image" width="200">
+                    <h2>Our doctor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <header>
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <div class="container"><a class="navbar-brand" href="#"><img src="./assets/png/logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ms-auto"> 
-                <!-- TODO: Add functionality--><a class="nav-link" href="./index.html">Home</a><a class="nav-link" href="./us.html">Nosotros</a><a class="nav-link active" href="./services.html">Servicios</a><a class="nav-link" href="./about.html">Proyectos</a><a class="nav-link" href="./faq.html">FAQ</a>
-                <button class="btn navbar-btn" onclick="location.href='#1';" type="button" data-bs-toggle="modal" data-bs-target="#1">Crear pedido</button>
-                <button class="btn navbar-btn" onclick="location.href='./login.html';" type="button" data-bs-toggle="modal" data-bs-target="./login.html">Iniciar sesión</button>
+              <div class="navbar-nav ms-auto"> <a class="nav-link" href="./index.html">Home</a><a class="nav-link" href="./us.html">Nosotros</a><a class="nav-link active" href="./services.html">Servicios</a><a class="nav-link" href="./about.html">Proyectos</a><a class="nav-link" href="./faq.html">FAQ</a>
+                <button class="btn navbar-btn btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Crear Pedido</button>
+                <button class="btn navbar-btn" onclick="location.href='./login.html';" type="button">Iniciar Sesión</button>
               </div>
             </div>
           </div>
         </nav>
       </div>
     </header>
-    <!-- TODO: Cambiar clase a Services-page y en el sass mas por favor :) -->
     <main class="cases" id="cases">
       <div class="container-fluid">
         <div class="row">
@@ -52,7 +141,7 @@
         </div>
       </div>
     </main>
-    <div class="section services" id="services">
+    <div class="section services-page" id="services-page">
       <div class="container">
         <div class="row">
           <div class="col-4">
@@ -68,9 +157,7 @@
               </div>
               <div class="row">
                 <div class="col text-center">
-                  <button class="btn rounded-pill btn-primary" type="button"> 
-                    <!-- TODO: Get data to submit--><i class="bi bi-calendar-check"></i> Submit
-                  </button>
+                  <button class="btn rounded-pill btn-primary" type="button"> <i class="bi bi-calendar-check"></i> Submit</button>
                 </div>
               </div>
             </div>
@@ -187,23 +274,15 @@
       </div>
     </section>
     <section class="record" id="record">
-      <div class="container-fluid bg-primary">
-        <div class="row">
-          <div class="col">
-            <div class="container">
-              <div class="row">
-                <div class="col text-center">
-                  <h1>15M</h1><span>diseases and disorders prevented yearly in US due to annual wellness exams</span><a href="#1">National Survey on Health Disorders </a>
-                </div>
-                <div class="col text-center">
-                  <h1>45</h1><span>minutes per year is the average time you need for your annual wellness checks</span><a href="#2">The National Institute for Safety and Health</a>
-                </div>
-                <div class="col text-center">
-                  <h1>1 in 5</h1><span>among adults in the U.S. puts themselves to danger by skipping the annual exam</span><a href="#3">Nation Survey on Healthcare</a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col text-center">
+          <h1>15M</h1><span>diseases and disorders prevented yearly in US due to annual wellness exams</span><a href="#1">National Survey on Health Disorders </a>
+        </div>
+        <div class="col text-center">
+          <h1>45</h1><span>minutes per year is the average time you need for your annual wellness checks</span><a href="#2">The National Institute for Safety and Health</a>
+        </div>
+        <div class="col text-center">
+          <h1>1 in 5</h1><span>among adults in the U.S. puts themselves to danger by skipping the annual exam</span><a href="#3">Nation Survey on Healthcare</a>
         </div>
       </div>
     </section>
@@ -214,14 +293,14 @@
           <div class="col">
             <h2>Annual Wellness Exam Checklist</h2>
             <ul>
-              <li><i class="bi bi-check-circle-fill">Weight</i></li>
-              <li><i class="bi bi-check-circle-fill">Height</i></li>
-              <li><i class="bi bi-check-circle-fill">Blood Pressure</i></li>
-              <li><i class="bi bi-check-circle-fill">Pulse</i></li>
-              <li><i class="bi bi-check-circle-fill">Screening Lab Tests</i></li>
-              <li><i class="bi bi-check-circle-fill">X-Rays</i></li>
-              <li><i class="bi bi-check-circle-fill">Immunizations</i></li>
-              <li><i class="bi bi-check-circle-fill">Medical History Review</i></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Weight</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Height</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Blood Pressure</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Pulse</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Screening Lab Tests</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>X-Rays</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Immunizations</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Medical History Review</span></li>
             </ul>
           </div>
         </div>
@@ -274,7 +353,7 @@
           <div class="col footer-patient-care"><span>Patient care</span>
             <ul>
               <li><a href="#0">Providers</a></li>
-              <li><a href="#1">Servíces</a></li>
+              <li><a href="#1">Services</a></li>
               <li><a href="#2">Request an Appointment</a></li>
               <li><a href="#3">Reviews</a></li>
               <li><a href="#4">Billing &amp; Insurance</a></li>
@@ -282,14 +361,13 @@
           </div>
           <div class="col footer-contact"><span>Contact</span>
             <ul>
-              <!-- TODO: Give links-->
-                  <li><a class="d-flex" href="#1"><i class="bi bi-cursor me-2"></i>
+                  <li><a class="d-flex" href="https://goo.gl/maps/2sLSML13gqrDjnicA"><i class="bi bi-cursor me-2"></i>
                       <p>Boston, USA 55 Huntington Ave Str</p></a></li>
-                  <li><a class="d-flex" href="#2"><i class="bi bi-telephone me-2"></i>
-                      <p>+1 541-754-3010</p></a></li>
-                  <li><a class="d-flex" href="#3"><i class="bi bi-envelope me-2"></i>
+                  <li><a class="d-flex" href="https://api.whatsapp.com/send?phone=59177540218&amp;text=Hola%2C%20deseo%20solicitar%20informaci%C3%B3n%20sobre%20las%20pr%C3%B3tesis"><i class="bi bi-telephone me-2"></i>
+                      <p>+591 77540218</p></a></li>
+                  <li><a class="d-flex" href="mailto:antonio.riveros.pilco@gmail.com"><i class="bi bi-envelope me-2"></i>
                       <p>support@medilab.com</p></a></li>
-                  <li><a class="d-flex" href="#4"><i class="bi bi-clock me-2"></i>
+                  <li><a class="d-flex" href="#4" style="cursor: default;"><i class="bi bi-clock me-2"></i>
                       <p>Mo-Fr: 07:00-23:00h</p></a></li>
             </ul>
           </div>

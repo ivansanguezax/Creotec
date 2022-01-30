@@ -5,7 +5,6 @@
     .row
         .col.form
             form
-                // TODO: Hide magnifing glass when typing
                 input#txtSearch.form-control(type="text" placeholder="Search" style="font-family: FontAwesome,'Merriweather Sans', sans-serif;")
 
 .container.faq-content
@@ -81,15 +80,8 @@
                             .col.d-flex.justify-content-center
                                 nav(aria-label='Page navigation example')
                                     ul.pagination.justify-content-center
-                                        li.page-item.disabled
-                                            // TODO: hide when page is 0
-                                            a Previous
-                                        li.page-item
-                                            a(href='#') 1
-                                        li.page-item
-                                            a(href='#') 2
-                                        li.page-item
-                                            a(href='#') 3
-                                        li.page-item
-                                            // TODO: hide when page is n
-                                            a(href='#') Next
+                                        // TODO: Add Javascript
+                                        li.page-item#btn-prev
+                                            a(href="#0") Previous
+                                        li.page-item#btn-next
+                                            a(href='#4') Next

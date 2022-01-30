@@ -1,7 +1,5 @@
 include _globals.pug
 
-// TODO: Cambiar clase a Services-page y en el sass mas por favor :) 
-
 main.cases#cases
     .container-fluid
         .row
@@ -13,7 +11,7 @@ main.cases#cases
                             span.text-white Keeping Close Attention To Your Health Is Always of Great Important
 
 
-.section.services#services
+.section.services-page#services-page
     .container
         .row
             .col-4
@@ -27,7 +25,6 @@ main.cases#cases
                     .row
                         .col.text-center
                             button.btn.rounded-pill.btn-primary(type='button') 
-                                // TODO: Get data to submit
                                 i.bi.bi-calendar-check
                                 |  Submit
             .col-8
@@ -122,23 +119,19 @@ section.service-carousel#service-carousel
 
 
 section.record#record
-    .container-fluid.bg-primary
-        .row
-            .col
-                .container
-                    .row
-                        .col.text-center
-                            h1 15M
-                            span diseases and disorders prevented yearly in US due to annual wellness exams
-                            a(href="#1") National Survey on Health Disorders 
-                        .col.text-center
-                            h1 45
-                            span minutes per year is the average time you need for your annual wellness checks
-                            a(href="#2") The National Institute for Safety and Health
-                        .col.text-center
-                            h1 1 in 5
-                            span among adults in the U.S. puts themselves to danger by skipping the annual exam
-                            a(href="#3") Nation Survey on Healthcare
+    .row
+        .col.text-center
+            h1 15M
+            span diseases and disorders prevented yearly in US due to annual wellness exams
+            a(href="#1") National Survey on Health Disorders 
+        .col.text-center
+            h1 45
+            span minutes per year is the average time you need for your annual wellness checks
+            a(href="#2") The National Institute for Safety and Health
+        .col.text-center
+            h1 1 in 5
+            span among adults in the U.S. puts themselves to danger by skipping the annual exam
+            a(href="#3") Nation Survey on Healthcare
 
 section.checklist#checklist
     .container
@@ -149,21 +142,29 @@ section.checklist#checklist
                 h2 Annual Wellness Exam Checklist
                 ul
                     li
-                        i.bi.bi-check-circle-fill Weight
+                        i.bi.bi-check-circle-fill
+                        span Weight
                     li
-                        i.bi.bi-check-circle-fill Height
+                        i.bi.bi-check-circle-fill
+                        span Height
                     li
-                        i.bi.bi-check-circle-fill Blood Pressure
+                        i.bi.bi-check-circle-fill
+                        span Blood Pressure
                     li
-                        i.bi.bi-check-circle-fill Pulse
+                        i.bi.bi-check-circle-fill
+                        span Pulse
                     li
-                        i.bi.bi-check-circle-fill Screening Lab Tests
+                        i.bi.bi-check-circle-fill
+                        span Screening Lab Tests
                     li
-                        i.bi.bi-check-circle-fill X-Rays
+                        i.bi.bi-check-circle-fill
+                        span X-Rays
                     li
-                        i.bi.bi-check-circle-fill Immunizations
+                        i.bi.bi-check-circle-fill
+                        span Immunizations
                     li
-                        i.bi.bi-check-circle-fill Medical History Review
+                        i.bi.bi-check-circle-fill
+                        span Medical History Review
 
 section.contact#contact
     .container.contact-container

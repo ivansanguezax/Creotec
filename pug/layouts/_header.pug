@@ -1,4 +1,5 @@
 include _globals.pug
+include _modals.pug
 
 header
     .container
@@ -10,8 +11,7 @@ header
                     span.navbar-toggler-icon
                 #navbarNavAltMarkup.collapse.navbar-collapse
                     .navbar-nav.ms-auto 
-                        // TODO: Add functionality
                         each val,key in headerItems
                             a.nav-link(class=(val==pag)?"active":"", href=key)=val
-                        each val,id in headerButtons
-                            button.btn.navbar-btn(onclick="location.href='"+id+"';" type="button" data-bs-toggle="modal" data-bs-target=id)= val
+                        button.btn.navbar-btn(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal") Crear Pedido
+                        button.btn.navbar-btn(onclick="location.href='./login.html';" type="button") Iniciar Sesión

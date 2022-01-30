@@ -1,0 +1,64 @@
+section.modals
+    #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h5#exampleModalLabel.modal-title Nuevo Pedido
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    form
+                        .mb-3
+                            label.col-form-label(for='recipient-name') Nombre:
+                            input#recipient-name.form-control(type='text')
+                        .mb-3
+                            label.col-form-label(for='message-text') Producto:
+                            textarea#message-text.form-control
+                .modal-footer
+                    button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Cancelar
+                    button.btn.btn-primary(type='button') Confirmar
+    #Modal1.modal.fade(tabindex='-1' aria-labelledby='Modal1Label' aria-hidden='true')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h5#Modal1Label.modal-title Agendar cita
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    form
+                        .mb-3
+                            label.col-form-label(for='recipient-name') Nombre:
+                            input#recipient-name.form-control(type='text')
+                        .mb-3
+                            label.form-label(for='exampleInputEmail1') Fecha
+                            input#exampleInputDate.form-control(type='date' aria-describedby='dateHelp' placeholder='Select date and time')
+                .modal-footer
+                    button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Cancelar
+                    button.btn.btn-primary(type='button') Confirmar
+    #Modal2.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+        .modal-dialog.modal-xl.modal-dialog-scrollable
+            .modal-content
+                .modal-header
+                    h5#exampleModalLabel.modal-title Nuestros doctores
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .container-fluid
+                        .row
+                            .col
+                                img(src="./assets/jpg/img-1.jpg", alt="image" width="200")
+                                h2 Our doctor
+                                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.
+                            .col
+                                img(src="./assets/jpg/img-2.jpg", alt="image" width="200")
+                                h2 Our doctor
+                                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.
+                        .row
+                            .col
+                                img(src="./assets/jpg/img-3.jpg", alt="image" width="200")
+                                h2 Our doctor
+                                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.
+                            .col
+                                img(src="./assets/jpg/img-1.jpg", alt="image" width="200")
+                                h2 Our doctor
+                                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugiat? Voluptatibus asperiores, ratione consectetur obcaecati accusamus dolorum, officiis aliquam quia quibusdam eos natus labore suscipit, dolorem optio libero amet accusantium.
+
+                .modal-footer
+                    button.btn.btn-primary(type='button' data-bs-dismiss='modal') Confirmar

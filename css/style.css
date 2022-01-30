@@ -968,7 +968,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
-    .welcome .col:nth-child(1) img {
+    .welcome .col:nth-child(1) .quote {
+      background-color: red;
       position: absolute;
       width: 506px;
       height: 256px;
@@ -1061,13 +1062,13 @@ body {
   line-height: 150%;
   color: #1A60FF; }
 
-.services h1 {
+.services-page h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 150%;
   color: #434657; }
-.services p {
+.services-page p {
   margin-top: 18px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -1075,7 +1076,7 @@ body {
   line-height: 150%;
   color: #434657;
   text-align: justify; }
-.services button {
+.services-page button {
   margin-top: 40px;
   padding: 13px 38px;
   background-color: #1A60FF;
@@ -1084,13 +1085,13 @@ body {
   font-weight: 700;
   line-height: 150%;
   color: #FFFFFF; }
-.services h5 {
+.services-page h5 {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 150%;
   color: #434657; }
-.services .card {
+.services-page .card {
   border: none !important;
   box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
   border-radius: 16px; }
