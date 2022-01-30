@@ -68,11 +68,11 @@ mixin rowCasesCards(images,texts,urls,ids)
                         p.card-text= texts[index]
                         a(href=urls[index]) Read more
     
-mixin rowAboutCards(images,texts,urls)
+mixin rowAboutCards(images,texts,urls,ids)
     .row.mb-3
         each val,index in images
             .col-12.col-lg
-                .card
+                .card(id=ids[index])
                     img.card-img-top(src=val alt=image)
                     .card-body
                         h5 Title

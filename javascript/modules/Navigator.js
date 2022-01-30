@@ -64,7 +64,11 @@ class Navigator {
             document.getElementById(this.ids[index]).parentNode.parentNode.hidden = false;
             document.getElementById(this.ids[index]).querySelector(".card-img-top").src = element.img;
             document.getElementById(this.ids[index]).querySelector(".card-body").querySelector("p").innerHTML = element.title;
-            document.getElementById(this.ids[index]).querySelector(".card-body").querySelector("a").href = element.url;
+            try {
+                document.getElementById(this.ids[index]).querySelector(".card-body").querySelector("a").href = element.url;
+            } catch (error) {
+                                
+            }
         });
         
         this.ids.forEach((element,index) => {

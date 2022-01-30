@@ -46,21 +46,17 @@ section.items
                                     hr.dropdown-divider
                                 li
                                     a.dropdown-item(href='#') Something else here
-
-                
-
         .row
             .col
                 .container.items-content
-                    +rowAboutCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
-                    +rowAboutCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
-                    +rowAboutCards(casesItemsImages,casesItemsTexts,casesItemsUrls)
+                    +rowAboutCards(casesItemsImages,casesItemsTexts,casesItemsUrls,casesId1)
+                    +rowAboutCards(casesItemsImages,casesItemsTexts,casesItemsUrls,casesId2)
+                    +rowAboutCards(casesItemsImages,casesItemsTexts,casesItemsUrls,casesId3)
         .row.items-pages
             .col
                 nav(aria-label='Page navigation example')
                     ul.pagination.justify-content-center
                         li.page-item.disabled
-                            // TODO: Add Javascript
                             li.page-item#btn-prev
                                 a(href="#0") Previous
                             li.page-item#btn-next
