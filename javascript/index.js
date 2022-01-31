@@ -21,12 +21,11 @@ window.animateCarrousel = new AnimationCicle(5, (counter) => {
     $(`#nav-service-item-${counter==4?1:counter+2}`).toggleClass('patients-nav-item');
 },2000);
 
-window.animatePictures = new AnimationCicle(7,(counter)=>{
-    let firstChild = $(".slide").first().attr('id', 'remove');
-    // console.log(firstChild);
-    document.querySelector(".slide-track").appendChild(firstChild[0]);
-    // firstChild.remove();
-},4000)
+// window.animatePictures = new AnimationCicle(7,(counter)=>{
+//     document.querySelector(".slide-track").appendChild(firstChild[0]);
+//     console.log(firstChild);
+//     firstChild.remove();
+// },4000)
 
 // Calling function
 window.animateImagesandCards.movediv();
