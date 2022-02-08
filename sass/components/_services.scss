@@ -1,5 +1,6 @@
-
 .services-page{
+    background-color:$color-background;
+    padding: 72px 32px;
     h1{@include font(36px,700, $color-text-primary);}
     p{
         margin-top:18px;
@@ -19,6 +20,7 @@
     }
 }
 .record{
+    padding: 80px  100px ;
     background-color:$color-secondary-100;
     height: 369px !important;
     display: flex;
@@ -36,6 +38,7 @@
     
 }
 .checklist{
+    padding: 74px 0px;
     img{
         width: 606px;
         height: 398px;

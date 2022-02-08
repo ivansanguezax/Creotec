@@ -1142,12 +1142,31 @@ body {
   background-position: center;
 }
 .welcome .col:nth-child(1) .quote {
-  background-color: red;
   position: absolute;
   width: 506px;
   height: 256px;
-  left: 664px;
-  top: 900px;
+  left: 440px;
+  top: 1200px;
+  background-color: #EEF8FF;
+  border-radius: 16px;
+  padding: 40px 32px;
+}
+.welcome .col:nth-child(1) .quote i {
+  font-size: 80px;
+}
+.welcome .col:nth-child(1) .quote span {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  color: #82869E;
+}
+.welcome .col:nth-child(1) .quote h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #1A60FF;
 }
 .welcome .col:nth-child(2) {
   margin-left: 38px;
@@ -1179,7 +1198,6 @@ body {
 
 .image {
   margin-top: 74px;
-  width: 1920px;
   height: 748px;
   background-image: url("../../assets/jpg/img-1.jpg");
   background-repeat: no-repeat;
@@ -1252,6 +1270,10 @@ body {
   color: #1A60FF;
 }
 
+.services-page {
+  background-color: #F8F8FC;
+  padding: 72px 32px;
+}
 .services-page h1 {
   font-family: "Roboto", sans-serif;
   font-size: 36px;
@@ -1292,6 +1314,7 @@ body {
 }
 
 .record {
+  padding: 80px 100px;
   background-color: #EEF8FF;
   height: 369px !important;
   display: flex;
@@ -1325,6 +1348,9 @@ body {
   color: #1990FF;
 }
 
+.checklist {
+  padding: 74px 0px;
+}
 .checklist img {
   width: 606px;
   height: 398px;
@@ -1362,9 +1388,11 @@ body {
 }
 .login div .col:nth-child(1) {
   margin-right: 138px;
-}
-.login div .col:nth-child(1) img {
-  width: 727px;
+  background-image: url(../../assets/jpg/img-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 727.02px;
   height: 849px;
 }
 .login div .col:nth-child(2) {

@@ -12,13 +12,23 @@
         background-size: cover;
         background-position: center;
         .quote{
-            background-color: red;
             position: absolute; 
             width: 506px; 
             height: 256px; 
-            left: 664px; 
-            top: 900px; 
-            
+            left: 440px; 
+            top: 1200px; 
+            background-color:$color-secondary-100;
+            border-radius: 16px;
+            padding:40px 32px;
+            i{
+                font-size:80px;
+            }
+            span{
+                @include font(16px,300, $color-text-secondary)
+            }
+            h6{
+                @include font(24px,700, $color-primary-500);
+            }
         }
     }
     .col:nth-child(2){
@@ -35,7 +45,6 @@
 }
 .image{
     margin-top:74px;
-    width: 1920px;
     height: 748px;
     background-image: url('../../assets/jpg/img-1.jpg');
     background-repeat: no-repeat;
