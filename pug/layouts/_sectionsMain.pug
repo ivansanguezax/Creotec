@@ -14,20 +14,13 @@ main.homepage
                     button#btn-nav-img-3.btn 3
                     button#btn-nav-img-4.btn 4
 
-section.blockcontent1#blockcontent1
-    .container
-        .row
-            .col-lg.col-12.blockcontent1-description
-                h1 Por qué elegirnos?
-            .col-lg.col-12.blockcontent1-images
-                img(src="./assets/png/image.png", alt="image")
-
-section.blockcontent-2#blockcontent-2
-    .container-fluid.bg-primary
-        .row
-            .col.pt-5.pb-4.text-center
-                h1.text-center.text-white.fs-4 “Good health is not something we can buy. However, it can be an extremely valuable savings account.”
-                button.btn.btn-light.text-primary.mt-3(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1") Request an Appointment
+//- section.blockcontent1#blockcontent1
+//-     .container
+//-         .row
+//-             .col-lg.col-12.blockcontent1-description
+//-                 h1 Por qué elegirnos?
+//-             .col-lg.col-12.blockcontent1-images
+//-                 img(src="./assets/png/image.png", alt="image")
 
 section.services#services
     .container
@@ -38,6 +31,16 @@ section.services#services
             each val,index in cardImages
                 +cardWithModal(val,cardTitles[index],cardTexts[index], cardModals[index],index)
 
+section.blockcontent-2#blockcontent-2
+    .container-fluid.bg-primary
+        .row
+            .col.pt-5.pb-4.text-center
+                h1.text-center.text-white.fs-4 
+                    | Las prótesis de 
+                    strong Creotec 
+                    | son accesibles para tu economía y de alta calidad
+                button.btn.btn-light.text-primary.mt-3(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1") Crear pedido
+
 section.patients#patients
     .container
         .row.patients-title
@@ -45,19 +48,19 @@ section.patients#patients
         .row.patients-testimonials
             .col-lg-6.col
                 .card.d-flex.justify-content-center.text-center
-                    img(src='./assets/png/image.png' alt='...')
+                    img(src='./assets/jpg/icon-user.jpeg' alt='...')
                     .card-body
-                        h5.card-title Card title
+                        h5.card-title Jorge Marca
                         p.card-text
-                            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            | Desde mi accidente perdí mi trabajo y vida social. Con mi prótesis buscare trabajo para mantener a mi familia.
                         i.bi.bi-quote
             .col-lg-6.col
                 .card.d-flex.justify-content-center.text-center
-                    img(src='./assets/png/image.png' alt='...')
+                    img(src='./assets/jpg/icon-user.jpeg' alt='...')
                     .card-body
-                        h5.card-title Card title
+                        h5.card-title Blanca Caracara
                         p.card-text
-                            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            | El 2017 tuve un accidente de alta tensión. Entre en depresión hasta quise matarme “Por mi hija voy a vivir”. 
                         i.bi.bi-quote
         .row.patients-nav
             .col-2.offset-5
@@ -68,68 +71,66 @@ section.patients#patients
                     li#nav-service-item-4
                     li#nav-service-item-5
 
-section.healthy#healthy
-    .container
-        .row.text.center.healthy-title
-            h1 Healthy Tips
-        .row.healthy-cards
-            each val,index in cardHealthyImages
-                +card(val,cardHealthyTitles[index],cardHealthyTexts[index])
-        .row
-            .col-2.offset-5.healthy-button
-                a.btn.btn-primary(href="./cases.html")
-                    | More post   
-                    i.bi.bi-chevron-right
+//- section.healthy#healthy
+//-     .container
+//-         .row.text.center.healthy-title
+//-             h1 Healthy Tips
+//-         .row.healthy-cards
+//-             each val,index in cardHealthyImages
+//-                 +card(val,cardHealthyTitles[index],cardHealthyTexts[index])
+//-         .row
+//-             .col-2.offset-5.healthy-button
+//-                 a.btn.btn-primary(href="./cases.html")
+//-                     | More post   
+//-                     i.bi.bi-chevron-right
 
 section.contact#contact
     .container.contact-container
         .row.contact-title
             .col.text-center
-                h1 
-                    | Request Appointment <br />
-                    | for Annual Wellness Exam
+                h1 Te contactamos con e-mail
         .row.contact-form
             .col-6.form.offset-3
                 .mb-3
-                    label.form-label(for='exampleInputEmail1') Your Full Name
-                    input#exampleInputName.form-control(type='text' aria-describedby='nameHelp' placeholder='Input here')
+                    label.form-label(for='exampleInputEmail1') Nombre completo
+                    input#exampleInputName.form-control(type='text' aria-describedby='nameHelp' placeholder='Ingrese aquí')
                 .mb-3
-                    label.form-label(for='exampleInputEmail1') Phone Number
-                    input#exampleInputNumber.form-control(type='tel' aria-describedby='numberHelp' placeholder='Input here')
+                    label.form-label(for='exampleInputEmail1') Número de teléfono
+                    input#exampleInputNumber.form-control(type='tel' aria-describedby='numberHelp' placeholder='Ingrese aquí')
                 .mb-3
                     label.form-label(for='exampleInputEmail1') Email
-                    input#exampleInputEmail.form-control(type='email' aria-describedby='emailHelp' placeholder='Vui lòng nhập')
+                    input#exampleInputEmail.form-control(type='email' aria-describedby='emailHelp' placeholder='Ingrese aquí')
                 .mb-3
-                    label.form-label(for='exampleInputEmail1') Schedule date
-                    input#exampleInputDate.form-control(type='date' aria-describedby='dateHelp' placeholder='Select date and time')
+                    label.form-label(for='exampleInputEmail1') Fecha
+                    input#exampleInputDate.form-control(type='date' aria-describedby='dateHelp' placeholder='Seleccionar fecha')
         .row.contact-submit
             .col.d-flex.justify-content-center
-                button.btn.btn-primary(type='submit') Submit
+                button.btn.btn-primary(type='submit') Enviar
 
-section.blockcontent3#blockcontent3
-    .container
-        .row.blockcontent3-title
-            .col
-                h1 Accepted Insurance
-.container-fluid#carousel
-    .photobanner
-        img(src='https://i.stack.imgur.com/xckZy.jpg' alt='')
-        img(src='https://i.stack.imgur.com/CVgbr.jpg' alt='')
-        img(src='https://i.stack.imgur.com/7c4yC.jpg' alt='')
-        img(src='https://i.stack.imgur.com/RTiml.jpg' alt='')
-        img(src='https://i.stack.imgur.com/xckZy.jpg' alt='')
-        img(src='https://i.stack.imgur.com/CVgbr.jpg' alt='')
-        img(src='https://i.stack.imgur.com/7c4yC.jpg' alt='')
-        img(src='https://i.stack.imgur.com/RTiml.jpg' alt='')
+//- section.blockcontent3#blockcontent3
+//-     .container
+//-         .row.blockcontent3-title
+//-             .col
+//-                 h1 Accepted Insurance
+//- .container-fluid#carousel
+//-     .photobanner
+//-         img(src='https://i.stack.imgur.com/xckZy.jpg' alt='')
+//-         img(src='https://i.stack.imgur.com/CVgbr.jpg' alt='')
+//-         img(src='https://i.stack.imgur.com/7c4yC.jpg' alt='')
+//-         img(src='https://i.stack.imgur.com/RTiml.jpg' alt='')
+//-         img(src='https://i.stack.imgur.com/xckZy.jpg' alt='')
+//-         img(src='https://i.stack.imgur.com/CVgbr.jpg' alt='')
+//-         img(src='https://i.stack.imgur.com/7c4yC.jpg' alt='')
+//-         img(src='https://i.stack.imgur.com/RTiml.jpg' alt='')
 
 section.blockcontent4#blockcontent4
     .container-fluid.bg-primary.pt-3.blockcontent4-container
         .row.d-flex.justify-content-center.text-center
             .col-lg-4.col-12.blockcontent4-left
-                img(src="./assets/png/image.png", alt="imagealt")
-                h1  Meet Our Doctors
-                button.btn.btn-light(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2") See more
+                img(src="./assets/jpg/about-img.jpeg", alt="imagealt")
+                h1  Conoce nuestro trabajo
+                button.btn.btn-light(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2") Ver más
             .col-lg-4.col-12.blockcontent4-right
-                img(src="./assets/png/image.png", alt="imagealt")
-                h1  Meet Our Doctors
-                button.btn.btn-light(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2") See more
+                img(src="./assets/jpg/about2-img.jpeg", alt="imagealt")
+                h1  Conoce nuestro equipo
+                button.btn.btn-light(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2") Ver más

@@ -2,18 +2,18 @@ include _globals.pug
 
 footer#footer.footer
     .container-fluid.footer-container
-        .row.gap-5
+        .row.gap-5.ms-5
             .col.footer-img
                 img(src="./assets/png/logo.png", alt="imagealt")
-                p We are a family centered practice that incorporates compassion and dedication to promote your well being.
-            .col.footer-patient-care
-                span Patient care
+                p Creotec, startup dedicada al DISEÑO y FABRICACIÓN de prótesis estéticas y funcionales PERSONALIZADAS a través de impresión 3D de extremidades superiores a un costo accesible
+            .col-2.footer-patient-care
+                span Enlaces útiles
                 ul
                     each val,index in objCare
                         li
                             a(href=index)=val
-            .col.footer-contact
-                span Contact
+            .col-4.footer-contact
+                span Contacto
                 ul
                     each val,index in contactIcons
                         +contactItem(val,contactTexts[index],contactUrls[index])

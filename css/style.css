@@ -7,7 +7,7 @@ body {
 }
 
 .navbar-brand img {
-  width: 72px;
+  width: 150px;
 }
 .navbar-nav a {
   font-family: "Roboto", sans-serif;
@@ -117,7 +117,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end !important;
-  background-image: url("/assets/jpg/img-1.jpg");
+  background-image: url("/assets/jpg/home1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -157,7 +157,8 @@ footer ul li {
   align-items: flex-start !important;
 }
 .footer-img img {
-  width: 128px;
+  width: 200px;
+  margin-bottom: 30px;
 }
 .footer-img p {
   font-family: "Roboto", sans-serif;
@@ -308,7 +309,8 @@ footer ul li {
 }
 
 .services {
-  height: 100vh;
+  height: auto;
+  padding: 50px 0px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,6 +327,7 @@ footer ul li {
   margin-right: 16px;
   width: 296px;
   border-radius: 16px !important;
+  text-align: center;
 }
 .services-card .card h5 {
   font-family: "Roboto", sans-serif;
@@ -332,13 +335,15 @@ footer ul li {
   font-weight: 700;
   line-height: 150%;
   color: #434657;
+  text-align: center;
 }
-.services-card .card p {
+.services-card .card ul {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 200;
   line-height: 150%;
   color: #82869E;
+  text-align: left;
 }
 .services-card-active {
   background-color: #1A60FF;
@@ -349,17 +354,20 @@ footer ul li {
   font-weight: 700;
   line-height: 150%;
   color: #FFFFFF !important;
+  text-align: center;
 }
-.services-card-active p {
+.services-card-active ul {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 200;
   line-height: 150%;
   color: #FFFFFF !important;
+  text-align: left;
 }
 
 .patients {
-  height: 100vh;
+  height: auto;
+  padding: 100px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -476,7 +484,8 @@ footer ul li {
 }
 
 .contact {
-  height: 100vh;
+  height: auto;
+  padding: 100px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1136,10 +1145,11 @@ body {
 .welcome .col:nth-child(1) {
   width: 606px;
   height: 909px;
-  background-image: url("../../assets/jpg/img-1.jpg");
+  background-image: url("../../assets/jpg/home3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
 }
 .welcome .col:nth-child(1) .quote {
   position: absolute;
@@ -1149,7 +1159,7 @@ body {
   top: 1200px;
   background-color: #EEF8FF;
   border-radius: 16px;
-  padding: 40px 32px;
+  padding: 5px 32px;
 }
 .welcome .col:nth-child(1) .quote i {
   font-size: 80px;
@@ -1199,7 +1209,7 @@ body {
 .image {
   margin-top: 74px;
   height: 748px;
-  background-image: url("../../assets/jpg/img-1.jpg");
+  background-image: url("../../assets/jpg/about2-img.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1312,6 +1322,11 @@ body {
   box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
 }
+.services-page .card img {
+  border-radius: 16px;
+  height: 260px;
+  object-fit: cover;
+}
 
 .record {
   padding: 80px 100px;
@@ -1319,11 +1334,13 @@ body {
   height: 369px !important;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .record .col {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .record .col h1 {
   font-family: "Roboto", sans-serif;
@@ -1388,10 +1405,10 @@ body {
 }
 .login div .col:nth-child(1) {
   margin-right: 138px;
-  background-image: url(../../assets/jpg/img-3.jpg);
+  background-image: url(../../assets/jpg/servicios.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   width: 727.02px;
   height: 849px;
 }
@@ -1472,6 +1489,9 @@ body {
   box-shadow: -10px 15px 10px rgba(100, 100, 100, 0.231373);
   border-radius: 10px;
   padding: 14px 30px;
+}
+.login div .col:nth-child(2) div a img {
+  width: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,27 +21,36 @@
   <body>
     <section class="modals">
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Nuevo Pedido</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Crea tu pedido</h5>
               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form>
-                <div class="mb-3">
-                  <label class="col-form-label" for="recipient-name">Nombre:</label>
-                  <input class="form-control" id="recipient-name" type="text">
-                </div>
-                <div class="mb-3">
-                  <label class="col-form-label" for="message-text">Producto:</label>
-                  <textarea class="form-control" id="message-text"></textarea>
+                <div class="col-6 form offset-3">
+                  <div class="mb-3">
+                    <label class="form-label" for="exampleInputEmail1">Nombre completo</label>
+                    <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Ingrese aquí">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="exampleInputEmail1">Número de teléfono</label>
+                    <input class="form-control" id="exampleInputNumber" type="tel" aria-describedby="numberHelp" placeholder="Ingrese aquí">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="exampleInputEmail1">Email</label>
+                    <input class="form-control" id="exampleInputEmail" type="email" aria-describedby="emailHelp" placeholder="Ingrese aquí">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="exampleInputEmail1">Fecha</label>
+                    <input class="form-control" id="exampleInputDate" type="date" aria-describedby="dateHelp" placeholder="Seleccionar fecha">
+                  </div>
                 </div>
               </form>
             </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancelar</button>
-              <button class="btn btn-primary" type="button">Confirmar</button>
+            <div class="modal-footer justify-content-center">
+              <button class="btn btn-primary" type="submit">Enviar</button>
             </div>
           </div>
         </div>
@@ -116,7 +125,7 @@
           <div class="container"><a class="navbar-brand" href="#"><img src="./assets/png/logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ms-auto"> <a class="nav-link" href="./index.html">Home</a><a class="nav-link" href="./us.html">Nosotros</a><a class="nav-link" href="./services.html">Servicios</a><a class="nav-link" href="./about.html">Proyectos</a><a class="nav-link active" href="./faq.html">FAQ</a>
+              <div class="navbar-nav ms-auto"> <a class="nav-link" href="./index.html">Inicio</a><a class="nav-link" href="./us.html">Nosotros</a><a class="nav-link" href="./services.html">Servicios</a><a class="nav-link" href="./about.html">Proyectos</a><a class="nav-link active" href="./faq.html">FAQ</a>
                 <button class="btn navbar-btn btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Crear Pedido</button>
                 <button class="btn navbar-btn" onclick="location.href='./login.html';" type="button">Iniciar Sesión</button>
               </div>
@@ -197,29 +206,29 @@
     </div>
     <footer class="footer" id="footer">
       <div class="container-fluid footer-container">
-        <div class="row gap-5">
+        <div class="row gap-5 ms-5">
           <div class="col footer-img"><img src="./assets/png/logo.png" alt="imagealt">
-            <p>We are a family centered practice that incorporates compassion and dedication to promote your well being.</p>
+            <p>Creotec, startup dedicada al DISEÑO y FABRICACIÓN de prótesis estéticas y funcionales PERSONALIZADAS a través de impresión 3D de extremidades superiores a un costo accesible</p>
           </div>
-          <div class="col footer-patient-care"><span>Patient care</span>
+          <div class="col-2 footer-patient-care"><span>Enlaces útiles</span>
             <ul>
-              <li><a href="#0">Providers</a></li>
-              <li><a href="#1">Services</a></li>
-              <li><a href="#2">Request an Appointment</a></li>
-              <li><a href="#3">Reviews</a></li>
-              <li><a href="#4">Billing &amp; Insurance</a></li>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./us.html">Nosotros</a></li>
+              <li><a href="./services.html">Servicios</a></li>
+              <li><a href="./about.html">Proyectos</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
             </ul>
           </div>
-          <div class="col footer-contact"><span>Contact</span>
+          <div class="col-4 footer-contact"><span>Contacto</span>
             <ul>
                   <li><a class="d-flex" href="https://goo.gl/maps/2sLSML13gqrDjnicA"><i class="bi bi-cursor me-2"></i>
-                      <p>Boston, USA 55 Huntington Ave Str</p></a></li>
+                      <p>Av. Busch esquina Pasoskanki #1599 La Paz</p></a></li>
                   <li><a class="d-flex" href="https://api.whatsapp.com/send?phone=59177540218&amp;text=Hola%2C%20deseo%20solicitar%20informaci%C3%B3n%20sobre%20las%20pr%C3%B3tesis"><i class="bi bi-telephone me-2"></i>
                       <p>+591 77540218</p></a></li>
                   <li><a class="d-flex" href="mailto:antonio.riveros.pilco@gmail.com"><i class="bi bi-envelope me-2"></i>
-                      <p>support@medilab.com</p></a></li>
+                      <p>creotec@grupotec.io</p></a></li>
                   <li><a class="d-flex" href="#4" style="cursor: default;"><i class="bi bi-clock me-2"></i>
-                      <p>Mo-Fr: 07:00-23:00h</p></a></li>
+                      <p>Lu-Mi: 09:00-23:00h</p></a></li>
             </ul>
           </div>
           <div class="col footer-social"><span>Follow Us</span>

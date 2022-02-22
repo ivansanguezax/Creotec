@@ -7,10 +7,11 @@
     .col:nth-child(1){
         width: 606px;
         height:909px;
-        background-image: url('../../assets/jpg/img-1.jpg');
+        background-image: url('../../assets/jpg/home3.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        border-radius:10px;
         .quote{
             position: absolute; 
             width: 506px; 
@@ -19,7 +20,7 @@
             top: 1200px; 
             background-color:$color-secondary-100;
             border-radius: 16px;
-            padding:40px 32px;
+            padding:5px 32px;
             i{
                 font-size:80px;
             }
@@ -46,7 +47,7 @@
 .image{
     margin-top:74px;
     height: 748px;
-    background-image: url('../../assets/jpg/img-1.jpg');
+    background-image: url('../../assets/jpg/about2-img.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
