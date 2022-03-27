@@ -7,18 +7,29 @@
     .col:nth-child(1){
         width: 606px;
         height:909px;
-        background-image: url('../../assets/jpg/img-1.jpg');
+        background-image: url('../../assets/jpg/home3.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        border-radius:10px;
         .quote{
-            background-color: red;
             position: absolute; 
             width: 506px; 
             height: 256px; 
-            left: 664px; 
-            top: 900px; 
-            
+            left: 440px; 
+            top: 1200px; 
+            background-color:$color-secondary-100;
+            border-radius: 16px;
+            padding:5px 32px;
+            i{
+                font-size:80px;
+            }
+            span{
+                @include font(16px,300, $color-text-secondary)
+            }
+            h6{
+                @include font(24px,700, $color-primary-500);
+            }
         }
     }
     .col:nth-child(2){
@@ -35,9 +46,8 @@
 }
 .image{
     margin-top:74px;
-    width: 1920px;
     height: 748px;
-    background-image: url('../../assets/jpg/img-1.jpg');
+    background-image: url('../../assets/jpg/about2-img.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

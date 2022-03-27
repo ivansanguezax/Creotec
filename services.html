@@ -22,27 +22,36 @@
   <body>
     <section class="modals">
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Nuevo Pedido</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Crea tu pedido</h5>
               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form>
-                <div class="mb-3">
-                  <label class="col-form-label" for="recipient-name">Nombre:</label>
-                  <input class="form-control" id="recipient-name" type="text">
-                </div>
-                <div class="mb-3">
-                  <label class="col-form-label" for="message-text">Producto:</label>
-                  <textarea class="form-control" id="message-text"></textarea>
+                <div class="col-6 form offset-3">
+                  <div class="mb-3">
+                    <label class="form-label" for="exampleInputEmail1">Nombre completo</label>
+                    <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Ingrese aquí">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="exampleInputEmail1">Número de teléfono</label>
+                    <input class="form-control" id="exampleInputNumber" type="tel" aria-describedby="numberHelp" placeholder="Ingrese aquí">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="exampleInputEmail1">Email</label>
+                    <input class="form-control" id="exampleInputEmail" type="email" aria-describedby="emailHelp" placeholder="Ingrese aquí">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="exampleInputEmail1">Fecha</label>
+                    <input class="form-control" id="exampleInputDate" type="date" aria-describedby="dateHelp" placeholder="Seleccionar fecha">
+                  </div>
                 </div>
               </form>
             </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancelar</button>
-              <button class="btn btn-primary" type="button">Confirmar</button>
+            <div class="modal-footer justify-content-center">
+              <button class="btn btn-primary" type="submit">Enviar</button>
             </div>
           </div>
         </div>
@@ -117,7 +126,7 @@
           <div class="container"><a class="navbar-brand" href="#"><img src="./assets/png/logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ms-auto"> <a class="nav-link" href="./index.html">Home</a><a class="nav-link" href="./us.html">Nosotros</a><a class="nav-link active" href="./services.html">Servicios</a><a class="nav-link" href="./about.html">Proyectos</a><a class="nav-link" href="./faq.html">FAQ</a>
+              <div class="navbar-nav ms-auto"> <a class="nav-link" href="./index.html">Inicio</a><a class="nav-link" href="./us.html">Nosotros</a><a class="nav-link active" href="./services.html">Servicios</a><a class="nav-link" href="./about.html">Proyectos</a><a class="nav-link" href="./faq.html">FAQ</a>
                 <button class="btn navbar-btn btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Crear Pedido</button>
                 <button class="btn navbar-btn" onclick="location.href='./login.html';" type="button">Iniciar Sesión</button>
               </div>
@@ -133,7 +142,7 @@
             <div class="container">
               <div class="row">
                 <div class="col">
-                  <h1 class="cases-title">Annual Wellness Exam</h1><span class="text-white">Keeping Close Attention To Your Health Is Always of Great Important</span>
+                  <h1 class="cases-title">Servicios</h1><span class="text-white">Innovando en prótesis 3D a medida </span>
                 </div>
               </div>
             </div>
@@ -148,16 +157,13 @@
             <div class="container">
               <div class="row">
                 <div class="col">
-                  <h1>Your Annual <br > Wellness Exam</h1>
-                  <p>
-                     At this appointment, you can generally expect your doctor to take your vital signs, including your blood pressure and heart rate, and check your eyes, ears, nose, and mouth. 
-                    Finally, your doctor can determine whether you’re due for any immunizations, and also recommend routine screening tests that are appropriate for you.
-                  </p>
+                  <h1>Pasos para <br > Obtener tu prótesis</h1>
+                  <p>Creotec puede donar prótesis a personas de bajos recursos</p>
                 </div>
               </div>
               <div class="row">
                 <div class="col text-center">
-                  <button class="btn rounded-pill btn-primary" type="button"> <i class="bi bi-calendar-check"></i> Submit</button>
+                  <button class="btn rounded-pill btn-primary" type="button"> <i class="bi bi-calendar-check"></i> Crear pedido</button>
                 </div>
               </div>
             </div>
@@ -167,19 +173,19 @@
               <div class="row mb-4">
                 <div class="col">
                   <div class="card">
-                    <div class="btn-text-start"><img class="card-img-top" src="./assets/png/image.png" alt="image"></div>
+                    <div class="btn-text-start"><img class="card-img-top" src="./assets/jpg/paso1.jpeg" alt="image"></div>
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Paso 1</h5>
+                      <p class="card-text">Solicitas tu prótesis y te confirmamos el inicio de su fabricación</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card">
-                    <div class="btn-text-start"><img class="card-img-top" src="./assets/png/image.png" alt="image"></div>
+                    <div class="btn-text-start"><img class="card-img-top" src="./assets/jpg/paso2.jpeg" alt="image"></div>
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Paso 2</h5>
+                      <p class="card-text">El equipo de Creotec diseña la prótesis a tu medida.</p>
                     </div>
                   </div>
                 </div>
@@ -187,19 +193,19 @@
               <div class="row">
                 <div class="col">
                   <div class="card">
-                    <div class="btn-text-start"><img class="card-img-top" src="./assets/png/image.png" alt="image"></div>
+                    <div class="btn-text-start"><img class="card-img-top" src="./assets/jpg/paso3.jpeg" alt="image"></div>
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Paso 3</h5>
+                      <p class="card-text">Pago inicial y te mandamos pruebas de tu prótesis las veces necesarias hasta que quede perfecta.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card">
-                    <div class="btn-text-start"><img class="card-img-top" src="./assets/png/image.png" alt="image"></div>
+                    <div class="btn-text-start"><img class="card-img-top" src="./assets/jpg/paso4.jpeg" alt="image"></div>
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Paso 4</h5>
+                      <p class="card-text">Pago final y entrega de tu prótesis terminada y la garantía.</p>
                     </div>
                   </div>
                 </div>
@@ -209,98 +215,33 @@
         </div>
       </div>
     </div>
-    <section class="service-carousel" id="service-carousel">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1>Our Personalized Prevention plan Is Designed To Keep You Safe</h1>
-            <div class="container-carousel">
-              <div class="wgh-slider">
-                <input class="wgh-slider-target" id="slide-1" type="radio" name="slider">
-                <input class="wgh-slider-target" id="slide-2" type="radio" name="slider">
-                <input class="wgh-slider-target" id="slide-3" type="radio" name="slider" checked="checked">
-                <input class="wgh-slider-target" id="slide-4" type="radio" name="slider">
-                <input class="wgh-slider-target" id="slide-5" type="radio" name="slider">
-                <div class="wgh-slider__viewport">
-                  <div class="wgh-slider__viewbox">
-                    <div class="wgh-slider__container">
-                      <div class="wgh-slider-item">
-                        <div class="wgh-slider-item__inner">
-                          <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="img/image-1.jpg" alt="The 5th Exotic">
-                            <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a3905613628_16.jpg">The 5th Exotic</a><span>Quantic</span></figcaption>
-                          </figure>
-                          <label class="wgh-slider-item__trigger" for="slide-1" title="Show product 1"></label>
-                        </div>
-                      </div>
-                      <div class="wgh-slider-item">
-                        <div class="wgh-slider-item__inner">
-                          <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="img/image-2.jpg" alt="The 5th Exotic">
-                            <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a3905613628_16.jpg">The 5th Exotic</a><span>Quantic</span></figcaption>
-                          </figure>
-                          <label class="wgh-slider-item__trigger" for="slide-2" title="Show product 2"></label>
-                        </div>
-                      </div>
-                      <div class="wgh-slider-item">
-                        <div class="wgh-slider-item__inner">
-                          <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="img/image-3.png" alt="The 5th Exotic">
-                            <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a3905613628_16.jpg">The 5th Exotic</a><span>Quantic</span></figcaption>
-                          </figure>
-                          <label class="wgh-slider-item__trigger" for="slide-3" title="Show product 3"></label>
-                        </div>
-                      </div>
-                      <div class="wgh-slider-item">
-                        <div class="wgh-slider-item__inner">
-                          <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="img/image-4.jpg" alt="The 5th Exotic">
-                            <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a3905613628_16.jpg">The 5th Exotic</a><span>Quantic</span></figcaption>
-                          </figure>
-                          <label class="wgh-slider-item__trigger" for="slide-4" title="Show product 4"></label>
-                        </div>
-                      </div>
-                      <div class="wgh-slider-item">
-                        <div class="wgh-slider-item__inner">
-                          <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="img/image-5.jpg" alt="RYSY - Traveler LP">
-                            <figcaption class="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">RYSY - Traveler LP</a><span>RYSY</span></figcaption>
-                          </figure>
-                          <label class="wgh-slider-item__trigger" for="slide-5" title="Show product 5"></label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="record" id="record">
       <div class="row">
         <div class="col text-center">
-          <h1>15M</h1><span>diseases and disorders prevented yearly in US due to annual wellness exams</span><a href="#1">National Survey on Health Disorders </a>
+          <h1>200</h1><span>Amputaciones en Bolivia</span><a href="#1">
+             Ver más <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col text-center">
-          <h1>45</h1><span>minutes per year is the average time you need for your annual wellness checks</span><a href="#2">The National Institute for Safety and Health</a>
+          <h1>200</h1><span>Amputaciones en Bolivia</span><a href="#2">
+             Ver más <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col text-center">
-          <h1>1 in 5</h1><span>among adults in the U.S. puts themselves to danger by skipping the annual exam</span><a href="#3">Nation Survey on Healthcare</a>
+          <h1>200</h1><span>Amputaciones en Bolivia</span><a href="#3">
+             Ver más <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
     </section>
     <section class="checklist" id="checklist">
       <div class="container">
         <div class="row">
-          <div class="col"><img src="./assets/png/image.png" alt="image"></div>
+          <div class="col"><img src="./assets/jpg/home3.jpg" alt="image"></div>
           <div class="col">
             <h2>Annual Wellness Exam Checklist</h2>
             <ul>
-              <li><i class="bi bi-check-circle-fill"></i><span>Weight</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span>Height</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span>Blood Pressure</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span>Pulse</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span>Screening Lab Tests</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span>X-Rays</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span>Immunizations</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span>Medical History Review</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> Conoce como Creotec hace tu prótesis personalizada</li>
+              <li><i class="bi bi-check-circle-fill"></i> Creotec puede donar prótesis a personas de bajos recursos</li>
+              <li><i class="bi bi-check-circle-fill"></i> Hacemos proyectos de RSE para impactar a tu comunidad</li>
+              <li><i class="bi bi-check-circle-fill"></i> Las prótesis de Creotec son accesibles para tu economía y de alta calidad</li>
             </ul>
           </div>
         </div>
@@ -310,65 +251,61 @@
       <div class="container contact-container">
         <div class="row contact-title">
           <div class="col text-center">
-            <h1>
-               Request Appointment <br />
-              for Annual Wellness Exam
-            </h1>
+            <h1>Te contactamos con e-mail</h1>
           </div>
         </div>
         <div class="row contact-form">
           <div class="col-6 form offset-3">
             <div class="mb-3">
-              <label class="form-label" for="exampleInputEmail1">Your Full Name</label>
-              <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Input here">
+              <label class="form-label" for="exampleInputEmail1">Nombre completo</label>
+              <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Ingrese aquí">
             </div>
             <div class="mb-3">
-              <label class="form-label" for="exampleInputEmail1">Phone Number</label>
-              <input class="form-control" id="exampleInputNumber" type="tel" aria-describedby="numberHelp" placeholder="Input here">
+              <label class="form-label" for="exampleInputEmail1">Número de teléfono</label>
+              <input class="form-control" id="exampleInputNumber" type="tel" aria-describedby="numberHelp" placeholder="Ingrese aquí">
             </div>
             <div class="mb-3">
               <label class="form-label" for="exampleInputEmail1">Email</label>
-              <input class="form-control" id="exampleInputEmail" type="email" aria-describedby="emailHelp" placeholder="Vui lòng nhập">
+              <input class="form-control" id="exampleInputEmail" type="email" aria-describedby="emailHelp" placeholder="Ingrese aquí">
             </div>
             <div class="mb-3">
-              <label class="form-label" for="exampleInputEmail1">Schedule date</label>
-              <input class="form-control" id="exampleInputDate" type="date" aria-describedby="dateHelp" placeholder="Select date and time">
+              <label class="form-label" for="exampleInputEmail1">Fecha</label>
+              <input class="form-control" id="exampleInputDate" type="date" aria-describedby="dateHelp" placeholder="Seleccionar fecha">
             </div>
           </div>
         </div>
         <div class="row contact-submit">
           <div class="col d-flex justify-content-center">
-            <!--Get data to submit-->
-            <button class="btn btn-primary" type="submit">Submit</button>
+            <button class="btn btn-primary" type="submit">Enviar</button>
           </div>
         </div>
       </div>
     </section>
     <footer class="footer" id="footer">
       <div class="container-fluid footer-container">
-        <div class="row gap-5">
+        <div class="row gap-5 ms-5">
           <div class="col footer-img"><img src="./assets/png/logo.png" alt="imagealt">
-            <p>We are a family centered practice that incorporates compassion and dedication to promote your well being.</p>
+            <p>Creotec, startup dedicada al DISEÑO y FABRICACIÓN de prótesis estéticas y funcionales PERSONALIZADAS a través de impresión 3D de extremidades superiores a un costo accesible</p>
           </div>
-          <div class="col footer-patient-care"><span>Patient care</span>
+          <div class="col-2 footer-patient-care"><span>Enlaces útiles</span>
             <ul>
-              <li><a href="#0">Providers</a></li>
-              <li><a href="#1">Services</a></li>
-              <li><a href="#2">Request an Appointment</a></li>
-              <li><a href="#3">Reviews</a></li>
-              <li><a href="#4">Billing &amp; Insurance</a></li>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./us.html">Nosotros</a></li>
+              <li><a href="./services.html">Servicios</a></li>
+              <li><a href="./about.html">Proyectos</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
             </ul>
           </div>
-          <div class="col footer-contact"><span>Contact</span>
+          <div class="col-4 footer-contact"><span>Contacto</span>
             <ul>
                   <li><a class="d-flex" href="https://goo.gl/maps/2sLSML13gqrDjnicA"><i class="bi bi-cursor me-2"></i>
-                      <p>Boston, USA 55 Huntington Ave Str</p></a></li>
+                      <p>Av. Busch esquina Pasoskanki #1599 La Paz</p></a></li>
                   <li><a class="d-flex" href="https://api.whatsapp.com/send?phone=59177540218&amp;text=Hola%2C%20deseo%20solicitar%20informaci%C3%B3n%20sobre%20las%20pr%C3%B3tesis"><i class="bi bi-telephone me-2"></i>
                       <p>+591 77540218</p></a></li>
                   <li><a class="d-flex" href="mailto:antonio.riveros.pilco@gmail.com"><i class="bi bi-envelope me-2"></i>
-                      <p>support@medilab.com</p></a></li>
+                      <p>creotec@grupotec.io</p></a></li>
                   <li><a class="d-flex" href="#4" style="cursor: default;"><i class="bi bi-clock me-2"></i>
-                      <p>Mo-Fr: 07:00-23:00h</p></a></li>
+                      <p>Lu-Mi: 09:00-23:00h</p></a></li>
             </ul>
           </div>
           <div class="col footer-social"><span>Follow Us</span>

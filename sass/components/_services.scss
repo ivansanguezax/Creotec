@@ -1,5 +1,6 @@
-
 .services-page{
+    background-color:$color-background;
+    padding: 72px 32px;
     h1{@include font(36px,700, $color-text-primary);}
     p{
         margin-top:18px;
@@ -16,17 +17,25 @@
         border: none !important;
         box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
         border-radius: 16px;
+        img{
+            border-radius: 16px;
+            height:260px;
+            object-fit: cover;
+        }
     }
 }
 .record{
+    padding: 80px  100px ;
     background-color:$color-secondary-100;
     height: 369px !important;
     display: flex;
     align-items: center;
+    justify-content:center;
     .col{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     h1{@include font(72px,700, $color-primary-500);}
     span{@include font(24px,400, $color-text-primary);}
     a{
@@ -36,6 +45,7 @@
     
 }
 .checklist{
+    padding: 74px 0px;
     img{
         width: 606px;
         height: 398px;

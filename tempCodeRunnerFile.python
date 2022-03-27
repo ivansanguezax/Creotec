@@ -1,7 +1,0 @@
-import datetime
-
-print(datetime.datetime(2022,7,23)-datetime.datetime.now())
-print(str(int(str(datetime.datetime(2022,7,23)-datetime.datetime.now()).split(' ')[0])/30) 
-        + " months, "
-        + str(int(str(datetime.datetime(2022,7,23)-datetime.datetime.now()).split(' ')[0]) % 30)
-        + " days.")

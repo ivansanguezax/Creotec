@@ -17,7 +17,8 @@ footer ul li{
         justify-content: flex-end!important;
         align-items: flex-start !important; 
         img{
-            width:128px;
+            width:200px;
+            margin-bottom: 30px;
         }
         p{
             @include font(12px,400,$color-text-primary);

@@ -1,13 +1,13 @@
 //- Variables
 //- Header
-- var headerItems = {"./index.html": "Home", "./us.html": "Nosotros", "./services.html": "Servicios", "./about.html": "Proyectos", "./faq.html": "FAQ"}
+- var headerItems = {"./index.html": "Inicio", "./us.html": "Nosotros", "./services.html": "Servicios", "./about.html": "Proyectos", "./faq.html": "FAQ"}
 
 //- Sections
 //- Main
 //- Cards
-- var cardImages = ["./assets/png/image.png","./assets/jpg/img-1.jpg","./assets/jpg/img-2.jpg","./assets/jpg/img-3.jpg"]
-- var cardTitles = ["Card title", "Card title", "Card title", "Card title"]
-- var cardTexts = ["This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."]
+- var cardImages = ["./assets/jpg/servicios.jpeg","./assets/jpg/servicios.jpeg","./assets/jpg/servicios.jpeg","./assets/jpg/servicios.jpeg"]
+- var cardTitles = ["Prótesis de Dedo", "Prótesis de Mano", "Prótesis de Antebrazo", "Prótesis de Brazo"]
+- var cardTexts = [["Diseño Personalizado","Apariencia Hiperrealista","Color de tu piel"],["Diseño Personalizado","Apariencia Hiperrealista","Color de tu piel"],["Diseño Personalizado","Apariencia Hiperrealista","Color de tu piel"],["Diseño Personalizado","Apariencia Hiperrealista","Color de tu piel"]]
 - var cardModals = ["#exampleModal", "#exampleModal", "#exampleModal", "#exampleModal"]
 
 //- Healthy Tips
@@ -20,11 +20,11 @@
 
 //- Footer
 //- Patient Care
-- var objCare = {"#0":"Providers","#1":"Services","#2":"Request an Appointment","#3":"Reviews","#4":"Billing & Insurance"}
+- var objCare = headerItems
 
 //- Contact
 - var contactIcons = ["bi-cursor","bi-telephone","bi-envelope","bi-clock"]
-- var contactTexts = ["Boston, USA 55 Huntington Ave Str","+591 77540218","support@medilab.com","Mo-Fr: 07:00-23:00h"]
+- var contactTexts = ["Av. Busch esquina Pasoskanki #1599 La Paz","+591 77540218","creotec@grupotec.io","Lu-Mi: 09:00-23:00h"]
 - var contactUrls = ["https://goo.gl/maps/2sLSML13gqrDjnicA","https://api.whatsapp.com/send?phone=59177540218&text=Hola%2C%20deseo%20solicitar%20informaci%C3%B3n%20sobre%20las%20pr%C3%B3tesis","mailto:antonio.riveros.pilco@gmail.com","#4"]
 
 //- Cases items
@@ -48,7 +48,10 @@ mixin cardWithModal(cardImage, cardTitle, cardText, cardModal,index)
                 img.card-img-top(src=cardImage alt=cardTitle)
             .card-body
                 h5.card-title= cardTitle
-                p.card-text= cardText
+                ul
+                    each val in cardText
+                        li=val
+
 
 mixin card(cardImage, cardTitle, cardText)
     .col-lg-4.col-12
