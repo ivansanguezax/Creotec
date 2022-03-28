@@ -6,13 +6,13 @@ section.modals
                     h5#exampleModalLabel.modal-title Nuevo Pedido
                     button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                 .modal-body
-                    form
+                    form.order
                         .mb-3
                             label.col-form-label(for='recipient-name') Nombre:
-                            input#recipient-name.form-control(type='text')
+                            input.form-control(type='text' name="name")
                         .mb-3
                             label.col-form-label(for='message-text') Producto:
-                            textarea#message-text.form-control
+                            textarea#message-text.form-control(name="product")
                 .modal-footer
                     button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Cancelar
                     button.btn.btn-primary(type='button') Confirmar
@@ -23,13 +23,13 @@ section.modals
                     h5#Modal1Label.modal-title Agendar cita
                     button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                 .modal-body
-                    form
+                    form.date
                         .mb-3
                             label.col-form-label(for='recipient-name') Nombre:
-                            input#recipient-name.form-control(type='text')
+                            input.form-control(type='text' name="name")
                         .mb-3
                             label.form-label(for='exampleInputEmail1') Fecha
-                            input#exampleInputDate.form-control(type='date' aria-describedby='dateHelp' placeholder='Select date and time')
+                            input#exampleInputDate.form-control(type='date' aria-describedby='dateHelp' placeholder='Select date and time' name="date")
                 .modal-footer
                     button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Cancelar
                     button.btn.btn-primary(type='button') Confirmar
