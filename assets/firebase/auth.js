@@ -5,7 +5,9 @@ import {
     getAuth,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword, signOut,
-    onAuthStateChanged
+    onAuthStateChanged,
+    GoogleAuthProvider,
+    signInWithPopup
 } from 'firebase/auth'
 //#endregion imports
 
@@ -44,7 +46,8 @@ const auth = getAuth();
 //     });
 // });
 
-//log in
+//! log in
+//* email
 const loginForm = document.querySelector('.form-signin');
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -59,6 +62,25 @@ loginForm.addEventListener('submit', (e) => {
     });
 });
 
+//* google
+const googleAuthButton = document.querySelector("#google-signin-button");
+googleAuthButton.addEventListener("click", (e) => {
+    const provider = new GoogleAuthProvider()
+    provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+        console.log(user);
+      }).catch((error) => {
+        console.error(error.message);
+        // ...
+      });
+});
+
 //log out
 // const logoutButton = document.querySelector('.logout');
 // logoutButton.addEventListener('click', () => {
@@ -70,8 +92,8 @@ loginForm.addEventListener('submit', (e) => {
 // });
 
 // subscribing to auth changes
-// const unsubAuth = onAuthStateChanged(auth, (user) => {
-//     console.log('user status changed: ', user)
-// });
+const unsubAuth = onAuthStateChanged(auth, (user) => {
+    console.log('user status changed: ', user)
+});
 
 //#endregion UserAuth
