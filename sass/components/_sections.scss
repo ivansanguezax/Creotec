@@ -26,7 +26,8 @@
 }
 
 .services{
-    height: 100vh;
+    height: auto;
+    padding:50px 0px 100px;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -38,26 +39,32 @@
         margin-right: 16px;
         width: 296px;
         border-radius: 16px !important;
+        text-align:center;
         h5{
             @include font(20px,700,$color-text-primary);
+            text-align: center;
         }
-        p{
+        ul{
             @include font(14px, 200,$color-text-secondary);
+            text-align:left ;
         }
     }
     &-card-active{
         background-color: $color-primary-500;
         h5{
             @include font(20px,700, $color-white !important);
+            text-align: center;
         }
-        p{
+        ul{
             @include font(14px, 200, $color-white !important);
+            text-align:left ;
         }
     }
 }
 
 .patients{
-    height: 100vh;
+    height: auto;
+    padding: 100px 0px;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -150,7 +157,8 @@
 }
 
 .contact{
-    height: 100vh;
+    height: auto;
+    padding:100px 0px;
     display:flex;
     justify-content:center;
     align-items: center;

@@ -5,10 +5,12 @@
     align-items:center;
     div .col:nth-child(1){
         margin-right: 138px;
-        img{
-            width: 727px;
+            background-image:url(../../assets/jpg/servicios.jpeg);
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 727.02px;
             height: 849px;
-        }
     }
     div .col:nth-child(2){
         display: flex;
@@ -61,6 +63,9 @@
                 box-shadow: -10px 15px 10px rgba(100, 100, 100, 0.231373);
                 border-radius: 10px;
                 padding:14px 30px;
+                img{
+                    width: 40px;
+                }
             }
         }
 

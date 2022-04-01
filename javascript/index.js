@@ -1,10 +1,10 @@
 import AnimationCicle from "./modules/AnimationCicle.js";
 
 const images = [
-    "./assets/jpg/img-2.jpg",
-    "./assets/jpg/img-1.jpg",
-    "./assets/jpg/img-2.jpg",
-    "./assets/jpg/img-3.jpg"
+    "./assets/jpg/home2.jpg",
+    "./assets/jpg/home1.jpeg",
+    "./assets/jpg/home3.jpg",
+    "./assets/jpg/home2.jpg"
 ];
 
 // Creating functions
@@ -30,6 +30,6 @@ window.animateCarrousel = new AnimationCicle(5, (counter) => {
 // Calling function
 window.animateImagesandCards.movediv();
 window.animateCarrousel.movediv();
-window.animatePictures.movediv();
+// window.animatePictures.movediv();
 
 

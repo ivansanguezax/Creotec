@@ -2,7 +2,7 @@
 
 .navbar{
     &-brand img{
-        width:72px;
+        width:150px;
     }
     &-nav a{
         @include font(18px,500,$color-text-primary);

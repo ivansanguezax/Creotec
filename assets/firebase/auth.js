@@ -49,37 +49,43 @@ const auth = getAuth();
 //! log in
 //* email
 const loginForm = document.querySelector('.form-signin');
-loginForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    signInWithEmailAndPassword(auth, loginForm.email.value, loginForm.password.value)
-        .then((credential) =>{
-            console.log("User logged in: ", credential.user);
-            loginForm.reset();
-        })
-        .catch((error) => {
-            console.error(error.message);
+try {
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+    
+        signInWithEmailAndPassword(auth, loginForm.email.value, loginForm.password.value)
+            .then((credential) =>{
+                console.log("User logged in: ", credential.user);
+                loginForm.reset();
+                userPage();
+            })
+            .catch((error) => {
+                console.error(error.message);
+        });
     });
-});
+} catch (error){}
 
 //* google
 const googleAuthButton = document.querySelector("#google-signin-button");
-googleAuthButton.addEventListener("click", (e) => {
-    const provider = new GoogleAuthProvider()
-    provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
-        // The signed-in user info.
-        const user = result.user;
-        console.log(user);
-      }).catch((error) => {
-        console.error(error.message);
-        // ...
-      });
-});
+try {
+    googleAuthButton.addEventListener("click", (e) => {
+        const provider = new GoogleAuthProvider()
+        provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+        signInWithPopup(auth, provider)
+          .then((result) => {
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            const credential = GoogleAuthProvider.credentialFromResult(result);
+            const token = credential.accessToken;
+            // The signed-in user info.
+            const user = result.user;
+            console.log(user);
+            userPage();
+          }).catch((error) => {
+            console.error(error.message);
+            // ...
+          });
+    });    
+} catch (error) {}
 
 //log out
 // const logoutButton = document.querySelector('.logout');
@@ -97,3 +103,9 @@ const unsubAuth = onAuthStateChanged(auth, (user) => {
 });
 
 //#endregion UserAuth
+
+//#region change page
+const userPage = () => {
+    window.location.href = "./user-view.html"
+}
+//#endregion change page

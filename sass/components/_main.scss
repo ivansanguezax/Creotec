@@ -17,7 +17,7 @@
             text-align: center;
         }
         p{
-            @include font(16px, 500, $color-text-primary)
+            @include font(16px, 500, $color-text-primary);
         }
         button{
             @include buttonPrimary(222px, 65px, 100px, 18px, 400 );
@@ -36,7 +36,7 @@
         flex-direction: column;
         justify-content:center;
         align-items: flex-end !important;
-        background-image: url('/assets/jpg/img-1.jpg');
+        background-image: url('/assets/jpg/home1.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
