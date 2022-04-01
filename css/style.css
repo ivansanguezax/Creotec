@@ -457,6 +457,12 @@ footer ul li {
       color: #FFFFFF;
       font-size: 16px;
       font-weight: 400 !important; }
+  .contact .form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; }
+    .contact .form-check input {
+      margin-right: 8px; }
 
 .blockcontent3 {
   height: 500px;
@@ -1164,7 +1170,7 @@ body {
   padding: 74px 0px; }
   .checklist img {
     width: 606px;
-    height: 398px;
+    height: auto;
     border-radius: 16px; }
   .checklist h2 {
     font-family: 'Roboto', sans-serif;
@@ -1257,6 +1263,14 @@ body {
       background-color: #3D576D;
       box-shadow: -10px 15px 10px rgba(100, 100, 100, 0.12157);
       border-radius: 7px; }
+    .login div .col:nth-child(2) .register {
+      width: 100px;
+      height: auto;
+      box-shadow: none;
+      border: none;
+      background-color: transparent;
+      text-decoration: underline;
+      color: #1756E6; }
     .login div .col:nth-child(2) div {
       margin: 37px 0px 53px;
       width: 380px; }
@@ -1269,10 +1283,148 @@ body {
         .login div .col:nth-child(2) div a img {
           width: 40px; }
 
-.user-main {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+@media screen and (max-width: 1400px) {
+  .services-card .card {
+    width: 260px; }
+    .services-card .card h5 {
+      font-size: 18px; }
+
+  .patients-testimonials .card {
+    width: 500px;
+    height: auto; } }
+@media screen and (max-width: 1300px) {
+  .services-card .card {
+    width: 220px; }
+    .services-card .card h5 {
+      font-size: 15px; }
+
+  .patients-testimonials .card {
+    width: 450px;
+    height: auto; }
+
+  .blockcontent4-left {
+    width: 400px; }
+    .blockcontent4-left img {
+      width: 400px;
+      border-radius: 16px; }
+  .blockcontent4-right {
+    width: 400px; }
+    .blockcontent4-right img {
+      width: 400px;
+      border-radius: 16px; }
+
+  .checklist img {
+    width: 450px; } }
+@media screen and (max-width: 990px) {
+  .homepage-description p {
+    text-align: center; }
+
+  .services {
+    text-align: center; }
+    .services-card {
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      .services-card .card {
+        width: 400px;
+        margin-bottom: 30px; }
+        .services-card .card h5 {
+          font-size: 20px; }
+
+  .blockcontent-2 button {
+    padding: 18px 50px; }
+
+  .patients-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #1A60FF;
+    margin-bottom: 50px; }
+  .patients-testimonials .card {
+    margin-right: 0px;
+    margin-top: 40px; }
+
+  .blockcontent4-container {
+    height: auto;
+    padding: 60px !important; }
+
+  .blockcontent4-left {
+    margin-right: 0px;
+    margin-bottom: 60px; }
+
+  .welcome {
+    height: auto;
+    padding: 60px; }
+
+  .welcome .col:nth-child(1) .quote {
+    width: 480px;
+    left: 300px;
+    top: 1100px; }
+
+  .checklist img {
+    width: 370px; } }
+@media screen and (max-width: 768px) {
+  .welcome .col:nth-child(1) {
+    height: 800px; }
+
+  .welcome .col:nth-child(1) .quote {
+    width: 400px;
+    height: auto;
+    left: 180px;
+    top: 1010px; }
+    .welcome .col:nth-child(1) .quote i {
+      font-size: 40px; }
+    .welcome .col:nth-child(1) .quote span {
+      font-size: 12px; }
+    .welcome .col:nth-child(1) .quote h6 {
+      font-size: 20px; } }
+@media screen and (max-width: 600px) {
+  .welcome .col:nth-child(1) .quote {
+    width: 300px;
+    left: 100px;
+    top: 1010px; }
+    .welcome .col:nth-child(1) .quote i {
+      font-size: 40px; }
+    .welcome .col:nth-child(1) .quote span {
+      font-size: 12px; }
+    .welcome .col:nth-child(1) .quote h6 {
+      font-size: 20px; }
+
+  .checklist img {
+    width: 350px; } }
+@media screen and (max-width: 500px) {
+  .services-card .card-img-top {
+    width: cover !important; }
+  .services-card .card {
+    width: 300px;
+    margin-bottom: 40px; }
+    .services-card .card h5 {
+      font-size: 18px; }
+
+  .patients-testimonials .card {
+    width: 300px !important; }
+
+  .contact-container {
+    height: auto;
+    padding: 60px 0px; }
+
+  .blockcontent4 img {
+    width: 250px !important;
+    height: 200px; }
+
+  .cases {
+    height: auto;
+    padding: 60px 0px; } }
+@media screen and (max-width: 375px) {
+  .blockcontent-2 h1 {
+    font-size: 18px !important; }
+  .blockcontent-2 button {
+    padding: 13px 30px;
+    font-size: 14px; }
+
+  .patients-testimonials .card {
+    width: 250px !important;
+    margin-top: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

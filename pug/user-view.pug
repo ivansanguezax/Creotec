@@ -25,7 +25,7 @@ html(lang="en")
         nav.navbar.navbar-light.bg-light.fixed-top
             .container-fluid
                 a.navbar-brand(href='#') 
-                    h3.user Hola 
+                    h3#user-greeting.user Hola 
                     p Bienvenido a Creotec
                 button.navbar-toggler(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar')
                     span.navbar-toggler-icon
@@ -55,6 +55,10 @@ html(lang="en")
                                 a.nav-link.active(href='#') 
                                     i.bi.bi-plus.me-3
                                     | Invitar a un miembro
+                            li.nav-item
+                                a.nav-link.active#logout-button(href='#1') 
+                                    i.bi.bi-power.me-3
+                                    | Cerrar sesión
         main.user-main
             .container-fluid
                 .row
@@ -96,4 +100,4 @@ html(lang="en")
         block import_js
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous')
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
-        script(src="./assets/dist/auth_bundle.js")  
+        script(src="./assets/dist/auth_bundle.js")

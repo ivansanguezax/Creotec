@@ -1,0 +1,218 @@
+@media screen and(max-width: 1400px){
+    .services{
+        &-card .card{
+            width:260px;
+            h5{
+                font-size:18px;
+            }
+        }
+    }
+    .patients{
+        &-testimonials .card{
+            width: 500px;
+        height: auto;
+        }
+    }
+}
+@media screen and(max-width: 1300px){
+    .services{
+        &-card .card{
+            width:220px;
+            h5{
+                font-size:15px;
+            }
+        }
+    }
+    .patients{
+        &-testimonials .card{
+            width: 450px;
+            height: auto;
+        }
+    }
+    .blockcontent4{
+        &-left{
+            width:400px;
+            img{
+                width: 400px;
+                border-radius: 16px;
+            }
+        }
+        &-right{
+            width:400px;
+            img{
+                width: 400px;
+                border-radius: 16px;
+            }
+        }
+    }
+    .checklist img{
+        width: 450px;
+    }
+    
+}
+
+@media screen and(max-width: 990px){
+    .homepage{
+        &-description{
+            p{
+                text-align:center;
+            }
+        }
+    }
+    .services{
+        text-align:center;
+        &-card{
+            display: flex;
+            justify-content:center;
+            align-content: center;
+            .card{
+                width:400px;
+                margin-bottom:30px;
+                h5{
+                    font-size:20px;
+                }
+            }
+        }
+          
+    }
+    
+
+    .blockcontent-2{
+        button{
+            padding: 18px 50px;
+        }
+    }
+
+    .patients{
+        &-title{
+            @include font(48px,700, $color-primary-500);
+            margin-bottom: 50px;
+        }
+        &-testimonials .card{
+            margin-right: 0px;
+            margin-top: 40px;
+        }
+    }
+    .blockcontent4-container{
+        height:auto;
+        padding: 60px!important;
+
+    }
+    .blockcontent4-left{
+        margin-right: 0px;
+        margin-bottom: 60px;
+    }
+    .welcome{
+        height:auto;
+        padding: 60px;
+    }
+    .welcome .col:nth-child(1) .quote{
+        width:480px;
+        left:300px;
+        top:1100px;
+
+    }
+    .checklist img{
+        width: 370px;
+    }
+}
+
+@media screen and(max-width:768px){
+    .welcome .col:nth-child(1){
+        height:800px;
+    }
+    .welcome .col:nth-child(1) .quote{
+        width:400px;
+        height:auto;
+        left:180px;
+        top:1010px;
+        i{
+            font-size:40px;
+        }
+        span{
+            font-size: 12px;
+        }
+        h6{
+            font-size: 20px;
+        }
+
+    }
+}
+
+@media screen and(max-width:600px){
+    .welcome .col:nth-child(1) .quote{
+        width:300px;
+        left:100px;
+        top:1010px;
+        i{
+            font-size:40px;
+        }
+        span{
+            font-size: 12px;
+        }
+        h6{
+            font-size: 20px;
+        }
+
+    }
+    .checklist img{
+        width: 350px;
+    }
+}
+
+
+@media screen and(max-width: 500px){
+    .services{
+        &-card{
+            .card-img-top{
+                width:cover !important;
+            }
+            .card{
+                width:300px;
+                margin-bottom:40px;
+                h5{
+                    font-size:18px;
+                }
+            }
+        }
+        
+    }
+    
+    .patients{
+        &-testimonials .card{
+            width:300px !important;
+        }
+    }
+    .contact-container{
+        height: auto;
+        padding: 60px 0px;
+    }
+    .blockcontent4{
+        img{
+            width:250px !important;
+            height: 200px;
+        }
+    }
+    .cases{
+        height: auto;
+        padding: 60px 0px;
+    }
+}
+
+@media screen and(max-width:375px){
+    .blockcontent-2{
+        h1{
+            font-size: 18px !important;
+        }
+        button{
+            padding: 13px 30px;
+            font-size: 14px;
+        }
+    }
+    .patients{
+        &-testimonials .card{
+            width:250px !important;
+            margin-top: 40px;
+        }
+    }
+}

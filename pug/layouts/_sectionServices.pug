@@ -23,7 +23,7 @@ main.cases#cases
                             p Creotec puede donar prótesis a personas de bajos recursos
                     .row
                         .col.text-center
-                            button.btn.rounded-pill.btn-primary(type='button') 
+                            button.btn.rounded-pill.btn-primary(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal")
                                 i.bi.bi-calendar-check
                                 |  Crear pedido
             .col-8
@@ -166,18 +166,29 @@ section.contact#contact
                 h1 Te contactamos con e-mail
         .row.contact-form
             .col-6.form.offset-3
-                .mb-3
-                    label.form-label(for='exampleInputEmail1') Nombre completo
-                    input#exampleInputName.form-control(type='text' aria-describedby='nameHelp' placeholder='Ingrese aquí')
-                .mb-3
-                    label.form-label(for='exampleInputEmail1') Número de teléfono
-                    input#exampleInputNumber.form-control(type='tel' aria-describedby='numberHelp' placeholder='Ingrese aquí')
-                .mb-3
-                    label.form-label(for='exampleInputEmail1') Email
-                    input#exampleInputEmail.form-control(type='email' aria-describedby='emailHelp' placeholder='Ingrese aquí')
-                .mb-3
-                    label.form-label(for='exampleInputEmail1') Fecha
-                    input#exampleInputDate.form-control(type='date' aria-describedby='dateHelp' placeholder='Seleccionar fecha')
+                form.order-embbed
+                    .mb-3
+                        label.col-form-label(for='recipient-name') Nombre:
+                        input.form-control(type='text' name="name" autocomplete="name")
+                    .mb-3
+                        label.col-form-label(for='message-text') Teléfono:
+                        input.form-control(type='text' name="phone" autocomplete="phone")
+                    .mb-3
+                        label.col-form-label(for='message-mail') Correo:
+                        input.form-control(type='text' name="mail" autocomplete="mail")
+                    .mb-3
+                        .form-check
+                            input#exampleRadios1.form-check-input(type='radio' name='exampleRadios' value='option1' checked='')
+                            label.form-check-label(for='exampleRadios1')
+                                | Solicitud de compra de prótesis
+                        .form-check
+                            input#exampleRadios2.form-check-input(type='radio' name='exampleRadios' value='option2')
+                            label.form-check-label(for='exampleRadios2')
+                                | Solicitud de donación de prótesis
+                        .form-check
+                            input#exampleRadios3.form-check-input(type='radio' name='exampleRadios' value='option3')
+                            label.form-check-label(for='exampleRadios3')
+                                | Solicitud de empresa para proyecto RSE
         .row.contact-submit
             .col.d-flex.justify-content-center
                 button.btn.btn-primary(type='submit') Enviar

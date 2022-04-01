@@ -190,6 +190,7 @@
         input::placeholder{
             @include font(14px, 400,$color-placeholder);
         }
+        
     }
     &-submit{
         margin-top: 32px;
@@ -197,6 +198,15 @@
             @include buttonPrimary(238px, 56px, 100px,16px,400 !important);
         }
     }
+    .form-check{
+        display:flex;
+        align-items: center;
+        margin-bottom: 15px;
+        input{
+            margin-right: 8px;
+        }
+    }
+    
 }
 
 .blockcontent3{

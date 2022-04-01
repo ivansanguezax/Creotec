@@ -9,13 +9,59 @@ section.modals
                     form.order
                         .mb-3
                             label.col-form-label(for='recipient-name') Nombre:
-                            input.form-control(type='text' name="name")
+                            input.form-control(type='text' name="name" autocomplete="name")
                         .mb-3
-                            label.col-form-label(for='message-text') Producto:
-                            textarea#message-text.form-control(name="product")
+                            label.col-form-label(for='message-text') Teléfono:
+                            input.form-control(type='text' name="phone" autocomplete="phone")
+                        .mb-3
+                            label.col-form-label(for='message-mail') Correo:
+                            input.form-control(type='text' name="email" autocomplete="mail")
+                        .mb-3#btngroup
+                            .form-check
+                                input#exampleRadios1.form-check-input(type='radio' name='exampleRadios' value='option1' checked='')
+                                label.form-check-label(for='exampleRadios1')
+                                    | Solicitud de compra de prótesis
+                            .form-check
+                                input#exampleRadios2.form-check-input(type='radio' name='exampleRadios' value='option2')
+                                label.form-check-label(for='exampleRadios2')
+                                    | Solicitud de donación de prótesis
+                            .form-check
+                                input#exampleRadios3.form-check-input(type='radio' name='exampleRadios' value='option3')
+                                label.form-check-label(for='exampleRadios3')
+                                    | Solicitud de empresa para proyecto RSE
                 .modal-footer
                     button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Cancelar
-                    button.btn.btn-primary(type='button') Confirmar
+                    button#submit-order-button.btn.btn-primary(type='button') Confirmar
+    #signupModal.modal.fade(tabindex='-1' aria-labelledby='signupModalLabel' aria-hidden='true')
+        .modal-dialog.modal-dialog-centered.modal-lg
+            .modal-content
+                .modal-header
+                    h5#signupModalLabel.modal-title Registrate
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    form.signup-form
+                        .mb-3
+                            label.col-form-label(for='recipient-name') Nombre:
+                            input.form-control(type='text' name="name" autocomplete="name")
+                        .mb-3
+                            label.col-form-label(for='message-text') Teléfono:
+                            input.form-control(type='text' name="phone" autocomplete="phone")
+                        .mb-3
+                            label.col-form-label(for='message-mail') Correo:
+                            input.form-control(type='text' name="email" autocomplete="mail")
+                        .mb-3
+                            label.col-form-label(for='user-country') Pais:
+                            input#country_input.form-control(list="country")
+                            datalist(id="country")
+                                include ./data/_countries.pug 
+                        .mb-3
+                            label.col-form-label(for='password-text') Contraseña:
+                            input.form-control(type='password' name="password" )
+                        .mb-3
+                            label.col-form-label(for='password-text') Confirmar contraseña:
+                            input.form-control(type='password' name="confirm_password")
+                .modal-footer
+                    button#signup-button.btn.btn-primary(type='button') Registrarse
     #Modal1.modal.fade(tabindex='-1' aria-labelledby='Modal1Label' aria-hidden='true')
         .modal-dialog.modal-dialog-centered
             .modal-content

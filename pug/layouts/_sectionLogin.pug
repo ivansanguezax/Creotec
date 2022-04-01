@@ -9,16 +9,12 @@
                 input#inputEmail.form-control(type='email' name="email" placeholder='Email address' required='' autofocus='')
                 label.sr-only(for='inputPassword') Password
                 input#inputPassword.form-control(type='password' name="password" placeholder='Password' required='')
-                a(href="#1") Recover password
-                button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in
+                a(href="#1") ¿Olvidaste tu contraseña?
+                button.btn.btn-lg.btn-primary.btn-block(type='submit') Iniciar sesión
             span Or continue with
             .d-flex.justify-content-around
                 a#google-signin-button(href="#1")
                     img(src="./assets/png/logo.png", alt="logo")
-                a#facebook-signin-button(href="#1")
-                    img(src="./assets/png/logo.png", alt="logo")
-                a#twitter-signin-button(href="#1")
-                    img(src="./assets/png/logo.png", alt="logo")
             span
                 | No tienes cuenta?
-                a(href="#1")  Regístrate!
+                button.register(type="button" data-bs-toggle="modal" data-bs-target="#signupModal")  Regístrate!

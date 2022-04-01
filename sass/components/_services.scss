@@ -48,7 +48,7 @@
     padding: 74px 0px;
     img{
         width: 606px;
-        height: 398px;
+        height: auto;
         border-radius: 16px;
     }
     h2{@include font(36px,700, $color-text-primary);}

@@ -54,6 +54,15 @@
             box-shadow: -10px 15px 10px rgba(100, 100, 100, 0.121569);
             border-radius: 7px;
         }
+        .register{
+        width:100px;
+        height:auto;
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+        text-decoration: underline;
+        color: $color-primary-600;
+        }
         div{
             margin:37px 0px 53px;
             width: 380px;
@@ -68,7 +77,6 @@
                 }
             }
         }
-
     }
    
 }
