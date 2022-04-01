@@ -1,0 +1,84 @@
+@media screen and(max-width: 1400px){
+    .services{
+        &-card .card{
+            width:260px;
+            h5{
+                font-size:18px;
+            }
+        }
+    }
+    .patients{
+        &-testimonials .card{
+            width: 500px;
+        height: auto;
+        }
+    }
+}
+@media screen and(max-width: 1300px){
+    .services{
+        &-card .card{
+            width:220px;
+            h5{
+                font-size:15px;
+            }
+        }
+    }
+    .patients{
+        &-testimonials .card{
+            width: 450px;
+            height: auto;
+        }
+    }
+    .blockcontent4{
+        &-left{
+            width:400px;
+            img{
+                width: 400px;
+                border-radius: 16px;
+            }
+        }
+        &-right{
+            width:400px;
+            img{
+                width: 400px;
+                border-radius: 16px;
+            }
+        }
+        
+    }
+}
+
+@media screen and(max-width: 990px){
+    .homepage{
+        &-description{
+            p{
+                text-align:center;
+            }
+        }
+    }
+    .services{
+        text-align:center;
+        &-card{
+            display: flex;
+            justify-content:center;
+            align-content: center;
+            .card{
+                width:400px;
+                margin-bottom:30px;
+                h5{
+                    font-size:20px;
+                }
+            }
+        }
+    }
+    .patients{
+        &-title{
+            @include font(48px,700, $color-primary-500);
+            margin-bottom: 50px;
+        }
+        &-testimonials .card{
+            margin-right: 0px;
+        }
+    }
+    
+}
