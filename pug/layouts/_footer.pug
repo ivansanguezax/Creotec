@@ -1,23 +1,23 @@
 include _globals.pug
 
 footer#footer.footer
-    .container-fluid.footer-container
-        .row.gap-5.ms-5
-            .col.footer-img
+    .container.footer-container
+        .row.ms-5
+            .col-12.col-lg.footer-img
                 img(src="./assets/png/logo.png", alt="imagealt")
                 p Creotec, startup dedicada al DISEÑO y FABRICACIÓN de prótesis estéticas y funcionales PERSONALIZADAS a través de impresión 3D de extremidades superiores a un costo accesible
-            .col-2.footer-patient-care
+            .col-12.col-lg-2.footer-patient-care
                 span Enlaces útiles
                 ul
                     each val,index in objCare
                         li
                             a(href=index)=val
-            .col-4.footer-contact
+            .col-12.col-lg-4.footer-contact
                 span Contacto
                 ul
                     each val,index in contactIcons
                         +contactItem(val,contactTexts[index],contactUrls[index])
-            .col.footer-social
+            .col-12.col-lg.footer-social
                 span Follow Us
                 .d-flex
                     a(href="https://www.facebook.com/creotec").fa.fa-facebook
