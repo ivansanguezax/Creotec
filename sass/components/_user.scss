@@ -1,6 +1,28 @@
+.navbar-user{
+    background-color: #306FFE !important;
+    a{
+        h3{
+            @include font(20px,300, $color-primary-50);
+        }
+        p{
+            @include font(25px,700, $color-primary-50);
+        }
+        
+    }
+
+
+}
+
+
 .user-main{
     height: 100vh;
     display:flex;
     justify-content:center;
     align-items: center;
+    button{
+        margin-top:40px;
+        padding: 13px 38px;
+        background-color: $color-primary-500;
+        @include font(20px,700, $color-white);
+    }
 }

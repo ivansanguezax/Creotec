@@ -40,28 +40,28 @@ section.blockcontent-2#blockcontent-2
                     | Las prótesis de 
                     strong Creotec 
                     | son accesibles para tu economía y de alta calidad
-                button.btn.btn-light.text-primary.mt-3(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1") Crear pedido
+                button.btn.btn-light.text-primary.mt-3(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal") Crear pedido
 
 section.patients#patients
     .container
         .row.patients-title
             h1 Nuestros Pacientes
-        .row.patients-testimonials
-            .col-lg-6.col
-                .card.d-flex.justify-content-center.text-center
+        .row.patients-testimonials.d-flex.justify-content-center
+            .col-8.col-lg-6
+                .patients-content.d-flex.justify-content-center.text-center
                     img(src='./assets/jpg/icon-user.jpeg' alt='...')
-                    .card-body
-                        h5.card-title Jorge Marca
-                        p.card-text
-                            | Desde mi accidente perdí mi trabajo y vida social. Con mi prótesis buscare trabajo para mantener a mi familia.
-                        i.bi.bi-quote
-            .col-lg-6.col
-                .card.d-flex.justify-content-center.text-center
-                    img(src='./assets/jpg/icon-user.jpeg' alt='...')
-                    .card-body
-                        h5.card-title Blanca Caracara
-                        p.card-text
+                    .patients-content-body
+                        h5.patients-content-title Blanca Caracara
+                        p.patients-content-text
                             | El 2017 tuve un accidente de alta tensión. Entre en depresión hasta quise matarme “Por mi hija voy a vivir”. 
+                        i.bi.bi-quote
+            .col-8.col-lg-6
+                .patients-content.d-flex.justify-content-center.text-center
+                    img(src='./assets/jpg/icon-user1.jpeg' alt='...')
+                    .patients-content-body
+                        h5.patients-content-title Richard Vargas
+                        p.patients-content-text
+                            | "Ahora ya puedo trabajar y salir a la calle sin que las personas se me queden viendo, muchas gracias Creotec."
                         i.bi.bi-quote
         .row.patients-nav
             .col-2.offset-5
@@ -141,7 +141,7 @@ section.blockcontent4#blockcontent4
             .col-lg-4.col-12.blockcontent4-left
                 img(src="./assets/jpg/about-img.jpeg", alt="imagealt")
                 h1  Conoce nuestro trabajo
-                button.btn.btn-light(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2") Ver más
+                button.btn.btn-light(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal3") Ver más
             .col-lg-4.col-12.blockcontent4-right
                 img(src="./assets/jpg/about2-img.jpeg", alt="imagealt")
                 h1  Conoce nuestro equipo

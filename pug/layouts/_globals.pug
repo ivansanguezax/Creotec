@@ -5,7 +5,7 @@
 //- Sections
 //- Main
 //- Cards
-- var cardImages = ["./assets/jpg/servicios.jpeg","./assets/jpg/servicios.jpeg","./assets/jpg/servicios.jpeg","./assets/jpg/servicios.jpeg"]
+- var cardImages = ["./assets/png/s1.png","./assets/png/s2.png","./assets/png/s3.png","./assets/png/s4.png"]
 - var cardTitles = ["Prótesis de Dedo", "Prótesis de Mano", "Prótesis de Antebrazo", "Prótesis de Brazo"]
 - var cardTexts = [["Diseño Personalizado","Apariencia Hiperrealista","Color de tu piel"],["Diseño Personalizado","Apariencia Hiperrealista","Color de tu piel"],["Diseño Personalizado","Apariencia Hiperrealista","Color de tu piel"],["Diseño Personalizado","Apariencia Hiperrealista","Color de tu piel"]]
 - var cardModals = ["#exampleModal", "#exampleModal", "#exampleModal", "#exampleModal"]
@@ -43,7 +43,7 @@ mixin contactItem(icon,text,url)
 
 mixin cardWithModal(cardImage, cardTitle, cardText, cardModal,index)
     .col-lg-3.col-12.services-card
-        button.card(class=index=="0"?"services-card-active":"" id="card-"+index type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=cardModal)
+        button.card.d-flex.align-items-center.flex-column(class=index=="0"?"services-card-active":"" id="card-"+index type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=cardModal)
             .btn.text-start
                 img.card-img-top(src=cardImage alt=cardTitle)
             .card-body

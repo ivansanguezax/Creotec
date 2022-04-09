@@ -1,0 +1,191 @@
+.container-fluid
+    .row
+        .col
+            img(src="./assets/jpg/servicios.jpeg", alt="protesis")
+        .col.d-flex.justify-content-center.align-items-center.flex-column
+            h1 Amputación Transradical Distal
+            p Creotec te ayuda a crear tu propia protésis
+form.container
+    .row
+        .col
+            h2 Por favor llene el formulario
+    .row
+        .col.text-center
+            h2 PERSONA ENCARGADA DE LA TOMA DE DATOS
+    .row
+        .col
+            .mb-3
+                label.col-form-label(for='recipient-name') Nombre:
+                input.form-control(type='text' name="name" autocomplete="name")
+            .mb-3
+                label.col-form-label(for='recipient-lastname') Apellidos:
+                input.form-control(type='text' name="lastname" autocomplete="lastname")
+            .mb-3
+                label.col-form-label(for='message-text') Teléfono:
+                input.form-control(type='text' name="phone" autocomplete="phone" placeholder="Ex: +59177777777")
+            .mb-3
+                label.col-form-label(for='message-mail') Correo:
+                input.form-control(type='text' name="email" autocomplete="mail")
+            .mb-3
+                label.col-form-label(for='user-country') Pais:
+                input#country_input.form-control(list="country")
+                datalist(id="country")
+                    include ./data/_countries.pug
+            .mb-3
+                label.col-form-label(for='recipient-city') Ciudad:
+                input.form-control(type='text' name="city" autocomplete="city")
+    .row
+        .col
+            .text-center
+                h2 DATOS DEL PACIENTE
+            .mb-3
+                label.col-form-label(for='recipient-name') Nombre:
+                input.form-control(type='text' name="name" autocomplete="name")
+            .mb-3
+                label.col-form-label(for='recipient-lastname') Apellidos:
+                input.form-control(type='text' name="lastname" autocomplete="lastname")
+            .mb-3
+                label.col-form-label(for='recipient-phone') Teléfono:
+                input.form-control(type='phone' name="phone" autocomplete="phone")
+    .row
+        .col.text-center
+            h2 CASO CLÍNICO DEL PACIENTE
+    .row
+        .col.text-center
+            h3 Muñón
+            img(src="", alt="alt")
+    .row
+        .col
+            span Selecciona uno de los casos clinicos
+            .mb-3#btngroup
+                .form-check
+                    input#exampleRadios1.form-check-input(type='radio' name='Izquierdo' value='option1' checked='')
+                    label.form-check-label(for='exampleRadios1')
+                        | Izquierdo
+                .form-check
+                    input#exampleRadios2.form-check-input(type='radio' name='Derecho' value='option2')
+                    label.form-check-label(for='exampleRadios2')
+                        | Derecho
+    .row
+        .col.text-center
+            h2 DESCRIPCIÓN/OBSERVACIONES
+    .row
+        .col
+            span Seleccione la causa por la cual el paciente perdió el brazo
+    .row
+        .col
+            .mb-3
+                label.col-form-label(for='recipient-cause') Causa de amputación:
+                input.form-control(type='text' name="cause")
+            .mb-3
+                label.col-form-label(for='recipient-other') Si su respuesta fue otro especifique:
+                input.form-control(type='text' name="other")
+            .mb-3
+                label.col-form-label(for='recipient-date') Fecha de amputación:
+                input.form-control(type='date' name="date")
+            .mb-3
+                span Indique si existe algfun molestia física en el muñón del paciente
+            .mb-3
+                label.col-form-label(for='recipient-date') Sensibilidad / Dolor:
+            .mb-3
+                select.form-control#cars(name='region')
+                    option(value='munon_end') Dolor en la punta del muñón 
+                    option(value='munon_length') Dolor a lo largo del muñón 
+                    option(value='cold') Sensibilidad al frio 
+                    option(value='none') Ninguno
+            .mb-3
+                span Mencione detalles adicionales sobre el muñón
+            .mb-3
+                label.col-form-label(for='recipient-other') Otros Detalles:
+                input.form-control(type='text' name="other")
+    .row
+        .col.text-center
+            h2 REQUERIMIENTOS DE LA PRÓTESIS
+    .row
+        .col
+            .mb-3
+                label.col-form-label(for='recipient-activity') Actividad para la que desea
+                select.form-control#cars(name='region')
+                    option(value='daily') Actividades diarias
+                    option(value='office') Oficina
+                    option(value='heavy_tools') Trabajo con herramientas pesadas
+                    option(value='country') Trabajo de campo
+            .mb-3
+                label.col-form-label(for='recipient-activity') Color de la prótesis
+                select.form-control#cars(name='region')
+                    option(value='cream') Crema
+                    option(value='white') Blanco
+                    option(value='blue') Azul
+                    option(value='black') Negro
+                    option(value='red') Rojo
+    .row
+        .col.text-center
+            h2 MEDIDAS
+            h3 ANTEBRAZO-MANO
+            img(src="", alt="alt")
+    .row
+        .col
+            .mb-3
+                label.col-form-label(for='recipient-distance') D1
+                input.form-control(type='text' name="dist1" placeholder="Valor [cm]")
+            .mb-3
+                label.col-form-label(for='recipient-distance') D2
+                input.form-control(type='text' name="dist2" placeholder="Valor [cm]")
+    .row
+        .col.text-center
+            h3 MANO-MUÑECA
+            img(src="", alt="alt")
+    .row
+        .col
+            .mb-3
+                label.col-form-label(for='recipient-distance') D3
+                input.form-control(type='text' name="dist3" placeholder="Valor [cm]")
+            .mb-3
+                label.col-form-label(for='recipient-distance') D4
+                input.form-control(type='text' name="dist4" placeholder="Valor [cm]")
+    .row
+        .col.text-center
+            h3 LARGO DEL MUÑÓN
+            img(src="", alt="alt")
+    .row
+        .col
+            .mb-3
+                label.col-form-label(for='recipient-distance') L1
+                input.form-control(type='text' name="lenght1" placeholder="Valor [cm]")
+            .mb-3
+                label.col-form-label(for='recipient-distance') L2
+                input.form-control(type='text' name="lenght2" placeholder="Valor [cm]")
+            .mb-3
+                label.col-form-label(for='recipient-distance') L3
+                input.form-control(type='text' name="lenght3" placeholder="Valor [cm]")
+            .mb-3
+                label.col-form-label(for='recipient-distance') L4
+                input.form-control(type='text' name="lenght4" placeholder="Valor [cm]")
+            .mb-3
+                label.col-form-label(for='recipient-distance') L5
+                input.form-control(type='text' name="lenght5" placeholder="Valor [cm]")
+    .row
+        .col.text-center
+            h3 PERÍMETROS DEL MUÑÓN
+            img(src="", alt="alt")
+    .row
+        .col
+            .mb-3
+                label.col-form-label(for='recipient-distance') B1
+                input.form-control(type='text' name="bicep1" placeholder="Valor [cm]")
+            .mb-3
+                label.col-form-label(for='recipient-distance') B2
+                input.form-control(type='text' name="bicep2" placeholder="Valor [cm]")
+            .mb-3
+                label.col-form-label(for='recipient-distance') A1
+                input.form-control(type='text' name="arm1" placeholder="Valor [cm]")
+            .mb-3
+                label.col-form-label(for='recipient-distance') A2
+                input.form-control(type='text' name="arm2" placeholder="Valor [cm]")
+            .mb-3
+                label.col-form-label(for='recipient-distance') A3
+                input.form-control(type='text' name="arm3" placeholder="Valor [cm]")
+    .row
+        .col
+            .d-grid
+                button.btn.btn-primary(type='submit' value='Submit') Submit

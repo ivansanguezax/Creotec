@@ -74,7 +74,11 @@
         @include font(48px,700, $color-primary-500);
         margin-bottom: 135px;
     }
-    &-testimonials .card{
+    &-testimonials .patients-content{
+        display:flex !important;
+        flex-direction: column;
+        align-items: center;
+        padding:0px 30px;
         width: 605px;
         height: 375px;
         box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
@@ -229,7 +233,6 @@
         }
     }    
 }
-
 .blockcontent4{
     &-container{
         height:610px;
@@ -270,6 +273,5 @@
         }
         
     }
-
 }
 

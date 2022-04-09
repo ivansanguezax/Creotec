@@ -322,7 +322,11 @@ footer ul li {
     line-height: 150%;
     color: #1A60FF;
     margin-bottom: 135px; }
-  .patients-testimonials .card {
+  .patients-testimonials .patients-content {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
     width: 605px;
     height: 375px;
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
@@ -331,24 +335,24 @@ footer ul li {
     justify-content: center;
     align-items: center;
     border: none; }
-    .patients-testimonials .card img {
+    .patients-testimonials .patients-content img {
       width: 100px;
       height: 100px;
       border-radius: 60px;
       margin: 44px 0px 17px; }
-    .patients-testimonials .card h5 {
+    .patients-testimonials .patients-content h5 {
       font-family: 'Roboto', sans-serif;
       font-size: 24px;
       font-weight: 700;
       line-height: 150%;
       color: #434657; }
-    .patients-testimonials .card p {
+    .patients-testimonials .patients-content p {
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
       font-weight: 200;
       line-height: 150%;
       color: #82869E; }
-    .patients-testimonials .card i {
+    .patients-testimonials .patients-content i {
       font-size: 35px;
       color: #1A60FF; }
   .patients-nav {
@@ -1289,7 +1293,7 @@ body {
     .services-card .card h5 {
       font-size: 18px; }
 
-  .patients-testimonials .card {
+  .patients-testimonials .patients-content {
     width: 500px;
     height: auto; } }
 @media screen and (max-width: 1300px) {
@@ -1298,7 +1302,7 @@ body {
     .services-card .card h5 {
       font-size: 15px; }
 
-  .patients-testimonials .card {
+  .patients-testimonials .patients-content {
     width: 450px;
     height: auto; }
 
@@ -1315,9 +1319,36 @@ body {
 
   .checklist img {
     width: 450px; } }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1024px) {
   .homepage-description p {
-    text-align: center; }
+    text-align: center; } }
+@media screen and (max-width: 990px) {
+  .homepage-images {
+    display: none !important; }
+
+  .navbar-btn {
+    display: none !important; }
+
+  .homepage-description button {
+    background-color: #E8EFFF !important;
+    color: #1A60FF;
+    width: auto;
+    height: auto;
+    padding: 15px 20px; }
+
+  .btn-check:focus + .btn-primary, .btn-primary:focus {
+    border: #E8EFFF !important; }
+
+  .homepage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/jpg/background-tablet.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .homepage-description h1 {
+      color: #E8EFFF !important; }
+    .homepage-description p {
+      text-align: center;
+      color: #E8EFFF !important; }
 
   .services {
     text-align: center; }
@@ -1341,9 +1372,14 @@ body {
     line-height: 150%;
     color: #1A60FF;
     margin-bottom: 50px; }
-  .patients-testimonials .card {
+  .patients-testimonials .patients-content {
     margin-right: 0px;
     margin-top: 40px; }
+
+  .patients-testimonials {
+    display: flex !important;
+    align-items: center;
+    justify-content: center; }
 
   .blockcontent4-container {
     height: auto;
@@ -1402,7 +1438,7 @@ body {
     .services-card .card h5 {
       font-size: 18px; }
 
-  .patients-testimonials .card {
+  .patients-testimonials .patients-content {
     width: 300px !important; }
 
   .contact-container {
@@ -1423,8 +1459,37 @@ body {
     padding: 13px 30px;
     font-size: 14px; }
 
-  .patients-testimonials .card {
+  .patients-testimonials .patients-content {
     width: 250px !important;
     margin-top: 40px; } }
+.navbar-user {
+  background-color: #306FFE !important; }
+  .navbar-user a h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #F4F7FF; }
+  .navbar-user a p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #F4F7FF; }
+
+.user-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .user-main button {
+    margin-top: 40px;
+    padding: 13px 38px;
+    background-color: #1A60FF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,7 @@
         }
     }
     .patients{
-        &-testimonials .card{
+        &-testimonials .patients-content{
             width: 500px;
         height: auto;
         }
@@ -24,7 +24,7 @@
         }
     }
     .patients{
-        &-testimonials .card{
+        &-testimonials .patients-content{
             width: 450px;
             height: auto;
         }
@@ -51,11 +51,46 @@
     
 }
 
+@media screen and (max-width:1024px){
+    .homepage-description p{
+        text-align:center;
+    }
+}
+
 @media screen and(max-width: 990px){
+    .homepage-images{
+        display:none !important;
+    }
+    .navbar-btn{
+        display:none !important;
+    }
+
+    .homepage-description button{
+        background-color: $color-primary-100 !important;
+        color:$color-primary-500;
+        width:auto;
+        height:auto;
+        padding: 15px 20px;
+    }
+
+    .btn-check:focus+.btn-primary, .btn-primary:focus{
+        border: $color-primary-100 !important;
+    }
+
     .homepage{
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/jpg/background-tablet.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
         &-description{
+            h1{
+                color: $color-primary-100 !important;
+            }
             p{
                 text-align:center;
+                color: $color-primary-100 !important;
             }
         }
     }
@@ -84,14 +119,21 @@
     }
 
     .patients{
+
+
         &-title{
             @include font(48px,700, $color-primary-500);
             margin-bottom: 50px;
         }
-        &-testimonials .card{
+        &-testimonials .patients-content{
             margin-right: 0px;
             margin-top: 40px;
         }
+    }
+    .patients-testimonials{
+        display:flex !important;
+        align-items:center;
+        justify-content: center;
     }
     .blockcontent4-container{
         height:auto;
@@ -179,7 +221,7 @@
     }
     
     .patients{
-        &-testimonials .card{
+        &-testimonials .patients-content{
             width:300px !important;
         }
     }
@@ -210,7 +252,7 @@
         }
     }
     .patients{
-        &-testimonials .card{
+        &-testimonials .patients-content{
             width:250px !important;
             margin-top: 40px;
         }
